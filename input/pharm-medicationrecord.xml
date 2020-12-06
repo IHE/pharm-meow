@@ -8,16 +8,16 @@
   <url value="xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuideihe.fhir.pharm.medicationrecord"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
   <version value="0.1.0-test"/>
-  <name value="xxxYourComputableMyIGNameHere"/>
-  <title value="xxxYour User Friendly Name for MyIG Here"/>
+  <name value="MedicationRecord"/>
+  <title value="IHE Pharmacy Medication Record"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <publisher value="xxxYour Work Group"/>
+  <publisher value="IHE Pharmacy Committee"/>
   <contact>
     <telecom>
       <!-- Or whatever URL and/or email address(es) are appropriate -->
       <system value="url"/>
-      <value value="htttps://ihe.net"/>
+      <value value="htttp://ihe.net"/>
     </telecom>
   </contact>
   <description value="IHE Pharmacy Medication Record"/>
