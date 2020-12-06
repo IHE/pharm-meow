@@ -1,6 +1,6 @@
-{project_name}
+IHE Pharmacy Medication Record
 ---
-This is the Implementation Guide for IHE's Medication Records profile
+This is the Implementation Guide for IHE's Medication Record profile
 <br> </br>
 ###
 ### Publication
