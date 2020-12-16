@@ -1,0 +1,212 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "medication-treatment-record",
+  "url": "http://example.org/fhir/StructureDefinition/medication-treatment-record",
+  "version": "0.1.0",
+  "name": "MedicationTreatmentRecord",
+  "status": "draft",
+  "date": "2020-02-09T03:35:13+01:00",
+  "publisher": "IHE Pharmacy",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/Special/committees/[something]"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationTreatmentRecord",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationTreatmentRecord",
+        "path": "MedicationTreatmentRecord",
+        "short": "A medication treatment - past, current or future, reported or documented.",
+        "definition": "The"
+      },
+      {
+        "id": "MedicationTreatmentRecord.identifier",
+        "path": "MedicationTreatmentRecord.identifier",
+        "short": "A business identifier for the treatment - for exchange , processing and reconciliation purposes",
+        "definition": "The",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "MedicationTreatmentRecord.patient",
+        "path": "MedicationTreatmentRecord.patient",
+        "short": "The patient",
+        "definition": "The",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "MedicationTreatmentRecord.treatmentProtocol",
+        "path": "MedicationTreatmentRecord.treatmentProtocol",
+        "short": "The protocol associated with the medication treatment",
+        "definition": "The",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "MedicationTreatmentRecord.treatmentLine",
+        "path": "MedicationTreatmentRecord.treatmentLine",
+        "short": "The medication treatment entry",
+        "definition": "The",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "MedicationTreatmentRecord.treatmentLine.medication",
+        "path": "MedicationTreatmentRecord.treatmentLine.medication",
+        "short": "The medication",
+        "definition": "The",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableReference"
+          }
+        ]
+      },
+      {
+        "id": "MedicationTreatmentRecord.treatmentLine.adverseEvents",
+        "path": "MedicationTreatmentRecord.treatmentLine.adverseEvents",
+        "short": "Any known - reported or documented - adverse events - reactions, etc.",
+        "definition": "The",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "MedicationTreatmentRecord.treatmentLine.order",
+        "path": "MedicationTreatmentRecord.treatmentLine.order",
+        "short": "Orders about the treatment line",
+        "definition": "The",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "MedicationTreatmentRecord.treatmentLine.dispenses",
+        "path": "MedicationTreatmentRecord.treatmentLine.dispenses",
+        "short": "The known dispenses of the medication",
+        "definition": "The",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "MedicationTreatmentRecord.treatmentLine.indication",
+        "path": "MedicationTreatmentRecord.treatmentLine.indication",
+        "short": "The reason or indication for the treatment",
+        "definition": "The",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "MedicationTreatmentRecord.treatmentLine.intakes",
+        "path": "MedicationTreatmentRecord.treatmentLine.intakes",
+        "short": "The known administrations or intakes of the medication",
+        "definition": "The",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "MedicationTreatmentRecord.treatmentLine.summary",
+        "path": "MedicationTreatmentRecord.treatmentLine.summary",
+        "short": "The main summary of the medication treatment line",
+        "definition": "The",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "MedicationTreatmentRecord.treatmentLine.otherSummaries",
+        "path": "MedicationTreatmentRecord.treatmentLine.otherSummaries",
+        "short": "Any other expressions of treatment such as patient statements..",
+        "definition": "The",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "MedicationTreatmentRecord.treatmentLine.administrations",
+        "path": "MedicationTreatmentRecord.treatmentLine.administrations",
+        "short": "Medication administrations",
+        "definition": "The",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      }
+    ]
+  }
+}
