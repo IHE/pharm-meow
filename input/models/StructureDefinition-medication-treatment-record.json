@@ -156,25 +156,12 @@
         ]
       },
       {
-        "id": "MedicationTreatmentRecord.treatmentLine.intakes",
-        "path": "MedicationTreatmentRecord.treatmentLine.intakes",
-        "short": "The known administrations or intakes of the medication",
-        "definition": "The",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Reference"
-          }
-        ]
-      },
-      {
         "id": "MedicationTreatmentRecord.treatmentLine.summary",
         "path": "MedicationTreatmentRecord.treatmentLine.summary",
         "short": "The main summary of the medication treatment line",
         "definition": "The",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Reference"
