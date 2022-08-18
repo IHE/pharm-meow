@@ -1,0 +1,7 @@
+@startuml
+agent "Medication Record Repository" as MedicationRecordRepository
+agent "Medication Data Provider" as MedicationDataProvider
+agent "Medication Data Consumer" as MedicationDataConsumer
+MedicationRecordRepository -- MedicationDataProvider : "ddd"
+MedicationRecordRepository -- MedicationDataConsumer : "dd"
+@enduml

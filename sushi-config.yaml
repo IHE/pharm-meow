@@ -60,33 +60,34 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 pages:
   index.xml:
-    title: "MHD Home"
-#  1331_actors_and_transactions.md:
-#    title: "1:33.1 Actors and Transactions"
-#  1332_actor_options.md:
-#    title: "1:33.2 Actor Options"
+    title: "MDR Home"
+  1330_overview.md:
+    title: "1:33.0 Overview"
+  1331_actors_and_transactions.md:
+    title: "1:33.1 Actors and Transactions"
+  1332_actor_options.md:
+    title: "1:33.2 Actor Options"
 #  1333_required_grouping.md:
 #    title: "1:33.3 Required Grouping"
-#  1334_overview.md:
-#    title: "1:33.4 Overview"
-#  1335_security_considerations.md:
-#    title: "1:33.5 Security Considerations"
-#  1336_cross_profile_considerations.md:
-#    title: "1:33.6 Cross Profile Considerations"
-#  ITI-65.md:
-#    title: "2:3.65 Provide Document Bundle [ITI-65]"
+
+  1335_security_considerations.md:
+    title: "1:33.5 Security Considerations"
+  1336_cross_profile_considerations.md:
+    title: "1:33.6 Cross Profile Considerations"
+  PHARM-x.md:
+    title: "PHARM xxx"
 #  ITI-66.md:
 #    title: "2:3.66 Find Document Lists [ITI-66]"
 #  ITI-67.md:
 #    title: "2:3.67 Find Document References [ITI-67]"
 #  ITI-68.md:
 #    title: "2:3.68 Retrieve Document [ITI-68]"
-#  31_xds.md:
-#    title: "3:4.2.4.1 Error Codes"
-#  32_fhir_maps.md:
-#    title: "3:4.5 FHIR Maps"
-#  testplan.md:
-#    title: "Test Plan"
+  31_xds.md:
+    title: "3:4.2.4.1 Error Codes"
+  32_fhir_maps.md:
+    title: "3:4.5 FHIR Maps"
+  testplan.md:
+    title: "Test Plan"
 #    extension: 
 #      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
 #        valueCode: informative
@@ -101,20 +102,19 @@ pages:
 # │  To use a provided ig-data/input/includes/menu.xml file, delete the "menu" property below.     │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
-  MHD Home: index.html
+  MDR Home: index.html
   Volume 1: 
-    Introduction: index.html
+    "Overview": 1330_overview.html
     "Actors and Transactions": 1331_actors_and_transactions.html
     "Actor Options": 1332_actor_options.html
-    "Actor Required Grouping": 1333_required_grouping.html
-    "Overview": 1334_overview.html
+   # "Actor Required Grouping": 1333_required_grouping.html
     "Security Considerations": 1335_security_considerations.html
     "Cross Profile Considerations": 1336_cross_profile_considerations.html
   Volume 2:
-    "Provide Document Bundle [ITI-65]": ITI-65.html
-    "Find Document Lists [ITI-66]": ITI-66.html
-    "Find Document References [ITI-67]": ITI-67.html
-    "Retrieve Document [ITI-68]": ITI-68.html
+    "Transaction 1xxx": PHARM-x.html
+  #  "Find Document Lists [ITI-66]": ITI-66.html
+  #  "Find Document References [ITI-67]": ITI-67.html
+  #  "Retrieve Document [ITI-68]": ITI-68.html
   Volume 3:
     "Error Codes": 31_xds.html
     "FHIR Maps": 32_fhir_maps.html
