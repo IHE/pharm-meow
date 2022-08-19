@@ -1,12 +1,11 @@
 * Actors
 
-  - [Document Source](1331_actors_and_transactions.html#133111-document-source)
+  - [Medication Repository](1331_actors_and_transactions.html#133111-medication-repository)
 
-  - [Document Recipient](1331_actors_and_transactions.html#133113-document-recipient)
+  - [Medication Data Provider](1331_actors_and_transactions.html#133112-medication-data-provider)
 
-  - [Document Consumer](1331_actors_and_transactions.html#133112-document-consumer)
+  - [Medication Data Consumer](1331_actors_and_transactions.html#133113-medication-data-consumer)
 
-  - [Document Responder](1331_actors_and_transactions.html#133114-document-responder)
 
 * Transactions
 
