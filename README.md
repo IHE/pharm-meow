@@ -7,7 +7,7 @@ This is the Implementation Guide for IHE's Medication Record profile
 This ImplementationGuide is published in the following locations:
 
 Continuous Build: __http://build.fhir.org/ig/ihe/pharm-medicationrecord/__  
-Continuous Build: __http://ihe.github.io/pharm-medicationrecord__
+Continuous Build: __http://ihe.github.io/pharm-medicationrecord__  
 Canonical / permanent URL: ____  
 <br> </br>
 
