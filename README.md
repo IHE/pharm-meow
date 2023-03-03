@@ -1,6 +1,6 @@
 IHE Pharmacy Medication Record
 ---
-This is the Implementation Guide for IHE's Medication Record profile
+This is the Implementation Guide for IHE's Medication Overview (MedO) profile
 <br> </br>
 ###
 ### Publication
