@@ -1,4 +1,4 @@
-IHE Pharmacy Medication Record
+IHE Pharmacy Medication Overview
 ---
 This is the Implementation Guide for IHE's Medication Overview (MEDO) profile
 <br> </br>
