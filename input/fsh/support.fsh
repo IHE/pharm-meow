@@ -3,7 +3,7 @@ Extension: RelatedTreatmentLine
 Id:        related-tl
 Title:    "Based On Extension"
 Description: "Extension for connecting several resources to a single Treatment Line"
-* value[x] only Reference(MedicationStatement)
+* value[x] only Reference(MedicationUsage)
 
 Profile: MedRecordDispense
 Title: "[Profile] - Dispense"
@@ -21,7 +21,7 @@ Parent: MedicationRequest
 Profile: MedRecordUsage
 Title: "[Profile] - Usage"
 Description: "The profile for Medication Usage in a Medication Record - a record of a single administration event"
-Parent: MedicationStatement
+Parent: MedicationUsage
 
 
 Profile: MedRecordAdministration

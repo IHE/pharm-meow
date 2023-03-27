@@ -1,19 +1,19 @@
 Profile: MedRecordTreatmentLine
 Title: "[Profile] - Treatment Line"
 Description: "The profile for Medication Treatment Line - a single recorded item/line of a medication treatment"
-Parent: MedicationStatement
+Parent: MedicationUsage
 * meta.profile 1..*
 * identifier MS
-* basedOn MS
+//* basedOn MS
 * subject MS 
 * informationSource MS //recorder
 * dateAsserted MS //recordDate
 * effectiveDateTime MS //startMedicationDate + endMedicationDate
 * effectivePeriod MS //startMedicationDate + endMedicationDate
 * status MS //lifecycleStatus
-* statusReason MS //statusReason
-* medicationCodeableConcept MS
-* medicationReference MS
+//* statusReason MS //statusReason
+* medication MS
+//* medicationReference MS
 * dosage MS //dosageAmmount + peridocity + dayperiod + route + instructionforUse
 * category MS //medicationType
 * note MS //everything else (origintype, lotnumber and reaction)
@@ -28,7 +28,7 @@ Parent: CarePlan
 * meta.profile 1..*
 * identifier MS
 * subject MS 
-* author MS
+//* author MS
 * basedOn MS
 * created MS 
 * period MS 

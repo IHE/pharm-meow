@@ -6,7 +6,7 @@ id: ihe-fhir-pharm-medicationrecord
 canonical: http://profiles.ihe.net/PHARM/ihe.pharm.medicationrecord
 name: IHE_MPD
 version: 0.1.0
-fhirVersion: 4.0.1
+fhirVersion: 5.0.0
 status: active
 title: "IHE Pharmacy Medication Record"
 description: ImplementationGuide for IHE Pharmacy Medication Prescription and Delivery
