@@ -1,3 +1,8 @@
+Extension: basedOn
+Description: "basedOn"
+* value[x] only Reference(CarePlan)
+
+
 Profile: MedRecordTreatmentLine
 Title: "[Profile] - Treatment Line"
 Description: "The profile for Medication Treatment Line - a single recorded item/line of a medication treatment"
@@ -13,11 +18,10 @@ Parent: MedicationStatement
 * status MS //lifecycleStatus
 //* statusReason MS //statusReason
 * medication MS
-//* medicationReference MS
 * dosage MS //dosageAmmount + peridocity + dayperiod + route + instructionforUse
 * category MS //medicationType
 * note MS //everything else (origintype, lotnumber and reaction)
-* extension contains http://hl7.org/fhir/StructureDefinition/event-basedOn named treatmentPlan 0..1 MS
+* extension contains basedOn named treatmentPlan 0..1 MS
 * extension[treatmentPlan].valueReference only Reference(CarePlan) 
 
 
