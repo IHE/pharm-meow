@@ -1,7 +1,7 @@
 Profile: MedRecordTreatmentLine
 Title: "[Profile] - Treatment Line"
 Description: "The profile for Medication Treatment Line - a single recorded item/line of a medication treatment"
-Parent: MedicationUsage
+Parent: MedicationStatement
 * meta.profile 1..*
 * identifier MS
 //* basedOn MS
