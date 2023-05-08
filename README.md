@@ -7,7 +7,7 @@ This is the Implementation Guide for IHE's Medication Overview (MEDO) profile
 This ImplementationGuide is published in the following locations:
 
 Continuous Build: __http://build.fhir.org/ig/ihe/pharm-medo/__  
-Continuous Build: __http://ihe.github.io/pharm-medo  
+Continuous Build: __http://ihe.github.io/pharm-meow__  
 Canonical / permanent URL: ____  
 <br> </br>
 
