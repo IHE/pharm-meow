@@ -1,6 +1,6 @@
 IHE Pharmacy Medication Overview
 ---
-This is the Implementation Guide for IHE's Medication Overview (MEDO) profile
+This is the Implementation Guide for IHE's Medication Overview (MEOW) profile
 <br> </br>
 ###
 ### Publication
@@ -14,8 +14,8 @@ Canonical / permanent URL: ____
 ### Issues
 Issues and change requests are managed here:  
 
-Issues:  __https://github.com/ihe/pharm-medicationrecord/issues__  
-Kanban board:  __https://github.com/ihe/pharm-medo/projects/1__  
+Issues:  __https://github.com/ihe/pharm-meow/issues__  
+Kanban board:  __https://github.com/ihe/pharm-meow/projects/1__  
 
 ---
  
