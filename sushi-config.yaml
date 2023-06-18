@@ -54,7 +54,6 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
 #    name: Example FindDocumentReferences response
 #    description: An example of a searchset Bundle with one DocumentReference
 #    exampleBoolean: true
-
 # ╭────────────────────────────────────────────pages───────────────────────────────────────────────╮
 # │  The pages property corresponds to IG.definition.page.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
