@@ -105,7 +105,7 @@ pages:
 # │  To use a provided ig-data/input/includes/menu.xml file, delete the "menu" property below.     │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
-  MDR Home: index.html
+  MEOw Home: index.html
   Volume 1: 
     "Overview": 1330_overview.html
     "Actors and Transactions": 1331_actors_and_transactions.html

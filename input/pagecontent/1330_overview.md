@@ -27,7 +27,7 @@
   - Use Case 11: Medication Views
   - Use Case 12: The patient is admitted to hospital and there the medication is changed to better help the patient
 
-## 1:33.0 MDR Overview
+## 1:33.0 MEOw Overview
 
 
 ### 1:33.0.1 Concepts
