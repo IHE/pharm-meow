@@ -63,6 +63,8 @@ pages:
     title: "MDR Home"
   1330_overview.md:
     title: "1:33.0 Overview"
+  functional-updates.md:
+    title: "Functional Updates"
   1331_actors_and_transactions.md:
     title: "1:33.1 Actors and Transactions"
   1332_actor_options.md:
