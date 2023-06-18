@@ -5,4 +5,3 @@
 |Medication Treatment| |||
 |Medication Treatment line||||
 
-{% include ../../LICENSE %}
