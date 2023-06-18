@@ -2,14 +2,14 @@
 # | documentation of this sushi-config.yaml file https://fshschool.org/docs/sushi/configuration/               |
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 
-id: ihe-fhir-pharm-medicationrecord
-canonical: http://profiles.ihe.net/PHARM/ihe.pharm.medicationrecord
-name: IHE_MPD
+id: ihe.pharm.meow
+canonical: http://profiles.ihe.net/PHARM/MEOW
+name: IHE_PHARM_MEOW
 version: 0.1.0
 fhirVersion: 5.0.0
 status: active
-title: "IHE Pharmacy Medication Record"
-description: ImplementationGuide for IHE Pharmacy Medication Prescription and Delivery
+title: "IHE Pharmacy Medication Overview"
+description: ImplementationGuide for IHE Pharmacy Medication Overview
 copyright: IHE http://www.ihe.net/Governance/#Intellectual_Property
 copyrightYear: 2022+
 releaseLabel: ci-build
@@ -59,11 +59,13 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 pages:
   index.xml:
-    title: "MDR Home"
+    title: "MEOW Home"
   1330_overview.md:
     title: "1:33.0 Overview"
   functional-updates.md:
     title: "Functional Updates"
+  glossary.md:
+    title: "Glossary"
   1331_actors_and_transactions.md:
     title: "1:33.1 Actors and Transactions"
   1332_actor_options.md:
