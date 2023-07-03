@@ -1,6 +1,47 @@
+Logical: MedicationOverview
+Title: "NEW | Medication Overview - logical model"
+Description: "NEW | A model for the whole medication overview (medication schema)"
+* patient 1..1 Reference(Patient) "Patient"
+* treatmentLine 0..* Reference(MedicationTreatmentLine) "List item in the list of all current medication based treatments"
+
+Logical: MedicationTreatment
+Title: "NEW | Medication Treatment - logical model"
+Description: "NEW | Grouping of treatment lines that are somehow related to eachother (the same purpose, other)"
+
+* advice 0..* BackboneElement "Advice"
+* comment 0..* BackboneElement "Comment"
+// * medicationTreatmentLine 1..* "Medication treatment line"
+
+Logical: MedicationTreatmentLine
+Title: "NEW | Medication Treatment Line - logical model"
+Description: "NEW | A model for representing a Treatment Line."
+* medication[x] 1..1 Reference(Medication) or CodeableConcept "Medicinal product for which the treatment line refers to. Identification or sufficient description of the product."
+* status 1..1 code "Status of the treatment line"
+* category 0..* code "Whatever category for the treatment. Categorisation of treatment lines is implementation-specific."
+* reasonIndication 0..* code "Reason why the product has been prescribed to the patient, or why the patient claims to be taking it"
+* usageInstructions 0..* BackboneElement "Instructions about requested administration of the product"
+  * timing 0..1 BackboneElement "Time-related attributes related to administration"
+    * startMedicationDate 1..1 dateTime "Start date of the medication" "Start date of the medication"
+    * endMedicationDate 0..1 dateTime "End date, if exists, for stopping the medication" "End date, if exists, for stopping the medication"
+    * duration 0..1 Quantity "Duration of the treatment"
+  * dosage 0..1 BackboneElement "strength, amount. Can be complex model, one dosage for odd days, another for even days"
+    * dose 0..1 Quantity "A dose to be administered at one time"
+    * frequency 0..1 Ratio "Administered amount per time unit"
+  * routeOfAdministration 0..1 code "Route of administration for this particular treatment"
+
+* preparationInstructions 0..* string "Additional instructions about preparation or dispense" 
+* relatedRequest 0..* Reference "Reference to any related source that gives additional information/context for this treatment line"
+* informationSource 0..* Reference "Other data object that this treatment line is derived from - !!!!!!possible a duplicate to relatedRequest"
+
+* reportingMetadata 1..1 BackboneElement ""
+  * reporter 1..1 Reference "Person authoring/cancelling the treatment line, either by requesting a treatment or documenting a patient's statement. Typically a doctor, nurse, or pharmacist."
+  * reporting 1..1 dateTime "Time of creation of the treatment line"
+  * patientReported 1..1 boolean "The treatment line has been documented according to patient's statement"
+
+
 Logical: ModelMedicationRecordTreatmentLine
-Title: "Medication Record Treatment Line - logical model"
-Description: "A model for representing a Treatment Line."
+Title: "OLD Medication Record Treatment Line - logical model"
+Description: "OLD A model for representing a Treatment Line."
 
 * identifier 0..1 Identifier "The business identifier(s) for the medication treatment Line" "The business identifier(s) for the medication treatment Line"
 * basedOn 0..1 Reference(ModelMedicationRecordTreatment) "The identifier of the treatment from which this line stems" "The identifier of the treatment from which this line stems" 
@@ -25,8 +66,8 @@ Description: "A model for representing a Treatment Line."
 
 
 Logical: ModelMedicationRecordTreatment
-Title: "Medication Record - Medication Treatment"
-Description: "A model for the Medication Treatment."
+Title: "OLD Medication Record - Medication Treatment"
+Description: "OLD A model for the Medication Treatment."
 
 * identifier 0..1 BackboneElement "The business identifier(s) for the medication treatment" "The business identifier(s) for the medication treatment" 
   * treatmentGuid 0..1 Identifier "The Global Unique identifier(s) for the medication treatment" "The Global Unique identifier(s) for the medication treatment" 
@@ -46,8 +87,8 @@ Description: "A model for the Medication Treatment."
 
 
 Logical: ModelMedicationRecord
-Title: "Medication Record logical model"
-Description: "A model for a structure collection of a patient's medication history."
+Title: "OLD Medication Record logical model"
+Description: "OLD A model for a structure collection of a patient's medication history."
 
 * identifier 0..1 Identifier "The business identifier(s) for the Medication Record" "The business identifier(s) for the Medication Record" 
 * patient 1..1 Reference "The subject of the medication record" "The subject of the medication record"
