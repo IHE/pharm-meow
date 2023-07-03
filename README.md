@@ -6,7 +6,7 @@ This is the Implementation Guide for IHE's Medication Overview (MEOW) profile
 ### Publication
 This ImplementationGuide is published in the following locations:
 
-Continuous Build: __http://build.fhir.org/ig/ihe/pharm-meow/__  
+Continuous Build: __http://build.fhir.org/ig/IHE/pharm-meow/branches/main/toc.html__  
 Continuous Build: __http://ihe.github.io/pharm-meow__  
 Canonical / permanent URL: ____  
 <br> </br>
