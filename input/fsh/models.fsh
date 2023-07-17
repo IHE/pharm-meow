@@ -52,6 +52,40 @@ Description: "NEW | A model for representing a Treatment Line."
 * relatedRequest 0..* Reference "Reference to any related source that gives additional information/context for this treatment line. Possibly a duplicate element?"
 // comment is modelled to the MedicationOverview object with a reference to treatment line. In FHIR resources could be the other way around.
 
+Logical: MedicationModel
+Title: "Medication for clinical workflows"
+Description: "UNICOM draft, cardinalities not revised, current description is focused on authorised product."
+
+* medicinalProductIdentifier 0..* II "MPID or national identifier"
+* packagedProductIdentifier 0..* II "PCID or national"
+* pharmaceuticalProductIdentifier 0..* II "PhPID"
+* atc 1..1 CD "ATC code"
+* classification 0..* CD "Classification"
+* packSize 1..* PQ "Overall amount of product (100ml; 20 tablets; 1 creme & 6 pessaries)"
+* name 0..* ST "Name of the product (full name, invented name, other)"
+* doseForm 1..* Class "The intended or existing dose form for the product"
+  * formCode 1..1 CD "The actual dose form"
+  * type 0..1 CD "The type of dose form" 
+//* authorisedDoseForm 0..1 CD "Authorised/Combined dose form" 
+//* pharmaceuticalDoseForm 0..* CD "Pharmaceutical dose form" // not needed if we could have the mapping 
+* manufacturedItem 1..* Class "Manufactured item if the prescription contains more than one type of items"
+  * manufacturedDoseForm 1..1 CD "Manufactured item dose form"
+  * ingredient 0..* Class "Ingredients"
+    * role 1..1 CD "Role (might not be needed if only active ingredients are expected)"
+    * substance 1..1 CD "Substance"
+    * strengthInfo 1..* Class "Concentration or presentation strength"
+      * strength 1..1 RTO "Concentration or presentation strength of the precise active ingredient"
+      * strengthType 1..1 CD "Type of strength that is expressed"
+      * strengthSubstance 0..1 CD "Substance that the strength refers to, if different from the main substance"
+  * unitOfPresentation 0..* CD "Unit of presentation for the manufactured item"
+  * containedQuantity 0..1 PQ "Manufactured item quantity for liquids (3ml/vial)"
+  * manufacturedItemQuantity 1..1 PQ "Number of such manufactured items in this product (5 vials)"
+* device 0..* Class "Administrative device included in the product"
+  * deviceQuantity 1..1 PQ "Number of such devices"
+  * device 1..1 CD "Device coded"
+* marketingAuthorisationHolder 0..1 ST "MAH name - do we need more?"
+* routeOfAdministration 1..* CD "Route of Administration - if we need it on product level"
+
 
 Logical: ModelMedicationRecordTreatmentLine
 Title: "OLD Medication Record Treatment Line - logical model"
