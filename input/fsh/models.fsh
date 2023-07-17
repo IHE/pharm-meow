@@ -42,12 +42,14 @@ Description: "NEW | A model for representing a Treatment Line."
     * frequency 0..1 Ratio "Administered amount per time unit"
   * routeOfAdministration 0..1 code "Route of administration for this particular treatment"
 * preparationInstructions 0..* string "Additional instructions about preparation or dispense" 
-* reportingMetadata 1..1 BackboneElement ""
+* reportingMetadata 1..1 BackboneElement "!! This duplicates relatedPrescription and relatedStatement elements. Should be revised."
   * reporter 1..1 Reference "Person authoring/cancelling the treatment line, either by requesting a treatment or documenting a patient's statement. Typically a doctor, nurse, or pharmacist."
   * reporting 1..1 dateTime "Time of creation of the treatment line"
   * patientReported 1..1 boolean "The treatment line has been documented according to patient's statement"
-* relatedRequest 0..* Reference "Reference to any related source that gives additional information/context for this treatment line"
 * informationSource 0..* Reference "Other data object that this treatment line is derived from - !!!!!!possible a duplicate to relatedRequest"
+* relatedPrescription 0..* Reference "Prescriptions that have been authored based on the verified treatment line, or which have been the source for creating the unverified treatment line"
+* relatedStatement 0..* Reference "Medication-related statements from patients, pharmacists, or other HCPs, that are related to the verified treatment line or are the source for creating the unverified treatment line"
+* relatedRequest 0..* Reference "Reference to any related source that gives additional information/context for this treatment line. Possibly a duplicate element?"
 // comment is modelled to the MedicationOverview object with a reference to treatment line. In FHIR resources could be the other way around.
 
 
