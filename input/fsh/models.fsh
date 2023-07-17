@@ -26,7 +26,11 @@ Title: "NEW | Medication Treatment Line - logical model"
 Description: "NEW | A model for representing a Treatment Line."
 * medication[x] 1..1 Reference(Medication) or CodeableConcept "Medicinal product for which the treatment line refers to. Identification or sufficient description of the product."
 * status 1..1 code "Status of the treatment line"
-* category 0..* code "Whatever category for the treatment. Categorisation of treatment lines is implementation-specific."
+* verificationInformation 0..1 BackboneElement "Last verification of full overview. The overview is verified as a whole, but each lines is equipped with the information"
+  * practicioner 1..1 Reference "HCP verifying the treatments/overview"
+  * verificationTime 1..1 dateTime ""
+* category 0..* code "Whatever category for the treatment line. Categorisation of treatment lines is implementation-specific."
+* medicationTreatment 0..1 Reference(MedicationTreatment) "Grouper of lines that belong together, lines are parts of the same treatment"
 * reasonIndication 0..* code "Reason why the product has been prescribed to the patient, or why the patient claims to be taking it"
 * usageInstructions 0..* BackboneElement "Instructions about requested administration of the product"
   * timing 0..1 BackboneElement "Time-related attributes related to administration"
@@ -37,17 +41,14 @@ Description: "NEW | A model for representing a Treatment Line."
     * dose 0..1 Quantity "A dose to be administered at one time"
     * frequency 0..1 Ratio "Administered amount per time unit"
   * routeOfAdministration 0..1 code "Route of administration for this particular treatment"
-* medicationTreatment 0..1 Reference(MedicationTreatment) "Grouper of lines that belong together, lines are parts of the same treatment"
-* verificationStatus 1..1 BackboneElement "Verification information - what is needed to create a verified version of the overview, and maintain it"
-
 * preparationInstructions 0..* string "Additional instructions about preparation or dispense" 
-* relatedRequest 0..* Reference "Reference to any related source that gives additional information/context for this treatment line"
-* informationSource 0..* Reference "Other data object that this treatment line is derived from - !!!!!!possible a duplicate to relatedRequest"
-
 * reportingMetadata 1..1 BackboneElement ""
   * reporter 1..1 Reference "Person authoring/cancelling the treatment line, either by requesting a treatment or documenting a patient's statement. Typically a doctor, nurse, or pharmacist."
   * reporting 1..1 dateTime "Time of creation of the treatment line"
   * patientReported 1..1 boolean "The treatment line has been documented according to patient's statement"
+* relatedRequest 0..* Reference "Reference to any related source that gives additional information/context for this treatment line"
+* informationSource 0..* Reference "Other data object that this treatment line is derived from - !!!!!!possible a duplicate to relatedRequest"
+// comment is modelled to the MedicationOverview object with a reference to treatment line. In FHIR resources could be the other way around.
 
 
 Logical: ModelMedicationRecordTreatmentLine
