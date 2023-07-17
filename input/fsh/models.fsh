@@ -2,7 +2,16 @@ Logical: MedicationOverview
 Title: "NEW | Medication Overview - logical model"
 Description: "NEW | A model for the whole medication overview (medication schema)"
 * patient 1..1 Reference(Patient) "Patient"
-* treatmentLine 0..* Reference(MedicationTreatmentLine) "List item in the list of all current medication based treatments"
+* medicationTreatmentLine 0..* Reference(MedicationTreatmentLine) "List item in the list of all current medication based treatments. Each line can be verified or unverified."
+* verification 0..1 BackboneElement "Verification of overview"
+  * practicioner 1..1 Reference "HCP verifying the treatments/overview"
+  * verificationTime 1..1 dateTime ""
+* comment 0..* BackboneElement "Comment on the full overview"
+  * author 1..1 Reference "author of the comment (pharmacist, doctor, social carer)"
+  * date 1..1 dateTime "time of comment"
+  * commentText 1..1 string "content of the comment"
+  * subject 0..* Reference "What the comment is about. It can reference either a treatment line, treatment, or full overview"
+
 
 Logical: MedicationTreatment
 Title: "NEW | Medication Treatment - logical model"
@@ -28,6 +37,8 @@ Description: "NEW | A model for representing a Treatment Line."
     * dose 0..1 Quantity "A dose to be administered at one time"
     * frequency 0..1 Ratio "Administered amount per time unit"
   * routeOfAdministration 0..1 code "Route of administration for this particular treatment"
+* medicationTreatment 0..1 Reference(MedicationTreatment) "Grouper of lines that belong together, lines are parts of the same treatment"
+* verificationStatus 1..1 BackboneElement "Verification information - what is needed to create a verified version of the overview, and maintain it"
 
 * preparationInstructions 0..* string "Additional instructions about preparation or dispense" 
 * relatedRequest 0..* Reference "Reference to any related source that gives additional information/context for this treatment line"
