@@ -55,6 +55,7 @@ Description: "NEW | A model for representing a Treatment Line."
 * relatedPrescription 0..* Reference "Prescriptions that have been authored based on the verified treatment line, or which have been the source for creating the unverified treatment line"
 * relatedStatement 0..* Reference "Medication-related statements from patients, pharmacists, or other HCPs, that are related to the verified treatment line or are the source for creating the unverified treatment line"
 * relatedRequest 0..* Reference "Reference to any related source that gives additional information/context for this treatment line. Possibly a duplicate element?"
+* relatedDispensation 0..* Reference "Related dispensations that are NOT related to existing prescriptions/requests/statements. Allowing this is very implemenation-specific."
 // comment is modelled to the MedicationOverview object with a reference to treatment line. In FHIR resources could be the other way around.
 
 Logical: MedicationModel
