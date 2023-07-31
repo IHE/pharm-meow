@@ -34,7 +34,7 @@ Description: "NEW A model for representing a Treatment Line."
 * medicationTreatment 0..* Reference(MedicationTreatment) "Grouper of lines that belong together, lines are parts of the same treatment"
 * indication 0..* code "Reason why the product has been prescribed to the patient, or why the patient claims to be taking it"
 * indicationText 0..1 string "Textual explanation for why the medication has been prescribed or why the patient is taking it. This might not be allowed by some implementations."
-* usageInstructions 0..* BackboneElement "Instructions about requested administration of the product"
+* usageInstructions 0..* BackboneElement "Instructions about requested administration of the product. Unfinished. See FHIR Dosage for now"
   * timing 0..1 BackboneElement "Time-related attributes related to administration"
     * startMedicationDate 1..1 dateTime "Start date of the medication" "Start date of the medication"
     * endMedicationDate 0..1 dateTime "End date, if exists, for stopping the medication" "End date, if exists, for stopping the medication"
@@ -59,7 +59,7 @@ Description: "NEW A model for representing a Treatment Line."
 * informationSource 0..* Reference "Other data object that this treatment line is derived from"
 // comment is modelled to the MedicationOverview object with a reference to treatment line. In FHIR resources could be the other way around.
 
-Logical: MedicationModel
+Logical: Medication
 Title: "NEW Medication for clinical workflows"
 Description: "NEW Medication information. The model is shared by statements, requests, dispensations, and treatment lines. Each of those may have different restrictions in FHIR profile."
 
