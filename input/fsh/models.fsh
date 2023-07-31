@@ -68,7 +68,7 @@ Description: "UNICOM draft, cardinalities not revised, current description is fo
 * pharmaceuticalProductIdentifier 0..* II "PhPID or national virtual/administrable product code"
 * atc 0..1 CD "ATC code"
 * classification 0..* CD "Classification (narcotic/psychotropic; orphan drug; etc)"
-* packSize 0..* PQ "Overall amount of product (100ml; 20 tablets; 1 creme & 6 pessaries)"
+* packSize 0..* PQ "Overall amount of product in one virtual or real package (100ml; 20 tablets; 1 creme & 6 pessaries)"
 * productName 0..* Class "Name of the product (full name, invented name, other)"
   * name 1..1 ST "Name of type and language that is relevant for the users"
   * language 0..1 CD "Language of the name"
@@ -77,7 +77,7 @@ Description: "UNICOM draft, cardinalities not revised, current description is fo
   * formCode 1..1 CD "Coded dose form"
   * type 0..1 CD "The type of dose form (combined, authorised, administrable...)" 
 
-* item 0..* Class "Manufactured item if the prescription contains more than one type of items"
+* item 0..* Class "A medication item. For combination packs, this can be manufactured items with each item having its own dose form and ingredients+strengths defined"
   * doseForm 0..1 Class "Dose form of single item"
     * formCode 1..1 CD "Dose form"
     * type 0..1 CD "The type of dose form (typically manufactured dose form)" 
@@ -96,7 +96,7 @@ Description: "UNICOM draft, cardinalities not revised, current description is fo
   * device 1..1 CD "Device coded"
 * marketingAuthorisationHolder 0..1 ST "MAH name - do we need more?"
 * routeOfAdministration 0..* CD "Route of Administration - if we need it on product level"
-
+// Shall we have some text?
 
 Logical: ModelMedicationRecordTreatmentLine
 Title: "OLD Medication Record Treatment Line - logical model"
