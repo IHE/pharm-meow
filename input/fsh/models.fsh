@@ -1,6 +1,6 @@
 Logical: MedicationOverview
-Title: "NEW | Medication Overview - logical model"
-Description: "NEW | A model for the whole medication overview (medication schema)"
+Title: "NEW Medication Overview - logical model"
+Description: "NEW A model for the whole medication overview (medication schema)"
 * patient 1..1 Reference(Patient) "Patient"
 * medicationTreatmentLine 0..* Reference(MedicationTreatmentLine) "List item in the list of all current medication based treatments. Each line can be verified or unverified."
 * verification 0..1 BackboneElement "Verification of overview"
@@ -14,8 +14,8 @@ Description: "NEW | A model for the whole medication overview (medication schema
 
 
 Logical: MedicationTreatment
-Title: "NEW | Medication Treatment - logical model"
-Description: "NEW | Grouping of treatment lines that are somehow related to eachother (the same purpose, other)"
+Title: "NEW Medication Treatment - logical model"
+Description: "NEW Grouping of treatment lines that are somehow related to eachother (the same purpose, other)"
 
 * advice 0..* BackboneElement "Advice"
 * comment 0..* BackboneElement "Comment"
@@ -23,8 +23,8 @@ Description: "NEW | Grouping of treatment lines that are somehow related to each
 // * medicationTreatmentLine 1..* "Medication treatment line"
 
 Logical: MedicationTreatmentLine
-Title: "NEW | Medication Treatment Line - logical model"
-Description: "NEW | A model for representing a Treatment Line."
+Title: "NEW Medication Treatment Line - logical model"
+Description: "NEW A model for representing a Treatment Line."
 * medication[x] 1..1 Reference(Medication) or CodeableConcept "Medicinal product for which the treatment line refers to. Identification or sufficient description of the product."
 * status 1..1 code "Status of the treatment line"
 * verificationInformation 0..1 BackboneElement "Last verification of full overview. The overview is verified as a whole, but each lines is equipped with the information"
@@ -60,8 +60,8 @@ Description: "NEW | A model for representing a Treatment Line."
 // comment is modelled to the MedicationOverview object with a reference to treatment line. In FHIR resources could be the other way around.
 
 Logical: MedicationModel
-Title: "Medication for clinical workflows"
-Description: "UNICOM draft, cardinalities not revised, current description is focused on authorised product."
+Title: "NEW Medication for clinical workflows"
+Description: "NEW Medication information. The model is shared by statements, requests, dispensations, and treatment lines. Each of those may have different restrictions in FHIR profile."
 
 * medicinalProductIdentifier 0..* II "MPID or national identifier"
 * packagedProductIdentifier 0..* II "PCID or national"
