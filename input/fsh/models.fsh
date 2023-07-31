@@ -25,7 +25,7 @@ Description: "NEW Grouping of treatment lines that are somehow related to eachot
 Logical: MedicationTreatmentLine
 Title: "NEW Medication Treatment Line - logical model"
 Description: "NEW A model for representing a Treatment Line."
-* medication[x] 1..1 Reference(Medication) or CodeableConcept "Medicinal product for which the treatment line refers to. Identification or sufficient description of the product."
+* medication[x] 1..1 Reference(MedicinalProduct) or CodeableConcept "Medicinal product for which the treatment line refers to. Identification or sufficient description of the product."
 * status 1..1 code "Status of the treatment line"
 * verificationInformation 0..1 BackboneElement "Last verification of full overview. The overview is verified as a whole, but each lines is equipped with the information"
   * practicioner 1..1 Reference "HCP verifying the treatments/overview"
@@ -59,7 +59,7 @@ Description: "NEW A model for representing a Treatment Line."
 * informationSource 0..* Reference "Other data object that this treatment line is derived from"
 // comment is modelled to the MedicationOverview object with a reference to treatment line. In FHIR resources could be the other way around.
 
-Logical: Medication
+Logical: MedicinalProduct
 Title: "NEW Medication for clinical workflows"
 Description: "NEW Medication information. The model is shared by statements, requests, dispensations, and treatment lines. Each of those may have different restrictions in FHIR profile."
 
