@@ -1,7 +1,7 @@
 /*
 Sources: https://wiki.hl7.de/index.php?title=HL7_CDA_Core_Principles 
 https://vico.org/HL7_RIM/infrastructure/datatypes_r2/datatypes_r2.html#datyp2introwhat
-*/
+
 
 
 Profile: Untyped
@@ -123,3 +123,5 @@ Description: "Address"
 // PostalAddress	AD	Mailing and home or office addresses. A sequence of address parts, such as street or post office box, city, postal code, country, etc.
 // MonetaryAmount	MO	A quantity expressing an amount of money in some currency. While the monetary amount is a single kind of quantity (money) the exchange rates between the different units are variable. This is the principle difference between PQ and MO, and the reason why currency units are not physical units.
 // Interval	IVL	A set of consecutive values of an ordered base data type.
+
+*/
