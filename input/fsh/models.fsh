@@ -1,3 +1,4 @@
+/*
 Logical: MedicationOverview
 Title: "NEW Medication Overview - logical model"
 Description: "NEW A model for the whole medication overview (medication schema)"
@@ -98,9 +99,11 @@ Description: "NEW Medication information. The model is shared by statements, req
 * routeOfAdministration 0..* CD "Route of Administration - if we need it on product level"
 // Shall we have some text?
 
+*/
+
 Logical: ModelMedicationRecordTreatmentLine
-Title: "OLD Medication Record Treatment Line - logical model"
-Description: "OLD A model for representing a Treatment Line."
+Title: "Medication Record Treatment Line - logical model"
+Description: "A model for representing a Treatment Line."
 
 * identifier 0..1 Identifier "The business identifier(s) for the medication treatment Line" "The business identifier(s) for the medication treatment Line"
 * basedOn 0..1 Reference(ModelMedicationRecordTreatment) "The identifier of the treatment from which this line stems" "The identifier of the treatment from which this line stems" 
@@ -125,8 +128,8 @@ Description: "OLD A model for representing a Treatment Line."
 
 
 Logical: ModelMedicationRecordTreatment
-Title: "OLD Medication Record - Medication Treatment"
-Description: "OLD A model for the Medication Treatment."
+Title: "Medication Record - Medication Treatment"
+Description: "A model for the Medication Treatment."
 
 * identifier 0..1 BackboneElement "The business identifier(s) for the medication treatment" "The business identifier(s) for the medication treatment" 
   * treatmentGuid 0..1 Identifier "The Global Unique identifier(s) for the medication treatment" "The Global Unique identifier(s) for the medication treatment" 
@@ -146,8 +149,8 @@ Description: "OLD A model for the Medication Treatment."
 
 
 Logical: ModelMedicationRecord
-Title: "OLD Medication Record logical model"
-Description: "OLD A model for a structure collection of a patient's medication history."
+Title: "Medication Record logical model"
+Description: "A model for a structure collection of a patient's medication history."
 
 * identifier 0..1 Identifier "The business identifier(s) for the Medication Record" "The business identifier(s) for the Medication Record" 
 * patient 1..1 Reference "The subject of the medication record" "The subject of the medication record"
