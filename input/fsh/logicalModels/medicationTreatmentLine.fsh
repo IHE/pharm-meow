@@ -18,10 +18,10 @@ Description: "A model for representing a Treatment Line."
   * noSubstitutionReasonText 0..1 ST "Textual reason for the no-substitution requirement"
 
 * reportingMetadata 1..1 BackboneElement "Metadata abour reporting/authoring of the treatment line"
-  * reporter 1..1 Reference "Person authoring/cancelling the treatment line, either by requesting a treatment or documenting a patient's statement. Typically a doctor, nurse, or pharmacist."
+  * reporter 1..1 Reference(PractitionerBasic) "Person authoring/cancelling the treatment line, either by requesting a treatment or documenting a patient's statement. Typically a doctor, nurse, or pharmacist."
   * reportingTime 1..1 dateTime "Time of creation of the treatment line"
   * patientReported 1..1 boolean "The treatment line has been documented according to patient's statement"
-  * author 0..1 Reference "HCP who takes the decision for prescribing the medication. !!Needs a better name, author is too generic."
+  * author 0..1 Reference(PractitionerBasic) "HCP who takes the decision for prescribing the medication. !!Needs a better name, author is too generic."
   * authoringTime 0..1 dateTime "The time the decision was made. Normally, the same time as reporting time when it's the same person."
 
 * relatedRequest 0..* Reference "Prescriptions that have been authored based on the verified treatment line, or which have been the source for creating the unverified treatment line"
