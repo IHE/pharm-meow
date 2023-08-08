@@ -37,7 +37,7 @@ Description: "A model for representing a Treatment Line."
 * usageInstructions 0..* Reference(DosagingInformation) "Instructions about requested administration of the product. Unfinished. See FHIR Dosage for now"
 * preparationInstructions 0..* string "Additional instructions about preparation or dispense" 
 * noSubstitution 0..1 BackboneElement "Substitution is not allowed for a given reason" 
-  * noSubstitution 1..1 boolean "Substitution of the product is not allowed."
+  * noSubstitutionFlag 1..1 boolean "Substitution of the product is not allowed."
   * noSubstitutionReason 0..1 CD "Coded reason for the no-substitution requirement"
   * noSubstitutionReasonText 0..1 ST "Textual reason for the no-substitution requirement"
 
