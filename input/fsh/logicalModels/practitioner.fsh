@@ -5,3 +5,4 @@ Description: "Basic prescribing/dispensing/caretaking practitioner's data releva
 * identifier 1..* II "Practitioner's identifier"
 * name 1..* EN "Practitioner's name, incl first name, last name, or any other relevant name parts"
 * specialty 0..* CD "Specialty of the prescribing practitioner"
+* organisation 0..* ANY "Organisation or facility of the practitioner"
