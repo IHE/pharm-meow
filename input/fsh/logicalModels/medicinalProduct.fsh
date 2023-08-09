@@ -35,4 +35,4 @@ Description: "Medication information. The model is shared by statements, request
   * device 1..1 CD "Device coded"
 * marketingAuthorisationHolder 0..1 ST "MAH name - do we need more?"
 * routeOfAdministration 0..* CD "Route of Administration - if we need it on product level"
-// Shall we have some text?
+// free text for something?
