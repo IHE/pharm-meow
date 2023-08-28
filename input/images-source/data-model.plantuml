@@ -1,0 +1,39 @@
+@startuml
+'skinparam linetype ortho
+skinparam linetype polyline
+hide circle
+hide stereotype
+
+
+skinparam class<<MD>> {
+ BorderColor DarkSlateGray
+ BackgroundColor WhiteSmoke
+ HeaderBackgroundColor #909090
+}
+
+skinparam class<<TM>> {
+ BorderColor #505090
+ BackgroundColor APPLICATION
+ HeaderBackgroundColor #8bd
+}
+
+
+    class "**Medication Treatment**" as MT<<TM>> {
+        --
+    }
+
+    class "**Medication Treatment Line**" as MTL<<TM>> {
+      |_ medicationTreatment 0..*
+    }
+
+    class "**Medication Overview**" as MEOW<<TM>> {
+        --
+    }
+
+
+MTL ->  MT : "Grouped by"
+MT ->  MEOW : "Part of"
+MTL -u->  MEOW : "Part of"
+
+
+@enduml
