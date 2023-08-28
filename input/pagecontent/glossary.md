@@ -4,4 +4,8 @@
 |Medication Overview||||
 |Medication Treatment| |||
 |Medication Treatment line||||
+|Administrable Product||||
+|Medicinal Product||||
+|Packaged Product||||
+
 

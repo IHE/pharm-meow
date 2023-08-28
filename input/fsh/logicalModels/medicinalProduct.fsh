@@ -2,11 +2,14 @@ Logical: MedicinalProduct
 Title: "Medication for clinical workflows"
 Description: "Medication information. The model is shared by statements, requests, dispensations, and treatment lines. Each of those may have different restrictions in FHIR profile."
 
-* medicinalProductIdentifier 0..* II "MPID or national identifier"
-* packagedProductIdentifier 0..* II "PCID or national"
-* pharmaceuticalProductIdentifier 0..* II "PhPID or national virtual/administrable product code"
-* atc 0..1 CD "ATC code"
-* classification 0..* CD "Classification (narcotic/psychotropic; orphan drug; etc)"
+* identifier 0..* class "The identifier(s) of the product, independently of the level of product. If several identifiers are specified, they shall not have conflicting meanings." 
+  * medicinalProductIdentifier 0..* II "Identifier at the product level - can be MPID or national identifier" 
+  * packagedProductIdentifier 0..* II "Identifier at the package level - can be PCID or national"
+  * pharmaceuticalProductIdentifier 0..* II "Identifier at the virtual or administrable product level - can be PhPID or national virtual/administrable product code"
+* productCode 0..1 CD "Code for the product that is actually being specified, in established terminologies" // To do: challenge this with examples. Do  we want one code or more? 
+* atc 0..* CD "ATC code"
+* classification 0..* CD "Classification (narcotic/psychotropic; orphan drug; etc) - other than ATC"
+
 * packSize 0..* PQ "Overall amount of product in one virtual or real package (100ml; 20 tablets; 1 creme & 6 pessaries)"
 * productName 0..* Class "Name of the product (full name, invented name, other)"
   * name 1..1 ST "Name of type and language that is relevant for the users"
@@ -36,3 +39,6 @@ Description: "Medication information. The model is shared by statements, request
 * marketingAuthorisationHolder 0..1 ST "MAH name - do we need more?"
 * routeOfAdministration 0..* CD "Route of Administration - if we need it on product level"
 // free text for something?
+
+
+// TO DO RL: Do we have a new model for Magistral/Officinal Formulations? Or is the same model reusable?
