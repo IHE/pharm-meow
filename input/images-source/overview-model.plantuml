@@ -1,0 +1,213 @@
+@startuml
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.4.0
+!includeurl ICONURL/common.puml
+!includeurl ICONURL/font-awesome-5/database.puml
+
+'skinparam linetype ortho
+skinparam linetype polyline
+hide circle
+hide stereotype
+
+'skinparam defaultFontName Avenir-Book
+'skinparam defaultFontSize 17
+'skinparam monochrome true
+
+
+'!pragma layout smetana
+
+skinparam class<<MD>> {
+ BorderColor DarkSlateGray
+ BackgroundColor WhiteSmoke
+ HeaderBackgroundColor #909090
+}
+
+skinparam class<<TM>> {
+ BorderColor #505090
+ BackgroundColor APPLICATION
+ HeaderBackgroundColor SkyBlue
+}
+
+
+skinparam class<<Doc>> {
+ BorderColor #505090
+ BackgroundColor APPLICATION
+ HeaderBackgroundColor SkyBlue
+}
+
+<style>
+file {
+  BackGroundColor APPLICATION
+  LineThickness 1
+  LineColor black
+}
+</style>
+
+'file MDd [
+'  MedicationSchema
+'  ===
+'  |_ patient
+'  |_ LastUpdate
+'  |_ Label
+'  |_ Version
+'  ]
+
+
+class "** Medication Schema **" as MS<<TM>> {
+  |_ businessIdentifier 1..*   
+  |_ businessVersion 1..1   
+  |_ patient 1..1   
+  |_ status 1..1   
+  |_ label 1..1   
+  |_ type 0..1   
+}
+
+
+class "** Medication Product **" as M<<TM>> {
+    |_ identifier 1..*
+    |_ doseForm 0..1
+    |_ name 0..1
+    |_ ingredient 0..1
+      |_ strength 0..1
+      |_ product 0..1
+    }
+
+class "**Medication Line**" as ML<<TM>> {
+  |_ businessIdentifier 1..*   
+  |_ businessVersion 1..1   
+  |_ patient 1..1   
+  |_ status 1..1   
+  |_ statusReason 0..1   
+  |_ authoredOn 0..1   
+  |_ authoredBy 0..1   
+  |_ medication 1..1    
+    |_ medication 1..1   
+    |_ medicationType 1..1   
+  |_ category 0..1   
+  |_ reason 0..*   
+    |_ reference 0..1   
+    |_ code 0..1   
+    |_ text 0..1   
+  |_ noSubstitution 0..*   
+    |_ reference 0..1   
+    |_ code 0..1   
+    |_ text 0..1   
+  |_ effectivePeriod 0..1   
+    |_ start 0..1   
+    |_ end 0..1   
+  |_ dosage 0..1   
+    |_ dosageDetails 0..1   
+    |_ dosageOverride 0..1   
+    |_ dosageOverrideReason 0..1   
+  |_ adherence 0..1   
+    |_ code 0..1   
+    |_ reason 0..1   
+  |_ orderStatus 1..1   
+  |_ orderStatusReason 0..1   
+  |_ note 0..*   
+  |_ relatedHistory 0..*
+}
+
+
+
+'
+'class "**Dosage**" as Dosage<<TM>> {
+'    |_ dosageDetails 0..1   
+'    |_ dosageOverrideReason 0..1   
+'}
+'ML *-l- Dosage 
+'PL *-u- Dosage 
+
+
+class "**Treatment (Group)**" as MT<<TM>> {
+  |_ businessIdentifier 1..*   
+  |_ statusReason 0..1   
+  |_ indication
+  |_ comment?
+}
+
+
+ML -l-* MT : ""
+
+ML -u-* MS : ""
+
+class "**Prescription (Group)**" as P<<TM>> {
+  |_ businessIdentifier 1..*   
+  |_ status
+  |_ statusReason
+  |_ period?
+  |_ indication?
+  |_ comment?
+}
+
+
+
+'P -u-> ML : supportingInformation
+PL -u-> ML : supportingInformation
+D -u-> ML : supportingInformation
+
+class "**Prescription Line**" as PL<<TM>> {
+  |_ businessIdentifier 1..*   
+  |_ status
+  |_ statusReason 0..1   
+  |_ prescriber
+  |_ issuedDate
+  |_ recorder
+  |_ recordedDate
+  |_ EffectivePeriod
+    |_ start
+    |_ end
+  |_ patient
+  |_ reason
+    |_ coded
+    |_ text
+    |_ reference
+  |_ medication <&link-intact>
+  |_ Dosage
+    |_ usageInstructions
+    |_ dosageDetails 0..1   
+    |_ dosageOverride 0..1   
+    |_ dosageOverrideReason 0..1   
+  |_ noSubstitution 0..*   
+    |_ reference 0..1   
+    |_ code 0..1   
+    |_ text 0..1   
+  |_ preparationInstructions
+  |_ SupportingInformation
+  |_ DispenseRequest
+    |_ quantity
+    |_ dispenseInterval
+    |_ validityPeriod
+--
+Substitution?
+}
+
+
+class "**Dispense**" as D<<TM>> {
+  |_ identifier
+  |_ prescription <&link-intact>
+  |_ patient 0..1 <&person>
+  |_ receiver 0..1 <&person>
+  |_ dispenser 0..1 <&person>
+  |_ status 1..1 <&list>
+  |_ statusReason
+    |_ coded 0..1
+    |_ text 0..1 
+  |_ medication 0..1 <&link-intact>
+  |_ dispensedQuantity 0..1 <&link-intact>
+  |_ timeOfDispensation  0..1 <&clock>
+  |_ substitution  0..1 <&check>
+  |_ coverage 0..1 <&ellipses>
+    |_ reimbursementRate 0..1 <&ellipses>   
+}
+
+
+
+
+D -l-> PL :" authorizedBy "
+D -d-> M :" medication "
+P *-r- PL :"           "
+'PL -r[hidden]- M
+PL -r-> M :" medication "
+'PL ||-d-o{ M :"                  "
+
+@enduml
