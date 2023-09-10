@@ -2,7 +2,7 @@ Logical: MedicinalProduct
 Title: "Medication for clinical workflows"
 Description: "Medication information. The model is shared by statements, requests, dispensations, and treatment lines. Each of those may have different restrictions in FHIR profile."
 
-* identifier 0..* class "The identifier(s) of the product, independently of the level of product. If several identifiers are specified, they shall not have conflicting meanings." 
+* identifier 0..* Class "The identifier(s) of the product, independently of the level of product. If several identifiers are specified, they shall not have conflicting meanings." 
   * medicinalProductIdentifier 0..* II "Identifier at the product level - can be MPID or national identifier" 
   * packagedProductIdentifier 0..* II "Identifier at the package level - can be PCID or national"
   * pharmaceuticalProductIdentifier 0..* II "Identifier at the virtual or administrable product level - can be PhPID or national virtual/administrable product code"
