@@ -142,8 +142,8 @@ class "**Prescription (Group)**" as P<<TM>> {
 
 
 'P -u-> ML : supportingInformation
-PL -u-> ML : supportingInformation
-D -u-> ML : supportingInformation
+PL <-u-> ML : supportingInformation
+D <-u-> ML : supportingInformation
 
 class "**Prescription Line**" as PL<<TM>> {
   |_ businessIdentifier 1..*   
