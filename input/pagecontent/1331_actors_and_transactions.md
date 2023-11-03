@@ -88,7 +88,13 @@ xxxxx
 ### 1:33.1.2 Transaction Descriptions
 The transactions in this profile are summarized in the sections below.
 
-#### 1:33.1.2.1 xxxx
+#### 1:33.1.2.1 Get Medication overview
+
+Transaction so and so, used for this and this.
+
+For more details see the detailed [PHARM-x transaction description](PHARM-x.html).
+
+#### 1:33.1.2.2 Begin treatment with line
 
 Transaction so and so, used for this and this.
 
