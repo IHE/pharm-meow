@@ -2,11 +2,9 @@
 
 
 
-
-<figure>
-  {% include overview-model.svg %}
-  <figcaption>MEOW Data overview</figcaption>
-</figure>
+<div>
+{%include overview-model.svg%}
+</div>
 
 
 * Actors
