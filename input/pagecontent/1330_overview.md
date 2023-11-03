@@ -2,10 +2,6 @@
 
 
 
-<div>
-{%include overview-model.svg%}
-</div>
-
 
 * Actors
 
@@ -20,6 +16,7 @@
 
   - [xxxx \[PHARM-xx\]](PHARM-x.html)
 
+  - [yyyy \[PHARM-yy\]](PHARM-y.html)
 
 
 
