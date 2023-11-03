@@ -4,12 +4,6 @@ Figure below shows the actors directly involved in the MEOW Profile and the rele
 
 
 
-<figure>
-  {% include actors_and_transactions.svg %}
-  <figcaption>MEOW Actor Diagram</figcaption>
-</figure>
-
-
 
 
 Table 1:33.1-1 lists the transactions for each actor directly involved in the MEOW Implementation Guide. To claim compliance with this guide, an actor shall support all required transactions (labeled "R") and may support the optional transactions (labeled "O").
