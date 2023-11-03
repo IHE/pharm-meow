@@ -1,6 +1,9 @@
 ### Data model overview
 
-
+<figure>
+  {% include overview-model.svg %}
+  <figcaption>MEOW Data overview</figcaption>
+</figure>
 
 
 * Actors
