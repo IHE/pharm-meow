@@ -24,10 +24,11 @@
 
 
 
-<figure>
-  {% include overview.png %}
-  <figcaption>MEOW Workflow overview</figcaption>
-</figure>
+
+<div>
+<img alt="Figure: MEOW Workflow overview" src="overview.png" width="100%">
+</div>
+
 
 ### 1:33.0.1 Concepts
 
