@@ -85,17 +85,27 @@ xxxxx
 #### 1:33.1.1.2 Medication Overview Creator
 xxxxx
 
+#### 1:33.1.1.2 Medication Overview Repository
+
+The Medication Treatment Repository is intended to capture the information about the overall treatment, including advices, comments. 
+
+
 ### 1:33.1.2 Transaction Descriptions
 The transactions in this profile are summarized in the sections below.
 
 #### 1:33.1.2.1 Get Medication overview
 
-Transaction so and so, used for this and this.
+This is a transaction that relates with getting the medication overview from a "Medication overview Creator".
+
+This is a pull transaction where we get the information from this actor.
+
+It is related with medication workflow artifacts (prescriptions, dispenses, administrations and statements) being summarized with a certain logic into medication treatment lines.
+
 
 For more details see the detailed [PHARM-x transaction description](PHARM-x.html).
 
-#### 1:33.1.2.2 Begin treatment with line
+#### 1:33.1.2.2 Creating treatment lines
 
 Transaction so and so, used for this and this.
 
-For more details see the detailed [PHARM-x transaction description](PHARM-x.html).
+For more details see the detailed [PHARM-y transaction description](PHARM-y.html).

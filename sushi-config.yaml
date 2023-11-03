@@ -77,8 +77,10 @@ pages:
     title: "1:33.5 Security Considerations"
   1336_cross_profile_considerations.md:
     title: "1:33.6 Cross Profile Considerations"
-#  PHARM-x.md:
-#    title: "PHARM xxx"
+  PHARM-x.md:
+    title: "PHARM xxx"
+  PHARM-y.md:
+    title: "PHARM yyy"
 #  ITI-66.md:
 #    title: "2:3.66 Find Document Lists [ITI-66]"
 #  ITI-67.md:
