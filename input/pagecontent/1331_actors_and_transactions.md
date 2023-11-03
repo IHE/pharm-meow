@@ -26,44 +26,56 @@ Table 1:33.1-1: MEOW Implementation Guide - Actors and Transactions
 </thead>
 <tbody>
                 
-<!-- <tr class="even">
-                        
-<td rowspan="1"><a href="1331_actors_and_transactions.html#133111-document-source">Document Source</a></td>
-                        
-<td><a href='ITI-65.html'>Provide Document Bundle [ITI-65]</a></td>
+<tr class="even">               
+<td rowspan="1"><a href="1331_actors_and_transactions.html#133111-document-source">Document Source</a></td>               
+<td><a href='PHARM-x.html'>Get medication Overview [PHARM-xx]</a></td>
 <td align='center'>R</td></tr>
+
+
+
+
+<tr class="even">           
+<td rowspan="1"><a href="1331_actors_and_transactions.html#133113-document-recipient">Document Recipient</a></td>            
+<td><a href='PHARM-y.html'>Create treatment line [PHARM-yy]</a></td>
+<td align='center'>R</td></tr>    
+
+
+<!-- 
 <tr class="even">
-                        
-<td rowspan="1"><a href="1331_actors_and_transactions.html#133113-document-recipient">Document Recipient</a></td>
-                        
-<td><a href='ITI-65.html'>Provide Document Bundle [ITI-65]</a></td>
-<td align='center'>R</td></tr>          
-<tr class="even">
-                        
 <td rowspan="3"><a href="1331_actors_and_transactions.html#133112-document-consumer">Document Consumer</a></td>        
 <td><a href='ITI-66.html'>Find Document Lists [ITI-66]</a></td>
-<td align='center'>R</td></tr>                
+<td align='center'>R</td></tr>   
+
+
 <tr class="odd">
-                        
 <td><a href='ITI-67.html'>Find Document References [ITI-67]</a></td>
 <td align='center'>R</td></tr>
-<tr class="even">
 
+
+
+<tr class="even">
 <td><a href='ITI-68.html'>Retrieve Document [ITI-68]</a></td>
 <td align='center'>R</td></tr>
+
+
+
 <tr class="odd">
-                        
 <td rowspan="3"><a href="1331_actors_and_transactions.html#133114-document-responder">Document Responder</a></td>        
 <td><a href='ITI-66.html'>Find Document Lists [ITI-66]</a></td>
 <td align='center'>R</td></tr>
+
+
 <tr class="even">
-                        
 <td><a href='ITI-67.html'>Find Document References [ITI-67]</a></td>
 <td align='center'>R</td></tr>
-<tr class="odd">
-                        
+
+
+<tr class="odd">      
 <td><a href='ITI-68.html'>Retrieve Document [ITI-68]</a></td>
-<td align='center'>R</td></tr>                     -->
+<td align='center'>R</td></tr>   
+-->
+
+
 </tbody>
 </table>
 
