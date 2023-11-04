@@ -2,3 +2,10 @@ This section corresponds to transaction [PHARM-xxxx] of the IHE Technical Framew
 It is used to do so and so.
 
 
+
+The actors included are the Medication Treatment repository which should have all of part of the medication treatment for a certain patient.
+
+From here, the creates pull data and aggregates it to create the medication overview.
+
+
+

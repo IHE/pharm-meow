@@ -113,9 +113,11 @@ menu:
    # "Actor Required Grouping": 1333_required_grouping.html
     "Security Considerations": 1335_security_considerations.html
     "Cross Profile Considerations": 1336_cross_profile_considerations.html
+    "Issues": issues.html
+
   Volume 2:
     "Transaction 1xxx": PHARM-x.html
-  #  "Find Document Lists [ITI-66]": ITI-66.html
+    "Transaction 2yyy": PHARM-y.html
   #  "Find Document References [ITI-67]": ITI-67.html
   #  "Retrieve Document [ITI-68]": ITI-68.html
   Volume 3:
