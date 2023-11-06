@@ -21,7 +21,7 @@ Description: "A model for representing a Treatment Line."
 * preparationInstructions 0..* string "Additional instructions about preparation or dispense" 
 
 * comment 0..* BackboneElement "Comment on the individual line"
-  * author 1..1 Reference() "Author of the comment (Pharmacist, doctor, social carer, patient, device, related person)"
+  * author 1..1 Reference "Author of the comment (Pharmacist, doctor, social carer, patient, device, related person)"
   * date 1..1 dateTime "time of comment"
   * commentText 1..1 string "content of the comment"
 
@@ -31,7 +31,7 @@ Description: "A model for representing a Treatment Line."
   * substitutionTypeReasonText 0..1 ST "Textual reason for the substitution requirement"
 
 * recordingMetadata 1..1 BackboneElement "Metadata about reporting/authoring of the treatment line"
-  * recorder 1..1 Reference() "Person authoring/cancelling the treatment line, either by requesting a treatment or documenting a patient's statement. Typically a doctor, nurse, or pharmacist, or patient..."
+  * recorder 1..1 Reference "Person authoring/cancelling the treatment line, either by requesting a treatment or documenting a patient's statement. Typically a doctor, nurse, or pharmacist, or patient..."
   * recordedTime 1..1 dateTime "Time of creation of the treatment line"
   * patientReported 1..1 boolean "The treatment line has been documented according to patient's statement"
 
