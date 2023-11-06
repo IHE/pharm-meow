@@ -7,17 +7,20 @@ Description: "Medication information. The model is shared by statements, request
   * packagedProductIdentifier 0..* II "Identifier at the package level - can be PCID or national"
   * pharmaceuticalProductIdentifier 0..* II "Identifier at the virtual or administrable product level - can be PhPID or national virtual/administrable product code"
 * productCode 0..1 CD "Code for the product that is actually being specified, in established terminologies" // To do: challenge this with examples. Do  we want one code or more? 
-* atc 0..* CD "ATC code"
-* classification 0..* CD "Classification (narcotic/psychotropic; orphan drug; etc) - other than ATC"
+//* atc 0..* CD "ATC code"
+* classification 0..* CD "Classification (e.g. ATC; narcotic/psychotropic; orphan drug; etc.)"
 
-* packSize 0..* PQ "Overall amount of product in one virtual or real package (100ml; 20 tablets; 1 creme & 6 pessaries)"
+* packSize 0..* PQ "Overall amount of product in one package (100ml; 20 tablets; 1 creme & 6 pessaries)"
+
 * productName 0..* Class "Name of the product (full name, invented name, other)"
   * name 1..1 ST "Name of type and language that is relevant for the users"
   * language 0..1 CD "Language of the name"
   * type 0..1 CD "Type of the name (full name, common name, etc)"
-* doseForm 0..* Class "Dose form(s) on a product level. Dose form for a single package item is defined below."
-  * formCode 1..1 CD "Coded dose form"
-  * type 0..1 CD "The type of dose form (combined, authorised, administrable...)" 
+
+* doseForm 0..1 CD "Dose form(s) on a product level. Dose form for a single package item is defined below."
+
+* administrableDoseForm CD "Administrable dose form"
+
 
 * item 0..* Class "A medication item. For combination packs, this can be manufactured items with each item having its own dose form and ingredients+strengths defined"
   * doseForm 0..1 Class "Dose form of single item"
