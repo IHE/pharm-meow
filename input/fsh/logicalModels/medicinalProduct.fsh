@@ -19,7 +19,7 @@ Description: "Medication information. The model is shared by statements, request
 
 * doseForm 0..1 CD "Dose form(s) on a product level. Dose form for a single package item is defined below."
 
-* administrableDoseForm CD "Administrable dose form"
+* administrableDoseForm 0..1 CD "Administrable dose form"
 
 
 * item 0..* Class "A medication item. For combination packs, this can be manufactured items with each item having its own dose form and ingredients+strengths defined"
