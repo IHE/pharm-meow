@@ -17,9 +17,9 @@
 
 * Transactions
 
-  - [xxxx \[PHARM-xx\]](PHARM-x.html)
+  - [Get the Medication Overview \[PHARM-xx\]](PHARM-x.html)
 
-  - [yyyy \[PHARM-yy\]](PHARM-y.html)
+  - [Producing the Medication Overview \[PHARM-yy\]](PHARM-y.html)
 
 
 
@@ -35,7 +35,7 @@
 
 A set of 1..n medication treatment lines and associated information, somehow related together (e.g. one same purpose, or one same entry by a professional)
 
-* 1..* Medication treatment line (this relation should not exist. should be the other way around . MTL → MT)
+* 1..* Medication treatment line (this relation should not exist. should be the other way around. MTL → MT)
 * 0..* Advice
   * Advice content
   * Advice issuer, date, etc.
