@@ -16,32 +16,31 @@ Description: "Medication information. The model is shared by statements, request
   * name 1..1 ST "Name of type and language that is relevant for the users"
   * language 0..1 CD "Language of the name"
   * type 0..1 CD "Type of the name (full name, common name, etc)"
-
 * doseForm 0..1 CD "Dose form(s) on a product level. Dose form for a single package item is defined below."
-
-* administrableDoseForm 0..1 CD "Administrable dose form"
-
+// 20-11-2023
+// Do we need a dose form type?
 
 * item 0..* Class "A medication item. For combination packs, this can be manufactured items with each item having its own dose form and ingredients+strengths defined"
-  * doseForm 0..1 Class "Dose form of single item"
-    * formCode 1..1 CD "Dose form"
-    * type 0..1 CD "The type of dose form (typically manufactured dose form)" 
+  * doseForm 0..1 CD "Dose form"
   * ingredient 1..* Class "Ingredients"
     * role 0..1 CD "Role (active ingredient, excipient). Typically excipients are not needed, so by default active ingredients are expected."
     * substance 1..1 CD "Substance"
-    * strengthInfo 1..* Class "Concentration or presentation strength"
+    * strengthInfo 0..* Class "Concentration or presentation strength"
       * strength 1..1 RTO "Concentration or presentation strength of the precise active ingredient"
-      * strengthType 1..1 CD "Type of strength that is expressed"
+      * strengthType 0..1 CD "Type of strength that is expressed"
       * strengthSubstance 0..1 CD "Substance that the strength refers to, if different from the main substance"
-  * unitOfPresentation 0..* CD "Unit of presentation for the manufactured item (tablet, vial, tube). Typically, the smallest countable object in the package."
+  * unitOfPresentation 0..1 CD "Unit of presentation for the manufactured item (tablet, vial, tube). Typically, the smallest countable object in the package."
   * containedQuantity 0..1 PQ "Manufactured item quantity for liquids (3ml/vial)"
-  * manufacturedItemQuantity 0..1 PQ "Number of such manufactured items in this product (5 vials)"
-* device 0..* Class "Administrative device included in the product"
+  * amount 0..1 PQ "Number of such manufactured items in this product (5 vials)"
+* device 0..* Class "Administration device included in the product"
   * deviceQuantity 1..1 PQ "Number of such devices"
   * device 1..1 CD "Device coded"
-* marketingAuthorisationHolder 0..1 ST "MAH name - do we need more?"
-* routeOfAdministration 0..* CD "Route of Administration - if we need it on product level"
-// free text for something?
+
+// * marketingAuthorisationHolder 0..1 ST "MAH name - do we need more?"
+// 20-11-2023: MAH is removed. We don't need that explicitly 
+// To do: do we want to accommodate for Manufacturer / supplier / ??
+// 20-11-2023: removed routeOfAdministration. This will also be present in the dosage information, so we don't need it here
+// * routeOfAdministration 0..* CD "Route of Administration as defined for the product"
 
 
 // TO DO RL: Do we have a new model for Magistral/Officinal Formulations? Or is the same model reusable?

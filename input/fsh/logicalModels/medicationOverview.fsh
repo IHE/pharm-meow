@@ -11,3 +11,5 @@ Description: "A model for the whole medication overview (medication schema)"
   * date 1..1 dateTime "time of comment"
   * commentText 1..1 string "content of the comment"
   * subject 0..* Reference "What the comment is about. It can reference either a treatment line, treatment, or full overview"
+
+  
