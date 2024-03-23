@@ -27,8 +27,9 @@ contact:
         use: work
 license: CC-BY-SA-4.0
 jurisdiction: 'http://unstats.un.org/unsd/methods/m49/m49.htm#001'
-#dependencies:
-#  https://profiles.ihe.net/fhir/ihe.formatcode.fhir: 0.2.4
+dependencies:
+  ihe.domain.logical-datatypes: current
+
  
 parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
   path-resource:
@@ -60,23 +61,44 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
 pages:
   index.md:
     title: "MeOw Home"
-  1330_overview.md:
-    title: "1:33.0 Overview"
-  functional-updates.md:
-    title: "Functional Updates"
-  glossary.md:
-    title: "Glossary"
-  1331_actors_and_transactions.md:
-    title: "1:33.1 Actors and Transactions"
-  1332_actor_options.md:
-    title: "1:33.2 Actor Options"
-#  1333_required_grouping.md:
-#    title: "1:33.3 Required Grouping"
 
-  1335_security_considerations.md:
-    title: "1:33.5 Security Considerations"
-  1336_cross_profile_considerations.md:
-    title: "1:33.6 Cross Profile Considerations"
+
+  volume1.md:
+    title: "Volume 1 Overview"
+
+    usecases.md:
+      title: "Use Case overview"
+      usecase-1.md:
+        title: "Use Case 1 - ..."
+
+    overview.md:
+      title: "Overview: data exchange for supply"
+    actors_and_transactions.md:
+      title: "Actors and Transactions overview"
+    actor_options.md:
+      title: "Actor Options"
+    actor_required_grouping.md:
+      title: "Actor Required Grouping"
+    security_considerations.md:
+      title: "Security Considerations"
+    cross_profile_considerations.md:
+      title: "Cross Profile Considerations"
+  volume2.md:
+    title:"Volume 2: Transactions"
+    transactions.md:
+      title: "Transaction Definitions"
+      PHARM-O1.md:
+        title: "TBD"
+
+
+
+
+
+
+
+
+
+
   PHARM-x.md:
     title: "PHARM xxx"
   PHARM-y.md:
@@ -107,22 +129,16 @@ pages:
 menu:
   MEOw Home: index.html
   Volume 1: 
-    "Overview": 1330_overview.html
-    "Actors and Transactions": 1331_actors_and_transactions.html
-    "Actor Options": 1332_actor_options.html
+    "Actors and Transactions": actors_and_transactions.html
+    "Actor Options": actor_options.html
    # "Actor Required Grouping": 1333_required_grouping.html
-    "Security Considerations": 1335_security_considerations.html
-    "Cross Profile Considerations": 1336_cross_profile_considerations.html
-    "Issues": issues.html
+    "Security Considerations": security_considerations.html
+    "Cross Profile Considerations": cross_profile_considerations.html
 
   Volume 2:
-    "Transaction 1xxx": PHARM-x.html
-    "Transaction 2yyy": PHARM-y.html
+    "Transaction O1": PHARM-O1.html
   #  "Find Document References [ITI-67]": ITI-67.html
   #  "Retrieve Document [ITI-68]": ITI-68.html
-  Volume 3:
-    "Error Codes": 31_xds.html
-    "FHIR Maps": 32_fhir_maps.html
-  Test Plan: testplan.html
+#  Test Plan: testplan.html
   Artifact Index: artifacts.html
   

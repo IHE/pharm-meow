@@ -1,6 +1,9 @@
-Logical: PatientBasic
+Logical: PatientLM
 Title: "Patient"
 Description: "Basic patient data relevant for this use case"
+* ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
+* ^name = "Patient"
+* ^status = #active
 
 * identifier 1..* II "Patient identifier"
 * name 1..* EN "Patient's name, incl first name, last name, or any other relevant name parts"

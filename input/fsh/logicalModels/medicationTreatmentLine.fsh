@@ -1,6 +1,9 @@
 Logical: MedicationTreatmentLine
-Title: "Medication Treatment Line - logical model"
+Title: "Medication Treatment Line"
 Description: "A model for representing a Treatment Line."
+* ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
+* ^name = "MedicationTreatmentLine"
+* ^status = #active
 
 * identifier 0..* II "Unique business identifier(s) for the medication treatment line"
 * medication[x] 1..1 Reference(MedicinalProduct) or CodeableConcept "Medicinal product for which the treatment line refers to. Identification or sufficient description of the product."

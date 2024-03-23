@@ -1,6 +1,9 @@
 Logical: MedicationTreatment
-Title: "Medication Treatment - logical model"
+Title: "Medication Treatment"
 Description: "Grouping of treatment lines that are somehow related to eachother (the same purpose, other)"
+* ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
+* ^name = "MedicationTreatment"
+* ^status = #active
 
 * comment 0..* BackboneElement "Comment"
 * treatmentPeriod 0..1 Period "The intended or effective treatment period"
