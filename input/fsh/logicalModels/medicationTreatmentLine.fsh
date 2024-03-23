@@ -13,8 +13,6 @@ Description: "A model for representing a Treatment Line."
 
 * statusReason 0..1 CD "The reason for the current entry status"
 
-* 
-
 * treatmentStatus 0..1 CD "The state of the actual treatment - taking, not taken..."
 * treatmentStatusReasonCode 0..1 CD "The reason - coded - for the treatment status - i.e. adverse events, refusal..."
 * treatmentStatusReasonText 0..1 ST "The reason - free text - for the treatment status - i.e. adverse events, refusal..."
