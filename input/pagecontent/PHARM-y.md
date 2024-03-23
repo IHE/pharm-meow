@@ -1,5 +1,6 @@
 This section corresponds to transaction [PHARM-yyyy] of the IHE Technical Framework. Transaction [PHARM-yyy] is used by x and x actors.
 
+This transaction is about producing the medication overview.
 
 **Begin treatment with line**
 
