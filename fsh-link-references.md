@@ -1,0 +1,14 @@
+[BusinessVersion]: StructureDefinition-BusinessVersion.html
+[Classification]: StructureDefinition-Classification.html
+[DosagingInformation]: StructureDefinition-DosagingInformation.html
+[MedicationOverview]: StructureDefinition-MedicationOverview.html
+[MedicationOverviewComposition]: StructureDefinition-MedicationOverviewComposition.html
+[MedicationTreatment]: StructureDefinition-MedicationTreatment.html
+[MedicationTreatmentLine]: StructureDefinition-MedicationTreatmentLine.html
+[MedicinalProduct]: StructureDefinition-MedicinalProduct.html
+[MedicinalProductName]: StructureDefinition-MedicinalProductName.html
+[Patient]: StructureDefinition-PatientLM.html
+[Practitioner]: StructureDefinition-PractitionerLM.html
+[Substitution]: StructureDefinition-Substitution.html
+[TreatmentStatus]: StructureDefinition-TreatmentStatus.html
+[VerificationInformation]: StructureDefinition-VerificationInformation.html

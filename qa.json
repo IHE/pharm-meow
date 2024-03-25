@@ -1,0 +1,19 @@
+{
+  "url" : "http://profiles.ihe.net/PHARM/MEOW/ImplementationGuide/ihe.pharm.meow",
+  "name" : "IHE_PHARM_MEOW",
+  "title" : "IHE Pharmacy Medication Overview",
+  "description" : "ImplementationGuide for IHE Pharmacy Medication Overview",
+  "status" : "active",
+  "package-id" : "ihe.pharm.meow",
+  "ig-ver" : "0.1.0",
+  "date" : "Mon, 25 Mar, 2024 23:08:27 +0000",
+  "dateISO8601" : "2024-03-25T23:08:27+00:00",
+  "errs" : 0,
+  "warnings" : 19,
+  "hints" : 15,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "5.0.0",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 2046495792
+}

@@ -1,0 +1,614 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://profiles.ihe.net/PHARM/MEOW/ImplementationGuide/ihe.pharm.meow> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ihe.pharm.meow"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IHE_PHARM_MEOW</h2><p>The official URL for this implementation guide is: </p><pre>http://profiles.ihe.net/PHARM/MEOW/ImplementationGuide/ihe.pharm.meow</pre><div><p>ImplementationGuide for IHE Pharmacy Medication Overview</p>\n</div></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://profiles.ihe.net/PHARM/MEOW/ImplementationGuide/ihe.pharm.meow"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "IHE_PHARM_MEOW"] ; # 
+  fhir:title [ fhir:v "IHE Pharmacy Medication Overview"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-03-25T23:08:27+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Integrating the Healthcare Enterprise (IHE)"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Integrating the Healthcare Enterprise (IHE)" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://ihe.net" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "secretary@ihe.net" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Jose Costa Teixeira" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "jose.a.teixeira@gmail.com" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "ImplementationGuide for IHE Pharmacy Medication Overview"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "IHE http://www.ihe.net/Governance/#Intellectual_Property"] ; # 
+  fhir:packageId [ fhir:v "ihe.pharm.meow"] ; # 
+  fhir:license [ fhir:v "CC-BY-SA-4.0"] ; # 
+  fhir:fhirVersion ( [ fhir:v "5.0.0"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r5" ] ;
+     fhir:version [ fhir:v "5.3.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r5" ] ;
+     fhir:version [ fhir:v "1.0.0" ]
+  ] [
+     fhir:id [ fhir:v "ihe_domain_logical_datatypes" ] ;
+     fhir:uri [
+       fhir:v "https://profiles.ihe.net/Domain/LogicalDatatypes/ImplementationGuide/ihe.domain.logical-datatypes"^^xsd:anyURI ;
+       fhir:link <https://profiles.ihe.net/Domain/LogicalDatatypes/ImplementationGuide/ihe.domain.logical-datatypes>
+     ] ;
+     fhir:packageId [ fhir:v "ihe.domain.logical-datatypes" ] ;
+     fhir:version [ fhir:v "current" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.1.0" ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/BusinessVersion> ;
+         fhir:reference [ fhir:v "StructureDefinition/BusinessVersion" ]
+       ] ;
+       fhir:name [ fhir:v "BusinessVersion" ] ;
+       fhir:description [ fhir:v "Business Version of the resource" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/Classification> ;
+         fhir:reference [ fhir:v "StructureDefinition/Classification" ]
+       ] ;
+       fhir:name [ fhir:v "Classification" ] ;
+       fhir:description [ fhir:v "Medication classification/category. Allows the product to be classified by various systems, e.g ATC, narcotic class, legal status of supply, etc." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/DosagingInformation> ;
+         fhir:reference [ fhir:v "StructureDefinition/DosagingInformation" ]
+       ] ;
+       fhir:name [ fhir:v "Dosaging" ] ;
+       fhir:description [ fhir:v "Usage instructions. Instructions about requested administration of the product. Based on FHIR Dosage complex data type." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverview> ;
+         fhir:reference [ fhir:v "StructureDefinition/MedicationOverview" ]
+       ] ;
+       fhir:name [ fhir:v "Medication overview" ] ;
+       fhir:description [ fhir:v "The profile for the full Medication overview" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverviewComposition> ;
+         fhir:reference [ fhir:v "StructureDefinition/MedicationOverviewComposition" ]
+       ] ;
+       fhir:name [ fhir:v "Medication Overview Composition" ] ;
+       fhir:description [ fhir:v "The profile for how to organize the information in a medication overview" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationTreatment> ;
+         fhir:reference [ fhir:v "StructureDefinition/MedicationTreatment" ]
+       ] ;
+       fhir:name [ fhir:v "Medication Treatment" ] ;
+       fhir:description [ fhir:v "The profile for Medication Treatment in a Medication Record - a set of treatment lines/items" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationTreatmentLine> ;
+         fhir:reference [ fhir:v "StructureDefinition/MedicationTreatmentLine" ]
+       ] ;
+       fhir:name [ fhir:v "Medication Treatment Line" ] ;
+       fhir:description [ fhir:v "The profile for Medication Treatment Line - a single recorded item/line of a medication treatment" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicinalProduct> ;
+         fhir:reference [ fhir:v "StructureDefinition/MedicinalProduct" ]
+       ] ;
+       fhir:name [ fhir:v "Medicinal product" ] ;
+       fhir:description [ fhir:v "Medication information. The model is shared by statements, requests, dispensations, and treatment lines. Each of those may have different restrictions in FHIR profile." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicinalProductName> ;
+         fhir:reference [ fhir:v "StructureDefinition/MedicinalProductName" ]
+       ] ;
+       fhir:name [ fhir:v "MedicinalProductName" ] ;
+       fhir:description [ fhir:v "Name of the medicinal product. Optionally the type of name (Full official name, prescribing name, invented name) and language of the name can be specified. The extension is a simplified approach of what is used in MedicinalProductDefinition resource." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/PatientLM> ;
+         fhir:reference [ fhir:v "StructureDefinition/PatientLM" ]
+       ] ;
+       fhir:name [ fhir:v "Patient" ] ;
+       fhir:description [ fhir:v "Basic patient data relevant for this use case" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/PractitionerLM> ;
+         fhir:reference [ fhir:v "StructureDefinition/PractitionerLM" ]
+       ] ;
+       fhir:name [ fhir:v "Practitioner" ] ;
+       fhir:description [ fhir:v "Basic prescribing/dispensing/caretaking practitioner's data relevant for this use case" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/Substitution> ;
+         fhir:reference [ fhir:v "StructureDefinition/Substitution" ]
+       ] ;
+       fhir:name [ fhir:v "Substitution" ] ;
+       fhir:description [ fhir:v "Whether and which type of substitution is allowed for this medication treatment line" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/TreatmentStatus> ;
+         fhir:reference [ fhir:v "StructureDefinition/TreatmentStatus" ]
+       ] ;
+       fhir:name [ fhir:v "TreatmentStatus" ] ;
+       fhir:description [ fhir:v "The status of the actual treatment - ongoing, temporarily stopped, etc" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/VerificationInformation> ;
+         fhir:reference [ fhir:v "StructureDefinition/VerificationInformation" ]
+       ] ;
+       fhir:name [ fhir:v "VerificationInformation" ] ;
+       fhir:description [ fhir:v "Verification of medication line. The overview is verified as a whole, but each line is equipped with the information. The actual functional meaning and impact of this validation depends on the implementation." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:page [
+       fhir:source [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:source [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "MeOw Home" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [ fhir:v "volume1.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "volume1.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Volume 1 Overview" ] ;
+         fhir:generation [ fhir:v "markdown" ] ;
+         fhir:page ( [
+           fhir:source [ fhir:v "usecases.html"^^xsd:anyURI ] ;
+           fhir:name [ fhir:v "usecases.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Use Case overview" ] ;
+           fhir:generation [ fhir:v "markdown" ] ;
+           fhir:page ( [
+             fhir:source [ fhir:v "usecase-1.html"^^xsd:anyURI ] ;
+             fhir:name [ fhir:v "usecase-1.html"^^xsd:anyURI ] ;
+             fhir:title [ fhir:v "Use Case 1 - ..." ] ;
+             fhir:generation [ fhir:v "markdown" ]
+           ] )
+         ] [
+           fhir:source [ fhir:v "overview.html"^^xsd:anyURI ] ;
+           fhir:name [ fhir:v "overview.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Overview: data exchange for supply" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:source [ fhir:v "actors_and_transactions.html"^^xsd:anyURI ] ;
+           fhir:name [ fhir:v "actors_and_transactions.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Actors and Transactions overview" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:source [ fhir:v "actor_options.html"^^xsd:anyURI ] ;
+           fhir:name [ fhir:v "actor_options.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Actor Options" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:source [ fhir:v "actor_required_grouping.html"^^xsd:anyURI ] ;
+           fhir:name [ fhir:v "actor_required_grouping.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Actor Required Grouping" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:source [ fhir:v "security_considerations.html"^^xsd:anyURI ] ;
+           fhir:name [ fhir:v "security_considerations.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Security Considerations" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:source [ fhir:v "cross_profile_considerations.html"^^xsd:anyURI ] ;
+           fhir:name [ fhir:v "cross_profile_considerations.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Cross Profile Considerations" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] )
+       ] [
+         fhir:source [ fhir:v "volume2.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "volume2.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Volume 2" ] ;
+         fhir:generation [ fhir:v "markdown" ] ;
+         fhir:page ( [
+           fhir:source [ fhir:v "transactions.html"^^xsd:anyURI ] ;
+           fhir:name [ fhir:v "transactions.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Transaction Definitions" ] ;
+           fhir:generation [ fhir:v "markdown" ] ;
+           fhir:page ( [
+             fhir:source [ fhir:v "PHARM-O1.html"^^xsd:anyURI ] ;
+             fhir:name [ fhir:v "PHARM-O1.html"^^xsd:anyURI ] ;
+             fhir:title [ fhir:v "TBD" ] ;
+             fhir:generation [ fhir:v "markdown" ]
+           ] )
+         ] )
+       ] [
+         fhir:source [ fhir:v "PHARM-x.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "PHARM-x.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "PHARM xxx" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [ fhir:v "PHARM-y.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "PHARM-y.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "PHARM yyy" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [ fhir:v "32_fhir_maps.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "32_fhir_maps.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "3:4.5 FHIR Maps" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [ fhir:v "testplan.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "testplan.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Test Plan" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [ fhir:v "issues.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "issues.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Issues" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "copyrightyear" ]
+       ] ;
+       fhir:value [ fhir:v "2022+" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "releaselabel" ]
+       ] ;
+       fhir:value [ fhir:v "ci-build" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "input/pagecontent" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "fsh-generated/includes" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-contact" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-jurisdiction" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-version" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "usage-stats-opt-out" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "autoload-resources" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-liquid" ]
+       ] ;
+       fhir:value [ fhir:v "template/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-liquid" ]
+       ] ;
+       fhir:value [ fhir:v "input/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-qa" ]
+       ] ;
+       fhir:value [ fhir:v "temp/qa" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-temp" ]
+       ] ;
+       fhir:value [ fhir:v "temp/pages" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-output" ]
+       ] ;
+       fhir:value [ fhir:v "output" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-tx-cache" ]
+       ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-suppressed-warnings" ]
+       ] ;
+       fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-history" ]
+       ] ;
+       fhir:value [ fhir:v "http://profiles.ihe.net/PHARM/MEOW/history.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "template-html" ]
+       ] ;
+       fhir:value [ fhir:v "template-page.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "template-md" ]
+       ] ;
+       fhir:value [ fhir:v "template-page-md.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-context" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-copyright" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-license" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-publisher" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-wg" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "active-tables" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "fmm-definition" ]
+       ] ;
+       fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "propagate-status" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludelogbinaryformat" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "tabbed-snapshots" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

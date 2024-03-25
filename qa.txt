@@ -1,0 +1,78 @@
+IHE_PHARM_MEOW : Validation Results
+=========================================
+
+err = 0, warn = 19, info = 15
+IG Publisher Version: 1.6.3
+Generated Mon Mar 25 23:08:59 UTC 2024. FHIR version 5.0.0 for ihe.pharm.meow#0.1.0 (canonical = http://profiles.ihe.net/PHARM/MEOW)
+ Build Errors : 5 / 1 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-ihe.pharm.meow : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-BusinessVersion : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-Classification : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-DosagingInformation : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationOverview : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationOverviewComposition : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationTreatment : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationTreatmentLine : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicinalProduct : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicinalProductName : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-PatientLM : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-PractitionerLM : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-Substitution : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-TreatmentStatus : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-VerificationInformation : 0 / 2 / 2
+</table>
+== n/a ==
+ERROR: /github/workspace/output/actors_and_transactions.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 219, column 18: The link '1331_actors_and_transactions.html#133111-medication-overview-consumer' for "Medication Overview Consumer" cannot be resolved
+ERROR: /github/workspace/output/actors_and_transactions.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 224, column 18: The link '1331_actors_and_transactions.html#133112-medication-overview-repository' for "Medication Overview Repository" cannot be resolved
+ERROR: /github/workspace/output/actors_and_transactions.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 230, column 18: The link '1331_actors_and_transactions.html#133112-medication-overview-creator' for "Medication Overview Creator" cannot be resolved
+ERROR: /github/workspace/output/actors_and_transactions.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 235, column 18: The link '1331_actors_and_transactions.html#133112-medication-overview-repository' for "Medication Overview Repository" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 310, column 29: The link 'insert-mpd-link-here' for "Pharmacy Medication Prescription and Dispense" cannot be resolved
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-ihe.pharm.meow.json ==
+INFORMATION: ImplementationGuide/ihe.pharm.meow: ImplementationGuide.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-BusinessVersion.json ==
+INFORMATION: StructureDefinition/BusinessVersion: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/BusinessVersion: StructureDefinition.context[0]: Review the extension type for BusinessVersion: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/BusinessVersion'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-Classification.json ==
+INFORMATION: StructureDefinition/Classification: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/Classification: StructureDefinition.context[0]: Review the extension type for Classification: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/Classification'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-DosagingInformation.json ==
+INFORMATION: StructureDefinition/DosagingInformation: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-MedicationOverview.json ==
+INFORMATION: StructureDefinition/MedicationOverview: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/MedicationOverview: StructureDefinition.snapshot.element[6]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/MedicationOverview: StructureDefinition.differential.element[2]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverview'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-MedicationOverviewComposition.json ==
+INFORMATION: StructureDefinition/MedicationOverviewComposition: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverviewComposition'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-MedicationTreatment.json ==
+INFORMATION: StructureDefinition/MedicationTreatment: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationTreatment'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-MedicationTreatmentLine.json ==
+INFORMATION: StructureDefinition/MedicationTreatmentLine: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationTreatmentLine'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-MedicinalProduct.json ==
+INFORMATION: StructureDefinition/MedicinalProduct: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-MedicinalProductName.json ==
+INFORMATION: StructureDefinition/MedicinalProductName: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/MedicinalProductName: StructureDefinition.context[0]: Review the extension type for MedicinalProductName: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicinalProductName'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-PatientLM.json ==
+INFORMATION: StructureDefinition/PatientLM: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-PractitionerLM.json ==
+INFORMATION: StructureDefinition/PractitionerLM: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-Substitution.json ==
+INFORMATION: StructureDefinition/Substitution: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/Substitution: StructureDefinition.context[0]: Review the extension type for Substitution: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/Substitution'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-TreatmentStatus.json ==
+INFORMATION: StructureDefinition/TreatmentStatus: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/TreatmentStatus: StructureDefinition.context[0]: Review the extension type for TreatmentStatus: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/TreatmentStatus'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-VerificationInformation.json ==
+INFORMATION: StructureDefinition/VerificationInformation: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/VerificationInformation: StructureDefinition.context[0]: Review the extension type for VerificationInformation: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/VerificationInformation'): The Implementation Guide contains no examples for this extension
