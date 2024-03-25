@@ -11,7 +11,7 @@ Description: "A model for representing a Treatment Line."
 * version 0..1 ST "Business version of the treatment line"
 * timestamp 0..1 TS "Timestamp of the version of the treatment line"
 
-* statusReason 0..1 CD "The reason for the current entry status"
+//* statusReason 0..1 CD "The reason for the current entry status"
 
 
 * treatmentStatus 0..1 CD "The state of the actual treatment - taking, not taken..."
