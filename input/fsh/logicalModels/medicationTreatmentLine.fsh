@@ -18,6 +18,8 @@ Description: "A model for representing a Treatment Line."
 * treatmentStatusReasonCode 0..1 CD "The reason - coded - for the treatment status - i.e. adverse events, refusal..."
 * treatmentStatusReasonText 0..1 ST "The reason - free text - for the treatment status - i.e. adverse events, refusal..."
 
+* effectivePeriod 0..1 Class "The period of time the treatment is in effect"
+
 * verificationInformation 0..* BackboneElement "Verification of medication line" "Verification of medication line. The overview is verified as a whole, but each line is equipped with the information. The actual functional meaning and impact of this validation depends on the implementation."
   * verifier 1..1 Reference "HCP (or device, if authorized) verifying the treatments/overview"
   * verificationTime 1..1 DT "The date and time when this medication treatment line was verified"
