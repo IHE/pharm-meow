@@ -1,37 +1,3 @@
-Extension: BusinessVersion
-Description: "Business Version of the resource"
-* extension contains
-    version 1..1 MS and
-    versiondate 0..1 MS 
-* extension[version].value[x] only positiveInt or string
-* extension[versiondate].value[x] only dateTime
-
-Extension: TreatmentStatus
-Description: "The state of the actual treatment - taking, not taken..."
-* extension contains
-    status 1..1 MS and
-    reason 0..1 MS 
-* extension[status].value[x] only CodeableConcept
-* extension[reason].value[x] only CodeableConcept
-
-Extension: VerificationInformation
-Description: "Verification of medication line. The overview is verified as a whole, but each line is equipped with the information. The actual functional meaning and impact of this validation depends on the implementation."
-* extension contains
-    verifier 1..1 MS and
-    verificationTime 1..1 MS 
-* extension[verifier].value[x] only Reference
-* extension[verificationTime].value[x] only dateTime
-
-Extension: Substitution
-Id: med-substitution
-Description: "Whether and which type of substitution is allowed for this medication treatment line"
-* extension contains
-    Type 1..1 and
-    TypeReason 0..1
-* extension[Type].value[x] only CodeableConcept
-* extension[TypeReason].value[x] only CodeableConcept
-
-
 
 Profile: MedicationTreatmentLine
 Title: "Medication Treatment Line"
@@ -62,8 +28,6 @@ Parent: MedicationStatement
 * reason MS //indication + indicationtext + intendedUse
 * dosage.text MS //preparationInstructions
 * note MS //comment
-
-
 
 
 Profile: MedicationTreatment

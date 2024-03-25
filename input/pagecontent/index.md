@@ -10,9 +10,31 @@
 
 The IHE Medication Overview profile describes the content and transactions for consistent capture and exchange of patient's medication overviews - also referred as medication lists, or medication schemes.
 
-scope
 
-background
+### Background
+
+Medication Overview is a list of patient's medication related treatments. The actual rules for composing and maintaining such lists can vary. IHE Medication Overview profile addresses multiple use cases and implementation patterns, including two opposite ways of creating the Medication Overview:  
+- Medication Overview is the source of truth, and the basis of creating medication requests;  
+- Medication Overview is an aggregation of medication information available in patient's medical records (usually prescriptions).
+
+The main objectives of a Medication Overview are:
+- better overview of ongoing treatments (multiple prescriptions aggregated into one row);  
+- possibility to use different information sources (for example, add OTC products or patient stated medications);  
+- suitable for feeding into Medications section in patient summary.
+
+### Scope
+
+**In scope:**
+- Medication Overview / Medication List, which can be delivered as a document or a list.
+- Description of each line in Medication Overview, and explanation of grouping mechanisms.
+- Medicinal product information with enough details to be understandable in a recepient system that may not have access to the same medicinal product library.
+- Transactions for retrieving Medication Overview.
+
+**Out of scope:**
+- Exact assembling and updating mechanism of the medication overview as similar result can be achieved with various implementation choices,
+- Reimbursement information,
+- Decision support mechanisms,
+- Practitioner and patient details.
 
 ### Navigation
 
