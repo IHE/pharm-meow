@@ -1,30 +1,76 @@
+Extension: BusinessVersion
+Description: "Business Version of the resource"
+* extension contains
+    version 1..1 MS and
+    versiondate 0..1 MS and
+* extension[version].value[x] only positiveInt or string
+* extension[versiondate].value[x] only Datetime
+
+Extension: TreatmentStatus
+Description: "The state of the actual treatment - taking, not taken..."
+* extension contains
+    status 1..1 MS and
+    reason 0..1 MS and
+* extension[status].value[x] only CodeableConcept
+* extension[reason].value[x] only CodeableConcept
+
+Extension: VerificationInformation
+Description: "Verification of medication line. The overview is verified as a whole, but each line is equipped with the information. The actual functional meaning and impact of this validation depends on the implementation."
+* extension contains
+    verifier 1..1 MS and
+    verificationTime 1..1 MS and
+* extension[verifier].value[x] only Reference
+* extension[verificationTime].value[x] only Datetime
+
+Extension: Substitution
+Id: med-substitution
+Description: "Whether and which type of substitution is allowed for this medication treatment line"
+* extension contains
+    Type 1..1 and
+    TypeReason 0..1
+* extension[Type].value[x] only CodeableConcept
+* extension[TypeReason].value[x] only CodeableConcept
+
+
+
 Profile: MedicationTreatmentLine
 Title: "Medication Treatment Line"
 Description: "The profile for Medication Treatment Line - a single recorded item/line of a medication treatment"
 Parent: MedicationStatement
-* meta.profile 1..*
-* identifier MS
-* derivedFrom MS
-* subject MS 
-* informationSource MS //recorder
-* dateAsserted MS //recordDate
-* effectiveDateTime MS //startMedicationDate + endMedicationDate
-* effectivePeriod MS //startMedicationDate + endMedicationDate
-* status MS //lifecycleStatus
-//* statusReason MS //statusReason
-* medication MS
-* dosage MS //dosageAmmount + peridocity + dayperiod + route + instructionforUse
-* category MS //medicationType
-* note MS //everything else (origintype, lotnumber and reaction)
-* extension contains http://hl7.org/fhir/StructureDefinition/event-basedOn named treatmentPlan 0..1 MS
-* extension[treatmentPlan].valueReference only Reference(CarePlan) 
+
+* identifier MS //identifier
+* derivedFrom MS //derivedFrom
+* subject MS //medicationOverview.patient
+* informationSource MS //recordingMetadata //possible extension for all the elements in the LM?
+* dateAsserted MS //recordedTime+authoringTime
+* effective only (Period)
+* effectivePeriod MS //effectivePeriod
+* status MS //status
+
+* medication MS //medication
+* dosage MS //usageInstructions
+* category MS //category
+
+//* extension contains http://hl7.org/fhir/StructureDefinition/event-basedOn named treatmentPlan 0..1 MS 
+//* extension[treatmentPlan].valueReference only Reference(CarePlan) //medicationTreatment (any for the time being ISSUE-39)
+
+* extension contains BusinessVersion named version 0..1 MS //version+timestamp
+* extension contains TreatmentStatus named TreatmentStatus 0..1 MS //treatmentStatus+treatmentStatusReasonCode+treatmentStatusReasonText
+* extension contains VerificationInformation named verificationInformation 0..1 MS //treatmentStatus+treatmentStatusReasonCode+treatmentStatusReasonText
+* extension contains Substitution named substitution 0..1 MS //substitution
+
+* reason MS //indication + indicationtext + intendedUse
+* dosage.text MS //preparationInstructions
+* note MS //comment
+
+
 
 
 Profile: MedicationTreatment
 Title: "Medication Treatment"
 Description: "The profile for Medication Treatment in a Medication Record - a set of treatment lines/items"
 Parent: CarePlan
-* meta.profile 1..*
+
 * identifier MS
 * subject MS 
 * contributor MS
@@ -53,7 +99,7 @@ Title: "Medication Overview Composition"
 Description: "The profile for how to organize the information in a medication overview"
 Parent: Composition
 Id: MedicationOverviewComposition
-* meta.profile 1..*
+
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "type.coding.code"
 * section ^slicing.rules = #open
@@ -72,6 +118,7 @@ Parent: Bundle
 Id: MedicationOverview
 Title: "Medication overview"
 Description: "The profile for the full Medication overview"
+
 * ^version = "1.0.0"
 * identifier 0..1 MS
 * type = #document (exactly)
