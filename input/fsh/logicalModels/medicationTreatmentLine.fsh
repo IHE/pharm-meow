@@ -13,6 +13,7 @@ Description: "A model for representing a Treatment Line."
 
 * statusReason 0..1 CD "The reason for the current entry status"
 
+
 * treatmentStatus 0..1 CD "The state of the actual treatment - taking, not taken..."
 * treatmentStatusReasonCode 0..1 CD "The reason - coded - for the treatment status - i.e. adverse events, refusal..."
 * treatmentStatusReasonText 0..1 ST "The reason - free text - for the treatment status - i.e. adverse events, refusal..."
@@ -54,11 +55,12 @@ Description: "A model for representing a Treatment Line."
   * authoringTime 0..1 DT "The time the clinical decision was made by the responsibleAuthor. Normally, the same time as recording time when it's the same person."
 
 
-* informationSource 0..* Class "Any data object that this treatment line is derived from"
-  * relatedRequest 0..* Reference "Prescriptions that have been the source for creating the unverified treatment line"
-  * relatedStatement 0..* Reference "Medication-related statements from patients, pharmacists, or other HCPs, that are the source for creating the unverified treatment line"
-  * relatedDispensation 0..* Reference "Related dispensations that are not necessarily related to existing prescriptions/requests/statements."
-  * relatedAdministration 0..* Reference "Related administrations that are not necessarily related to existing prescriptions/requests/statements."
-  * otherSource 0..* Reference "Other related sources of information - CarePlan, Immunizations, Documents (e.g. Discharge letters)..."
+//
+* derivedFrom 0..* Class "Any data object that this treatment line is derived from"
+  * request 0..* Reference "Prescriptions that have been the source for creating the unverified treatment line"
+  * statement 0..* Reference "Medication-related statements from patients, pharmacists, or other HCPs, that are the source for creating the unverified treatment line"
+  * dispensation 0..* Reference "Related dispensations that are not necessarily related to existing prescriptions/requests/statements."
+  * administration 0..* Reference "Related administrations that are not necessarily related to existing prescriptions/requests/statements."
+  * other 0..* Reference "Other related sources of information - CarePlan, Immunizations, Documents (e.g. Discharge letters)..."
 
 
