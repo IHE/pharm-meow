@@ -73,7 +73,7 @@ pages:
 
     overview.md:
       title: "Overview: data exchange for supply"
-    actors_and_transactions.md:
+    actors-transactions.md:
       title: "Actors and Transactions overview"
     actor_options.md:
       title: "Actor Options"
@@ -131,7 +131,7 @@ pages:
 menu:
   MEOw Home: index.html
   Volume 1: 
-    "Actors and Transactions": actors_and_transactions.html
+    "Actors and Transactions": actors-transactions.html
     "Actor Options": actor_options.html
    # "Actor Required Grouping": 1333_required_grouping.html
     "Security Considerations": security_considerations.html
