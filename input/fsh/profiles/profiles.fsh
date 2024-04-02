@@ -21,14 +21,16 @@ Parent: MedicationStatement
 //* extension[treatmentPlan].valueReference only Reference(CarePlan) //medicationTreatment (any for the time being ISSUE-39)
 
 * extension contains BusinessVersion named version 0..1 MS //version+timestamp
-* extension contains TreatmentStatus named TreatmentStatus 0..1 MS //treatmentStatus+treatmentStatusReasonCode+treatmentStatusReasonText
+//* extension contains TreatmentStatus named TreatmentStatus 0..1 MS //treatmentStatus+treatmentStatusReasonCode+treatmentStatusReasonText
+// removed TreatmentStatus as it appears to map to adherence
+
 * extension contains VerificationInformation named verificationInformation 0..1 MS //treatmentStatus+treatmentStatusReasonCode+treatmentStatusReasonText
 * extension contains Substitution named substitution 0..1 MS //substitution
 
 * reason MS //indication + indicationtext + intendedUse
 * dosage.text MS //preparationInstructions
 * note MS //comment
-
+* adherence MS //treatmentStatus
 
 Profile: MedicationTreatment
 Title: "Medication Treatment"
