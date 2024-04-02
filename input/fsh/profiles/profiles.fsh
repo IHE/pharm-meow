@@ -79,11 +79,11 @@ Id: MedicationOverviewComposition
 * section[detailsRecord].entry only Reference(MedicationStatement or MedicationRequest or MedicationDispense or MedicationAdministration )
 
 
-Profile: MedicationOverview
+Profile: MedicationOverviewBundle
 Parent: Bundle
 Id: MedicationOverview
-Title: "Medication overview"
-Description: "The profile for the full Medication overview"
+Title: "Medication Overview Bundle"
+Description: "The profile for the full Medication overview as a Bundle type Document"
 
 * ^version = "1.0.0"
 * identifier 0..1 MS

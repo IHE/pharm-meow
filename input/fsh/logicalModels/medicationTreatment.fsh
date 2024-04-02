@@ -1,8 +1,7 @@
-Logical: MedicationTreatment
+Logical: MedicationTreatmentLM
 Title: "Medication Treatment"
 Description: "Grouping of treatment lines that are somehow related to eachother (the same purpose, other)"
 * ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
-* ^name = "MedicationTreatment"
 * ^status = #active
 
 * comment 0..* BackboneElement "Comment"

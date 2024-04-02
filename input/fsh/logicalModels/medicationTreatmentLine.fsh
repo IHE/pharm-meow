@@ -1,12 +1,12 @@
-Logical: MedicationTreatmentLine
+Logical: MedicationTreatmentLineLM
 Title: "Medication Treatment Line"
 Description: "A model for representing a Treatment Line."
 * ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
-* ^name = "MedicationTreatmentLine"
+* ^name = "MedicationTreatmentLineLM"
 * ^status = #active
 
 * identifier 0..* II "Unique business identifier(s) for the medication treatment line"
-* medication[x] 1..1 Reference(MedicinalProduct) or CD "Medicinal product for which the treatment line refers to. Identification or sufficient description of the product."
+* medication[x] 1..1 Reference(MedicinalProductLM) or CD "Medicinal product for which the treatment line refers to. Identification or sufficient description of the product."
 * status 1..1 CD "Status of the treatment line entry" "Status of the record, not the status of the treatment."
 * version 0..1 ST "Business version of the treatment line"
 * timestamp 0..1 TS "Timestamp of the version of the treatment line"
@@ -26,7 +26,7 @@ Description: "A model for representing a Treatment Line."
 
 * category 0..* CD "Whatever category for the treatment line. Categorisation of treatment lines is implementation-specific."
 
-* medicationTreatment 0..* Reference(MedicationTreatment) "Reference or identifier of the group of lines that belong together"
+* medicationTreatment 0..* Reference(MedicationTreatmentLM) "Reference or identifier of the group of lines that belong together"
 
 * indication 0..* CD "Reason why the product has been prescribed to the patient, or why the patient claims to be taking it"
 * indicationText 0..1 string "Textual explanation for why the medication has been prescribed or why the patient is taking it. This might not be allowed by some implementations."
@@ -43,7 +43,7 @@ Description: "A model for representing a Treatment Line."
   * date 1..1 DT "time of comment"
   * commentText 1..1 ST "content of the comment"
 
-* substitution 0..1 class "Whether and which type of substitution is allowed for this medication treatment line" 
+* substitution 0..1 Class "Whether and which type of substitution is allowed for this medication treatment line" 
   * substitutionType 1..1 CD "The type of substitution that is allowed."
   * substitutionTypeReason 0..1 CD "Coded reason for the substitution requirement"
   * substitutionTypeReasonText 0..1 ST "Textual reason for the substitution requirement"
@@ -53,7 +53,7 @@ Description: "A model for representing a Treatment Line."
   * recordedTime 1..1 DT "Time of creation of the treatment line"
   * patientReported 0..1 BL "The treatment line has been documented according to patient's statement"
 
-  * responsibleAuthor 0..1 Reference(Practitioner) "HCP who takes the clinical decision for the medication treatment line. If an author is not present, the responsibility of the medication line is with the recorder."
+  * responsibleAuthor 0..1 Reference(PractitionerLM) "HCP who takes the clinical decision for the medication treatment line. If an author is not present, the responsibility of the medication line is with the recorder."
   * authoringTime 0..1 DT "The time the clinical decision was made by the responsibleAuthor. Normally, the same time as recording time when it's the same person."
 
 
