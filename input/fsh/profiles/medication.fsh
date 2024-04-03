@@ -23,6 +23,8 @@ Description: "Name of the medicinal product. Optionally the type of name (Full o
 Extension: SizeOfMedicationItem
 Description: "Size of a manufactured item or unit of presentation. For example, size of one vial in a package that may contain several vials."
 * value[x] only Quantity
+* ^context[+].type = #element
+* ^context[=].expression = "Medication"
 
 
 // Extension for pack size?

@@ -20,7 +20,7 @@ Parent: MedicationStatement
 //* extension contains http://hl7.org/fhir/StructureDefinition/event-basedOn named treatmentPlan 0..1 MS 
 //* extension[treatmentPlan].valueReference only Reference(CarePlan) //medicationTreatment (any for the time being ISSUE-39)
 
-* extension contains BusinessVersion named version 0..1 MS //version+timestamp
+* extension contains http://hl7.org/fhir/StructureDefinition/artifact-version named version 0..1 MS //version+timestamp
 //* extension contains TreatmentStatus named TreatmentStatus 0..1 MS //treatmentStatus+treatmentStatusReasonCode+treatmentStatusReasonText
 // removed TreatmentStatus as it appears to map to adherence
 
