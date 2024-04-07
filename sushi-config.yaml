@@ -79,6 +79,18 @@ pages:
       title: "Aggregation and Medication Reconcilliation"
     data_models.md:
       title: "Data Models"
+    
+    actors-transactions.md:
+      title: "Actors and Transactions"
+    actor_options.md:
+      title: "Actor Options"
+    required_grouping.md
+      title: "Actor Required Grouping"
+    security_considerations.md:
+      title: "Security Considerations"
+    cross_profile_considerations.md
+      title: "Cross Profile Considerations"
+
    # cross_profile_considerations.md:
    #   title: "Cross Profile Considerations"
   volume2.md:
