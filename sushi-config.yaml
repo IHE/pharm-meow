@@ -25,7 +25,7 @@ contact:
       - system: email
         value: jose.a.teixeira@gmail.com
         use: work
-license: CC-BY-SA-4.0
+license: CC-BY-4.0
 jurisdiction: 'http://unstats.un.org/unsd/methods/m49/m49.htm#001'
 dependencies:
   ihe.domain.logical-datatypes: current
@@ -66,8 +66,8 @@ pages:
 
     usecases.md:
       title: "Use Case overview"
-    usecase-1.md:
-      title: "Use Case 1 - ..."
+      usecase-1.md:
+        title: "Use Case 1 - ..."
 
     glossary.md:
       title: "Glossary"
@@ -83,30 +83,15 @@ pages:
    #   title: "Cross Profile Considerations"
   volume2.md:
     title:"Volume 2: Transactions"
-    transactions.md:
-      title: "Transaction Definitions"
-      PHARM-O1.md:
-        title: "TBD"
-
-  PHARM-x.md:
-    title: "PHARM xxx"
-  PHARM-y.md:
-    title: "PHARM yyy"
-#  ITI-66.md:
-#    title: "2:3.66 Find Document Lists [ITI-66]"
-#  ITI-67.md:
-#    title: "2:3.67 Find Document References [ITI-67]"
-#  ITI-68.md:
-#    title: "2:3.68 Retrieve Document [ITI-68]"
-#  32_fhir_maps.md:
-#    title: "3:4.5 FHIR Maps"
-#  testplan.md:
-#    title: "Test Plan"
+    PHARM-x.md:
+      title: "PHARM xxx"
+    PHARM-y.md:
+      title: "PHARM yyy"
   issues.md:
     title: "Issues"
-#    extension: 
-#      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
-#        valueCode: informative
+    extension: 
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: informative
 #  a_issues.md:
 #    title: "Issues"
 #    extension: 
@@ -128,16 +113,18 @@ menu:
     "Aggregation and Medication Reconcilliation": aggregation_and_medication_reconcilliation.html
     "Data Models": data_models.html
 
-   # "Actors and Transactions": actors-transactions.html
-   # "Actor Options": actor_options.html
-   # "Actor Required Grouping": 1333_required_grouping.html
-   # "Security Considerations": security_considerations.html
-   # "Cross Profile Considerations": cross_profile_considerations.html
+    "Actors and Transactions": actors-transactions.html
+    "Actor Options": actor_options.html
+    "Actor Required Grouping": required_grouping.html
+    "Security Considerations": security_considerations.html
+    "Cross Profile Considerations": cross_profile_considerations.html
 
   Volume 2:
+    "Volume 2 Overview": volume2.html
     "Transaction O1": PHARM-O1.html
   #  "Find Document References [ITI-67]": ITI-67.html
   #  "Retrieve Document [ITI-68]": ITI-68.html
 #  Test Plan: testplan.html
-  Artifact Index: artifacts.html
+  Artifacts: 
+    "Artifact Index": artifacts.html
   
