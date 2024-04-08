@@ -63,12 +63,10 @@ pages:
     title: "MeOw Home"
   volume1.md:
     title: "Volume 1 Overview"
-
     usecases.md:
       title: "Use Case overview"
       usecase-1.md:
         title: "Use Case 1 - ..."
-
     glossary.md:
       title: "Glossary"
     medication_concepts.md:
@@ -88,11 +86,9 @@ pages:
       title: "Actor Required Grouping"
     security_considerations.md:
       title: "Security Considerations"
-    cross_profile_considerations.md
+    cross_profile_considerations.md:
       title: "Cross Profile Considerations"
 
-   # cross_profile_considerations.md:
-   #   title: "Cross Profile Considerations"
   volume2.md:
     title:"Volume 2: Transactions"
     PHARM-x.md:
