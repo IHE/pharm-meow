@@ -58,7 +58,7 @@ class "** Medication Schema **" as MS<<TM>> {
   |_ patient 1..1   
   |_ status 1..1   
   |_ label 1..1   
-  |_ type 0..1   
+  |_ type 0..*   
 }
 
 

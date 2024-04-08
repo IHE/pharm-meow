@@ -39,7 +39,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
   path-pages:
     - input/pagecontent
     - fsh-generated/includes
- # active-tables: 'false'
+# active-tables: 'false'
   apply-contact: 'true'
   apply-jurisdiction: 'true'
   #apply-publisher: 'true'
@@ -82,7 +82,7 @@ pages:
       title: "Actors and Transactions"
     actor_options.md:
       title: "Actor Options"
-    required_grouping.md
+    required_grouping.md:
       title: "Actor Required Grouping"
     security_considerations.md:
       title: "Security Considerations"
