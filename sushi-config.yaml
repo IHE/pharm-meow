@@ -82,7 +82,7 @@ pages:
       title: "Actors and Transactions"
     actor_options.md:
       title: "Actor Options"
-    required_grouping.md:
+    actor_required_grouping.md:
       title: "Actor Required Grouping"
     security_considerations.md:
       title: "Security Considerations"
