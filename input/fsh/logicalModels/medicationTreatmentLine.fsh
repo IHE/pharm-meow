@@ -1,6 +1,6 @@
 Logical: MedicationTreatmentLineLM
-Title: "Medication Treatment Line"
-Description: "A model for representing a Treatment Line."
+Title: "Medication Treatment Line (model)"
+Description: "Logical model for representing one line/medication in medication overview."
 * ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 * ^name = "MedicationTreatmentLineLM"
 * ^status = #active

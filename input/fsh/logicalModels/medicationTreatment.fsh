@@ -1,6 +1,6 @@
 Logical: MedicationTreatmentLM
-Title: "Medication Treatment"
-Description: "Grouping of treatment lines that are somehow related to eachother (the same purpose, other)"
+Title: "Medication Treatment (model)"
+Description: "Logical model for subgroups of treatment lines that are somehow related to eachother (the same purpose, other)"
 * ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 * ^status = #active
 

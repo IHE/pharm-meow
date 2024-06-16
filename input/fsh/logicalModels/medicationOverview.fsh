@@ -1,6 +1,6 @@
 Logical: MedicationOverviewLM
-Title: "Medication Overview"
-Description: "A model for the whole medication overview (medication schema)"
+Title: "Medication Overview (model)"
+Description: "Logical model for the whole medication overview (medication schema)"
 * ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 * ^status = #active
 
