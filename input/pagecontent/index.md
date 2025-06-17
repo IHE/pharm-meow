@@ -36,17 +36,6 @@ The main objectives of a Medication Overview are:
 - Decision support mechanisms,
 - Practitioner and patient details.
 
-### Navigation
-
-
-### Dependencies
-
-{% include dependency-table.xhtml %}
-
-
-### IP statements
-
-{% include ip-statements.xhtml %}
 
 
 This profile 
