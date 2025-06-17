@@ -1,9 +1,7 @@
 @startuml
-'skinparam linetype ortho
 skinparam linetype polyline
 hide circle
 hide stereotype
-
 
 skinparam class<<MD>> {
  BorderColor DarkSlateGray
@@ -17,16 +15,15 @@ skinparam class<<TM>> {
  HeaderBackgroundColor #8bd
 }
 
-
-    BackboneElement "**Medication Treatment**" as MT<<TM>> {
+    Class "**Medication Treatment**" as MT <<TM>> {
         --
     }
 
-    BackboneElement "**Medication Treatment Line**" as MTL<<TM>> {
-      |_ medicationTreatment 0..*
+    Class "**Medication Treatment Line**" as MTL<<TM>>{
+      '|_ medicationTreatment 0..*
     }
 
-    BackboneElement "**Medication Overview**" as MEOW<<TM>> {
+    Class "**Medication Overview**" as MEOW<<TM>> {
         --
     }
 
@@ -34,6 +31,5 @@ skinparam class<<TM>> {
 MTL ->  MT : "Grouped by"
 MT ->  MEOW : "Part of"
 MTL -u->  MEOW : "Part of"
-
 
 @enduml
