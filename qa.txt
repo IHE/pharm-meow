@@ -1,0 +1,535 @@
+IHE_PHARM_MEOW : Validation Results
+=========================================
+
+err = 1, warn = 28, info = 19
+IG Publisher Version: 2.0.7
+Generated Tue Jun 17 18:37:28 UTC 2025. FHIR version 5.0.0 for ihe.pharm.meow#0.1.0 (canonical = http://profiles.ihe.net/PHARM/MEOW)
+ Build Errors : 426 / 3 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-ihe.pharm.meow : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Medication-01A-Cefuroxime1500GenericExplicit : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Medication-01B-Cefuroxime1500GenericConcept : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Medication-01C-Cefuroxime1500Branded : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Medication-02A-ClotrimazoleCanifugCremolum : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Medication-02A1-CanifugCremolumCreamItem : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Medication-02A2-CanifugCremolumPessaryItem : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Medication-03B-VitaminBComplexBranded : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DosagingInformation : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-IHEMedication : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationOverview : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationOverviewComposition : 1 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationOverviewLM : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationTreatment : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationTreatmentLM : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationTreatmentLine : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationTreatmentLineLM : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicinalProductLM : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-PatientLM : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-PractitionerLM : 0 / 4 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-ihe-ext-medication-classification : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-ihe-ext-medication-device : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-ihe-ext-medication-productname : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-ihe-ext-medication-sizeofitem : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-ihe-ext-medicationstatement-substitution : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-ihe-ext-medicationstatement-verificationinformation : 0 / 1 / 2
+</table>
+== n/a ==
+ERROR: Medication-01A-Cefuroxime1500GenericExplicit.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-01A-Cefuroxime1500GenericExplicit.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-01A-Cefuroxime1500GenericExplicit.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-01A-Cefuroxime1500GenericExplicit.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-01A-Cefuroxime1500GenericExplicit.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-01A-Cefuroxime1500GenericExplicit.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 165, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-01A-Cefuroxime1500GenericExplicit.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-01A-Cefuroxime1500GenericExplicit.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 165, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-01A-Cefuroxime1500GenericExplicit.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-01A-Cefuroxime1500GenericExplicit.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 165, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-01B-Cefuroxime1500GenericConcept.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-01B-Cefuroxime1500GenericConcept.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-01B-Cefuroxime1500GenericConcept.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-01B-Cefuroxime1500GenericConcept.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-01B-Cefuroxime1500GenericConcept.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-01B-Cefuroxime1500GenericConcept.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 165, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-01B-Cefuroxime1500GenericConcept.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-01B-Cefuroxime1500GenericConcept.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 165, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-01B-Cefuroxime1500GenericConcept.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-01B-Cefuroxime1500GenericConcept.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 165, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-01C-Cefuroxime1500Branded.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-01C-Cefuroxime1500Branded.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-01C-Cefuroxime1500Branded.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-01C-Cefuroxime1500Branded.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-01C-Cefuroxime1500Branded.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-01C-Cefuroxime1500Branded.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 165, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-01C-Cefuroxime1500Branded.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-01C-Cefuroxime1500Branded.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 165, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-01C-Cefuroxime1500Branded.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-01C-Cefuroxime1500Branded.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 165, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-02A-ClotrimazoleCanifugCremolum.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-02A-ClotrimazoleCanifugCremolum.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-02A-ClotrimazoleCanifugCremolum.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-02A-ClotrimazoleCanifugCremolum.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-02A-ClotrimazoleCanifugCremolum.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-02A-ClotrimazoleCanifugCremolum.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 165, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-02A-ClotrimazoleCanifugCremolum.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-02A-ClotrimazoleCanifugCremolum.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 165, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-02A-ClotrimazoleCanifugCremolum.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-02A-ClotrimazoleCanifugCremolum.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 165, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-02A1-CanifugCremolumCreamItem.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-02A1-CanifugCremolumCreamItem.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-02A1-CanifugCremolumCreamItem.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-02A1-CanifugCremolumCreamItem.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-02A1-CanifugCremolumCreamItem.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-02A1-CanifugCremolumCreamItem.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 165, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-02A1-CanifugCremolumCreamItem.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-02A1-CanifugCremolumCreamItem.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 165, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-02A1-CanifugCremolumCreamItem.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-02A1-CanifugCremolumCreamItem.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 165, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-02A2-CanifugCremolumPessaryItem.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-02A2-CanifugCremolumPessaryItem.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-02A2-CanifugCremolumPessaryItem.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-02A2-CanifugCremolumPessaryItem.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-02A2-CanifugCremolumPessaryItem.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-02A2-CanifugCremolumPessaryItem.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 165, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-02A2-CanifugCremolumPessaryItem.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-02A2-CanifugCremolumPessaryItem.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 165, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-02A2-CanifugCremolumPessaryItem.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-02A2-CanifugCremolumPessaryItem.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 165, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-03B-VitaminBComplexBranded.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-03B-VitaminBComplexBranded.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-03B-VitaminBComplexBranded.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-03B-VitaminBComplexBranded.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-03B-VitaminBComplexBranded.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-03B-VitaminBComplexBranded.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 165, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-03B-VitaminBComplexBranded.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-03B-VitaminBComplexBranded.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 165, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: Medication-03B-VitaminBComplexBranded.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: Medication-03B-VitaminBComplexBranded.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 165, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: PHARM-x.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: PHARM-x.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: PHARM-y.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: PHARM-y.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-DosagingInformation-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-DosagingInformation-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-DosagingInformation-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-DosagingInformation-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-DosagingInformation-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-DosagingInformation-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-DosagingInformation-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-DosagingInformation-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-DosagingInformation.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-DosagingInformation.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-DosagingInformation.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-DosagingInformation.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-DosagingInformation.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-DosagingInformation.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-DosagingInformation.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-DosagingInformation.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-DosagingInformation.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-DosagingInformation.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-IHEMedication-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-IHEMedication-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-IHEMedication-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-IHEMedication-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-IHEMedication-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-IHEMedication-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-IHEMedication-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-IHEMedication-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-IHEMedication.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-IHEMedication.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-IHEMedication.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-IHEMedication.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-IHEMedication.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-IHEMedication.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-IHEMedication.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-IHEMedication.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-IHEMedication.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-IHEMedication.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationOverview-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationOverview-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationOverview-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationOverview-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationOverview-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationOverview-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationOverview-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationOverview-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationOverview.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationOverview.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationOverview.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationOverview.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationOverview.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationOverview.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationOverview.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationOverview.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationOverview.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationOverview.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewComposition-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewComposition-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewComposition-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewComposition-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewComposition-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewComposition-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewComposition-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewComposition-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewComposition.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewComposition.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewComposition.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewComposition.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewComposition.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewComposition.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewComposition.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewComposition.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewComposition.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewComposition.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewLM-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewLM-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewLM-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewLM-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewLM-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewLM-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewLM-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewLM-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewLM.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewLM.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewLM.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewLM.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewLM.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewLM.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewLM.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewLM.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewLM.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationOverviewLM.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatment-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatment-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatment-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatment-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatment-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatment-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatment-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatment-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatment.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatment.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatment.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatment.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatment.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatment.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatment.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatment.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatment.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatment.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLM-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLM-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLM-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLM-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLM-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLM-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLM-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLM-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLM.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLM.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLM.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLM.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLM.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLM.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLM.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLM.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLM.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLM.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLine-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLine-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLine-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLine-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLine-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLine-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLine-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLine-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLine.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLine.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLine.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLine.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLine.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLine.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLine.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLine.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLine.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLine.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLineLM-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLineLM-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLineLM-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLineLM-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLineLM-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLineLM-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLineLM-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLineLM-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLineLM.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLineLM.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLineLM.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLineLM.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLineLM.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLineLM.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLineLM.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLineLM.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLineLM.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicationTreatmentLineLM.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicinalProductLM-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicinalProductLM-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicinalProductLM-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicinalProductLM-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicinalProductLM-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicinalProductLM-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicinalProductLM-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicinalProductLM-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicinalProductLM.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicinalProductLM.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicinalProductLM.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicinalProductLM.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicinalProductLM.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicinalProductLM.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicinalProductLM.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicinalProductLM.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-MedicinalProductLM.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-MedicinalProductLM.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-PatientLM-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-PatientLM-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-PatientLM-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-PatientLM-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-PatientLM-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-PatientLM-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-PatientLM-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-PatientLM-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-PatientLM.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-PatientLM.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-PatientLM.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-PatientLM.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-PatientLM.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-PatientLM.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-PatientLM.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-PatientLM.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-PatientLM.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-PatientLM.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-PractitionerLM-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-PractitionerLM-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-PractitionerLM-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-PractitionerLM-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-PractitionerLM-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-PractitionerLM-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-PractitionerLM-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-PractitionerLM-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-PractitionerLM.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-PractitionerLM.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-PractitionerLM.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-PractitionerLM.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-PractitionerLM.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-PractitionerLM.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-PractitionerLM.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-PractitionerLM.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-PractitionerLM.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-PractitionerLM.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-classification-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-classification-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-classification-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-classification-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-classification-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-classification-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-classification.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-classification.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-classification.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-classification.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-classification.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-classification.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-classification.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-classification.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-classification.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-classification.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-device-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-device-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-device-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-device-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-device-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-device-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-device.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-device.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-device.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-device.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-device.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-device.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-device.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-device.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-device.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-device.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-productname-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-productname-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-productname-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-productname-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-productname-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-productname-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-productname.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-productname.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-productname.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-productname.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-productname.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-productname.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-productname.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-productname.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-productname.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-productname.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-sizeofitem-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-sizeofitem-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-sizeofitem-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-sizeofitem-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-sizeofitem-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-sizeofitem-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-sizeofitem.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-sizeofitem.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-sizeofitem.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-sizeofitem.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-sizeofitem.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-sizeofitem.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-sizeofitem.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-sizeofitem.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-sizeofitem.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medication-sizeofitem.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-substitution-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-substitution-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-substitution-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-substitution-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-substitution-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-substitution-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-substitution.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-substitution.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-substitution.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-substitution.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-substitution.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-substitution.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-substitution.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-substitution.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-substitution.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-substitution.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-verificationinformation-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-verificationinformation-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-verificationinformation-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-verificationinformation-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-verificationinformation-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-verificationinformation-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-verificationinformation.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-verificationinformation.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-verificationinformation.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 148, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-verificationinformation.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 167, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-verificationinformation.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-verificationinformation.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-verificationinformation.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-verificationinformation.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-verificationinformation.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 152, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: StructureDefinition-ihe-ext-medicationstatement-verificationinformation.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 171, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: actor_options.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: actor_options.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: actor_required_grouping.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: actor_required_grouping.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: actors-transactions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: actors-transactions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: aggregation_and_medication_reconcilliation.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: aggregation_and_medication_reconcilliation.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: cross_profile_considerations.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: cross_profile_considerations.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: data_models.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: data_models.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: data_models.html#/html/body/div/div/div/div/div/ul/li/ul/li/p/a at Line 235, column 13: The link 'actors-transactions.html#133111-medication-repository' for "Medication Repository" cannot be resolved (valid targets: [133112-medication-overview-repository, project-nav, publish-box, segment-post-footer, 1-33-1-1-2-medication-overview-repository, 133122-creating-treatment-lines, 1-33-1-2-2-creating-treatment-lines, family-logo, top, 1-33-1-1-actor-descriptions-and-actor-profile-requirements, stripe, segment-footer, 13311-actor-descriptions-and-actor-profile-requirements, 133112-medication-overview-creator, ihe-logo, segment-content, 1-33-1-1-1-medication-overview-consumer, 133121-get-medication-overview, project-logo, segment-header, bottom, actors-and-transactions, markdown-toc-13311-actor-descriptions-and-actor-profile-requirements, 1-33-1-2-transaction-descriptions, 13312-transaction-descriptions, family-nav, ig-status, markdown-toc-13312-transaction-descriptions, markdown-toc, 1-33-1-1-2-medication-overview-creator, segment-navbar, 1-33-1-2-1-get-medication-overview, segment-breadcrumb, 133111-medication-overview-consumer])
+ERROR: data_models.html#/html/body/div/div/div/div/div/ul/li/ul/li/p/a at Line 238, column 13: The link 'actors-transactions.html#133112-medication-data-provider' for "Medication Data Provider" cannot be resolved (valid targets: [133112-medication-overview-repository, project-nav, publish-box, segment-post-footer, 1-33-1-1-2-medication-overview-repository, 133122-creating-treatment-lines, 1-33-1-2-2-creating-treatment-lines, family-logo, top, 1-33-1-1-actor-descriptions-and-actor-profile-requirements, stripe, segment-footer, 13311-actor-descriptions-and-actor-profile-requirements, 133112-medication-overview-creator, ihe-logo, segment-content, 1-33-1-1-1-medication-overview-consumer, 133121-get-medication-overview, project-logo, segment-header, bottom, actors-and-transactions, markdown-toc-13311-actor-descriptions-and-actor-profile-requirements, 1-33-1-2-transaction-descriptions, 13312-transaction-descriptions, family-nav, ig-status, markdown-toc-13312-transaction-descriptions, markdown-toc, 1-33-1-1-2-medication-overview-creator, segment-navbar, 1-33-1-2-1-get-medication-overview, segment-breadcrumb, 133111-medication-overview-consumer])
+ERROR: data_models.html#/html/body/div/div/div/div/div/ul/li/ul/li/p/a at Line 241, column 13: The link 'actors-transactions.html#133113-medication-data-consumer' for "Medication Data Consumer" cannot be resolved (valid targets: [133112-medication-overview-repository, project-nav, publish-box, segment-post-footer, 1-33-1-1-2-medication-overview-repository, 133122-creating-treatment-lines, 1-33-1-2-2-creating-treatment-lines, family-logo, top, 1-33-1-1-actor-descriptions-and-actor-profile-requirements, stripe, segment-footer, 13311-actor-descriptions-and-actor-profile-requirements, 133112-medication-overview-creator, ihe-logo, segment-content, 1-33-1-1-1-medication-overview-consumer, 133121-get-medication-overview, project-logo, segment-header, bottom, actors-and-transactions, markdown-toc-13311-actor-descriptions-and-actor-profile-requirements, 1-33-1-2-transaction-descriptions, 13312-transaction-descriptions, family-nav, ig-status, markdown-toc-13312-transaction-descriptions, markdown-toc, 1-33-1-1-2-medication-overview-creator, segment-navbar, 1-33-1-2-1-get-medication-overview, segment-breadcrumb, 133111-medication-overview-consumer])
+ERROR: glossary.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: glossary.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/ul/li/a at Line 323, column 29: The link 'insert-mpd-link-here' for "Pharmacy Medication Prescription and Dispense" cannot be resolved
+ERROR: issues.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: issues.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: medication_concepts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: medication_concepts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: medication_treatment_lifecycle.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: medication_treatment_lifecycle.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: security_considerations.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: security_considerations.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: usecase-1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: usecase-1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: usecases.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: usecases.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: volume1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: volume1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+ERROR: volume2.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'required_grouping.html' for "Actor Required Grouping" cannot be resolved
+ERROR: volume2.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 163, column 10: The link 'PHARM-O1.html' for "Transaction O1" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-ihe.pharm.meow.json ==
+INFORMATION: ImplementationGuide/ihe.pharm.meow: ImplementationGuide.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/Medication-01A-Cefuroxime1500GenericExplicit.json ==
+== fsh-generated/resources/Medication-01B-Cefuroxime1500GenericConcept.json ==
+== fsh-generated/resources/Medication-01C-Cefuroxime1500Branded.json ==
+WARNING: Medication/01C-Cefuroxime1500Branded: Medication.identifier[0].system: No definition could be found for URL value 'https://www.ravimiregister.ee'
+== fsh-generated/resources/Medication-02A-ClotrimazoleCanifugCremolum.json ==
+WARNING: Medication/02A-ClotrimazoleCanifugCremolum: Medication.identifier[0].system: No definition could be found for URL value 'https://www.ravimiregister.ee'
+== fsh-generated/resources/Medication-02A1-CanifugCremolumCreamItem.json ==
+== fsh-generated/resources/Medication-02A2-CanifugCremolumPessaryItem.json ==
+== fsh-generated/resources/Medication-03B-VitaminBComplexBranded.json ==
+WARNING: Medication/03B-VitaminBComplexBranded: Medication.identifier[0].system: No definition could be found for URL value 'https://www.ravimiregister.ee'
+== fsh-generated/resources/StructureDefinition-DosagingInformation.json ==
+INFORMATION: StructureDefinition/DosagingInformation: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-IHEMedication.json ==
+INFORMATION: StructureDefinition/IHEMedication: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/IHEMedication: StructureDefinition.snapshot.element[25].binding: The definition for the element 'Medication.ingredient.strength[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/medication-ingredientstrength' which is experimental, but this structure is not labeled as experimental
+== fsh-generated/resources/StructureDefinition-MedicationOverview.json ==
+INFORMATION: StructureDefinition/MedicationOverview: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/MedicationOverview: StructureDefinition.snapshot.element[6]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/MedicationOverview: StructureDefinition.differential.element[2]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverview'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-MedicationOverviewComposition.json ==
+INFORMATION: StructureDefinition/MedicationOverviewComposition: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+ERROR: StructureDefinition/MedicationOverviewComposition: StructureDefinition.snapshot.element[38].slicing.discriminator[0]: The discriminator path 'type.coding.code' does not appear to be valid for the element that is being sliced 'Composition.section': Error evaluating FHIRPath expression: The name 'coding' is not valid for any of the possible types: [] (@char 6)
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverviewComposition'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-MedicationOverviewLM.json ==
+INFORMATION: StructureDefinition/MedicationOverviewLM: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-MedicationTreatment.json ==
+INFORMATION: StructureDefinition/MedicationTreatment: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/MedicationTreatment: StructureDefinition.snapshot.element[15].binding: The definition for the element 'CarePlan.status' binds to the value set 'http://hl7.org/fhir/ValueSet/request-status|5.0.0' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationTreatment'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-MedicationTreatmentLM.json ==
+INFORMATION: StructureDefinition/MedicationTreatmentLM: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-MedicationTreatmentLine.json ==
+INFORMATION: StructureDefinition/MedicationTreatmentLine: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationTreatmentLine'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-MedicationTreatmentLineLM.json ==
+INFORMATION: StructureDefinition/MedicationTreatmentLineLM: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-MedicinalProductLM.json ==
+INFORMATION: StructureDefinition/MedicinalProductLM: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/MedicinalProductLM: StructureDefinition.snapshot.element[5].short: value should not start or finish with whitespace 'Identifier at the product level - can be MPID or national Identifier '
+WARNING: StructureDefinition/MedicinalProductLM: StructureDefinition.differential.element[2].short: value should not start or finish with whitespace 'Identifier at the product level - can be MPID or national Identifier '
+== fsh-generated/resources/StructureDefinition-PatientLM.json ==
+INFORMATION: StructureDefinition/PatientLM: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/PatientLM: StructureDefinition.snapshot.element[1].short: value should not start or finish with whitespace 'Patient Identifier '
+WARNING: StructureDefinition/PatientLM: StructureDefinition.differential.element[1].short: value should not start or finish with whitespace 'Patient Identifier '
+== fsh-generated/resources/StructureDefinition-PractitionerLM.json ==
+INFORMATION: StructureDefinition/PractitionerLM: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/PractitionerLM: StructureDefinition.snapshot.element[1].short: value should not start or finish with whitespace 'Prescribing/dispensing practitioner's Identifier '
+WARNING: StructureDefinition/PractitionerLM: StructureDefinition.snapshot.element[8].short: value should not start or finish with whitespace 'Organisation Identifier '
+WARNING: StructureDefinition/PractitionerLM: StructureDefinition.differential.element[1].short: value should not start or finish with whitespace 'Prescribing/dispensing practitioner's Identifier '
+WARNING: StructureDefinition/PractitionerLM: StructureDefinition.differential.element[5].short: value should not start or finish with whitespace 'Organisation Identifier '
+== fsh-generated/resources/StructureDefinition-ihe-ext-medication-classification.json ==
+INFORMATION: StructureDefinition/ihe-ext-medication-classification: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-ihe-ext-medication-device.json ==
+INFORMATION: StructureDefinition/ihe-ext-medication-device: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/ihe-ext-medication-device: StructureDefinition.context[0]: Review the extension type for ihe-ext-medication-device: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/ihe-ext-medication-device'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-ihe-ext-medication-productname.json ==
+INFORMATION: StructureDefinition/ihe-ext-medication-productname: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/ihe-ext-medication-productname: StructureDefinition.context[0]: Review the extension type for ihe-ext-medication-productname: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+== fsh-generated/resources/StructureDefinition-ihe-ext-medication-sizeofitem.json ==
+INFORMATION: StructureDefinition/ihe-ext-medication-sizeofitem: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/ihe-ext-medication-sizeofitem: StructureDefinition.context[0]: Review the extension type for ihe-ext-medication-sizeofitem: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+== fsh-generated/resources/StructureDefinition-ihe-ext-medicationstatement-substitution.json ==
+INFORMATION: StructureDefinition/ihe-ext-medicationstatement-substitution: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/ihe-ext-medicationstatement-substitution'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-ihe-ext-medicationstatement-verificationinformation.json ==
+INFORMATION: StructureDefinition/ihe-ext-medicationstatement-verificationinformation: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/ihe-ext-medicationstatement-verificationinformation'): The Implementation Guide contains no examples for this extension

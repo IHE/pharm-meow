@@ -1,0 +1,27 @@
+Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-ihe.pharm.meow.json	17127	-	0	0	0	0	0	0	10	94	0	0	0	0	0	0	0	1	0	0	66	68	0	0	0	5	0	1
+fsh-generated/resources/Medication-01A-Cefuroxime1500GenericExplicit.json	1409	19	0	0	0	0	0	0	1	675	0	0	0	0	0	0	0	0	0	0	14	16	0	0	1	0	0	0
+fsh-generated/resources/Medication-01B-Cefuroxime1500GenericConcept.json	425	12	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	10	7	0	0	0	0	0	0
+fsh-generated/resources/Medication-01C-Cefuroxime1500Branded.json	2280	16	0	0	0	0	0	0	0	170	0	0	0	0	0	0	0	0	0	0	17	12	0	0	0	0	0	0
+fsh-generated/resources/Medication-02A-ClotrimazoleCanifugCremolum.json	1652	10	0	0	0	0	0	0	1	3	0	0	0	0	0	0	0	0	0	0	14	13	0	0	0	0	0	0
+fsh-generated/resources/Medication-02A1-CanifugCremolumCreamItem.json	1423	13	0	0	1	0	0	0	0	339	0	0	0	0	0	0	0	0	0	0	11	12	0	0	0	0	0	0
+fsh-generated/resources/Medication-02A2-CanifugCremolumPessaryItem.json	1156	13	0	0	0	0	0	0	0	165	0	0	0	0	0	0	0	0	0	0	10	11	0	0	0	0	0	0
+fsh-generated/resources/Medication-03B-VitaminBComplexBranded.json	4362	14	0	0	0	0	0	0	1	327	0	0	0	0	0	0	0	0	0	0	14	16	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-DosagingInformation.json	18303	21	0	35	0	0	1	1	0	64	0	0	1	0	0	0	0	2	0	0	222	1425	0	0	0	8	0	1
+fsh-generated/resources/StructureDefinition-IHEMedication.json	5508	9	0	58	0	0	0	0	0	22	0	0	0	0	0	0	0	0	0	0	136	469	0	1	0	4	0	0
+fsh-generated/resources/StructureDefinition-MedicationOverview.json	5782	5	0	234	0	0	0	0	0	65	0	0	0	0	0	0	0	2	0	0	602	1402	0	0	0	29	1	5
+fsh-generated/resources/StructureDefinition-MedicationOverviewComposition.json	3086	3	0	33	1	0	0	0	0	61	0	0	1	0	0	0	0	1	0	0	256	660	0	0	0	13	0	1
+fsh-generated/resources/StructureDefinition-MedicationOverviewLM.json	5418	3	0	12	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	87	118	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-MedicationTreatment.json	2947	4	0	13	0	0	0	0	0	21	0	0	0	0	0	0	0	0	0	0	168	263	0	0	0	10	0	0
+fsh-generated/resources/StructureDefinition-MedicationTreatmentLM.json	2659	2	0	8	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	29	66	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-MedicationTreatmentLine.json	4420	3	0	19	0	0	0	0	0	24	0	0	0	0	0	0	0	1	0	0	162	315	0	0	0	9	0	1
+fsh-generated/resources/StructureDefinition-MedicationTreatmentLineLM.json	20075	7	0	57	0	0	0	0	0	29	0	0	0	0	0	0	0	0	0	0	176	259	0	0	0	6	0	0
+fsh-generated/resources/StructureDefinition-MedicinalProductLM.json	13007	6	0	34	0	0	0	0	0	25	0	0	0	0	0	0	0	1	0	0	162	279	0	0	0	6	0	1
+fsh-generated/resources/StructureDefinition-PatientLM.json	2850	3	0	15	1	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	30	80	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-PractitionerLM.json	4973	4	0	29	0	0	0	0	0	11	0	0	0	0	0	0	0	0	0	0	58	113	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-ihe-ext-medication-classification.json	1733	2	0	16	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	28	133	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-ihe-ext-medication-device.json	3074	3	0	15	0	0	0	0	0	14	0	0	0	0	0	0	0	0	0	0	60	136	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-ihe-ext-medication-productname.json	4171	5	0	17	0	0	0	0	0	19	0	0	0	0	0	0	0	0	0	0	76	118	0	0	0	2	0	1
+fsh-generated/resources/StructureDefinition-ihe-ext-medication-sizeofitem.json	1665	4	0	13	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	28	48	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-ihe-ext-medicationstatement-substitution.json	2956	4	0	15	0	0	0	0	0	13	0	0	1	0	0	0	0	0	0	0	65	62	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-ihe-ext-medicationstatement-verificationinformation.json	3305	2	0	15	1	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	62	65	0	0	0	2	0	0

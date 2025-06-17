@@ -1,0 +1,135 @@
+[
+  {
+    "id" : "ihe.pharm.meow",
+    "type" : "ImplementationGuide",
+    "url" : "http://profiles.ihe.net/PHARM/MEOW/ImplementationGuide/ihe.pharm.meow",
+    "version" : "0.1.0",
+    "name" : "IHE_PHARM_MEOW"
+  },
+  {
+    "id" : "DosagingInformation",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/DosagingInformation",
+    "version" : "0.1.0",
+    "name" : "DosagingInformation"
+  },
+  {
+    "id" : "IHEMedication",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/IHEMedication",
+    "version" : "0.1.0",
+    "name" : "IHEMedication"
+  },
+  {
+    "id" : "MedicationOverview",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverview",
+    "version" : "0.1.0",
+    "name" : "MedicationOverviewBundle"
+  },
+  {
+    "id" : "MedicationOverviewComposition",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverviewComposition",
+    "version" : "0.1.0",
+    "name" : "MedicationOverviewComposition"
+  },
+  {
+    "id" : "MedicationOverviewLM",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverviewLM",
+    "version" : "0.1.0",
+    "name" : "MedicationOverviewLM"
+  },
+  {
+    "id" : "MedicationTreatment",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationTreatment",
+    "version" : "0.1.0",
+    "name" : "MedicationTreatment"
+  },
+  {
+    "id" : "MedicationTreatmentLM",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationTreatmentLM",
+    "version" : "0.1.0",
+    "name" : "MedicationTreatmentLM"
+  },
+  {
+    "id" : "MedicationTreatmentLine",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationTreatmentLine",
+    "version" : "0.1.0",
+    "name" : "MedicationTreatmentLine"
+  },
+  {
+    "id" : "MedicationTreatmentLineLM",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationTreatmentLineLM",
+    "version" : "0.1.0",
+    "name" : "MedicationTreatmentLineLM"
+  },
+  {
+    "id" : "MedicinalProductLM",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicinalProductLM",
+    "version" : "0.1.0",
+    "name" : "MedicinalProductLM"
+  },
+  {
+    "id" : "PatientLM",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/PatientLM",
+    "version" : "0.1.0",
+    "name" : "PatientLM"
+  },
+  {
+    "id" : "PractitionerLM",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/PractitionerLM",
+    "version" : "0.1.0",
+    "name" : "PractitionerLM"
+  },
+  {
+    "id" : "ihe-ext-medication-classification",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/ihe-ext-medication-classification",
+    "version" : "0.1.0",
+    "name" : "MedicationClassification"
+  },
+  {
+    "id" : "ihe-ext-medication-device",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/ihe-ext-medication-device",
+    "version" : "0.1.0",
+    "name" : "MedicationDevice"
+  },
+  {
+    "id" : "ihe-ext-medication-productname",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/ihe-ext-medication-productname",
+    "version" : "0.1.0",
+    "name" : "MedicationProductName"
+  },
+  {
+    "id" : "ihe-ext-medication-sizeofitem",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/ihe-ext-medication-sizeofitem",
+    "version" : "0.1.0",
+    "name" : "MedicationSizeOfItem"
+  },
+  {
+    "id" : "ihe-ext-medicationstatement-substitution",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/ihe-ext-medicationstatement-substitution",
+    "version" : "0.1.0",
+    "name" : "Substitution"
+  },
+  {
+    "id" : "ihe-ext-medicationstatement-verificationinformation",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/ihe-ext-medicationstatement-verificationinformation",
+    "version" : "0.1.0",
+    "name" : "VerificationInformation"
+  }
+]
