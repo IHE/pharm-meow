@@ -14,10 +14,6 @@
 
   - [Producing the Medication Overview \[PHARM-yy\]](PHARM-y.html)
 
-<figure>
-  {% include overview-model.svg %}
-</figure>
-
 
 
 <div>
