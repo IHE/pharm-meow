@@ -1,8 +1,3 @@
-<figure>
-  {% include overview-model.svg %}
-  <figcaption>MEOW Data overview</figcaption>
-</figure>
-
 
 * Actors
 
@@ -18,6 +13,10 @@
   - [Get the Medication Overview \[PHARM-xx\]](PHARM-x.html)
 
   - [Producing the Medication Overview \[PHARM-yy\]](PHARM-y.html)
+
+<figure>
+  {% include overview-model.svg %}
+</figure>
 
 
 
