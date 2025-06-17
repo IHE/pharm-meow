@@ -23,14 +23,14 @@ Parent: BackboneElement
 Description: "Class of data elements"
 * . ^short = "group"
 * . ^definition = "Class of data elements"
-// Why is class derived from BackboneElement better than BackboneElement itself?
+// Why is BackboneElement derived from BackboneElement better than BackboneElement itself?
 
 
 Profile: BL
 Parent: Element
 Description: "Boolean - true or false"
 * . ^short = "Boolean"
-* . ^definition = "A binary value for use in boolean logic. A BL value can be either true or false, or, as any other value, MAY be NULL."
+* . ^definition = "A binary value for use in boolean logic. A boolean value can be either true or false, or, as any other value, MAY be NULL."
 // value
 
 Profile: CD
@@ -49,8 +49,8 @@ Description: "CharacterString"
 
 Profile: II
 Parent: Element
-Description: "InstanceIdentifier"
-* . ^short = "identifier"
+Description: "InstanceIdentifier "
+* . ^short = "Identifier "
 * . ^definition = "	An identifier that uniquely identifies a thing or object. Examples are object identifier for HL7 RIM objects, medical record number, order id, service catalog item id, Vehicle Identification Number (VIN), etc."
 //Now, if you look at the definition and think of the meaning of 'instance', I think it's not correct to use it as any Identifier. Unfortunately, there is only OID, UUID and RUID in V3, and none of those work either.
 //If we go custom, I'd say we lose "Instance" and one I.
@@ -121,5 +121,5 @@ Description: "Address"
 // Set:	SET	A value that contains distinct values in no particular order.
 // EncapsulatedData:	ED
 // PostalAddress	AD	Mailing and home or office addresses. A sequence of address parts, such as street or post office box, city, postal code, country, etc.
-// MonetaryAmount	MO	A quantity expressing an amount of money in some currency. While the monetary amount is a single kind of quantity (money) the exchange rates between the different units are variable. This is the principle difference between PQ and MO, and the reason why currency units are not physical units.
+// MonetaryAmount	MO	A quantity expressing an amount of money in some currency. While the monetary amount is a single kind of quantity (money) the exchange rates between the different units are variable. This is the principle difference between Quantity and MO, and the reason why currency units are not physical units.
 // Interval	IVL	A set of consecutive values of an ordered base data type.

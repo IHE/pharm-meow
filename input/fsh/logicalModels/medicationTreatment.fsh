@@ -6,8 +6,8 @@ Description: "Logical model for subgroups of treatment lines that are somehow re
 
 * comment 0..* BackboneElement "Comment"
 * treatmentPeriod 0..1 Period "The intended or effective treatment period"
-* identifier 0..* II "Unique identifier of the treatment"
-* indication 0..* CD "Reason why the treatment has been prescribed to the patient, or why the patient claims to be taking it"
+* identifier 0..* Identifier "Unique identifier of the treatment"
+* indication 0..* CodeableConcept "Reason why the treatment has been prescribed to the patient, or why the patient claims to be taking it"
 
 // This is starting to look like the prescription, which is good...
 // Example: end of treatment NOT defined by medication - 

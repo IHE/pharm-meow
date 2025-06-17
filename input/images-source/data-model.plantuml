@@ -18,15 +18,15 @@ skinparam class<<TM>> {
 }
 
 
-    class "**Medication Treatment**" as MT<<TM>> {
+    BackboneElement "**Medication Treatment**" as MT<<TM>> {
         --
     }
 
-    class "**Medication Treatment Line**" as MTL<<TM>> {
+    BackboneElement "**Medication Treatment Line**" as MTL<<TM>> {
       |_ medicationTreatment 0..*
     }
 
-    class "**Medication Overview**" as MEOW<<TM>> {
+    BackboneElement "**Medication Overview**" as MEOW<<TM>> {
         --
     }
 
