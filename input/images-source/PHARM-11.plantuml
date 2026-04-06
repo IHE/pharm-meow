@@ -1,0 +1,30 @@
+@startuml
+
+hide footbox
+
+Participant "[[actors_and_transactions.html#13311-medication-overview-consumer Medication\nOverview\nConsumer]]" as Consumer
+Participant "[[actors_and_transactions.html#13312-medication-overview-responder Medication\nOverview\nResponder]]" as Responder
+
+activate Consumer
+activate Responder
+
+Consumer -[hidden]> Responder
+
+group Pattern A: Retrieve known overview by id
+  Consumer -> Responder: \tRetrieve Medication Overview [PHARM-11]\n\tGET Bundle/[id]\n\t or GET Bundle?identifier=[system]|[value]
+  Consumer <-- Responder: \t[[StructureDefinition-MedicationOverview.html{MedicationOverviewBundle} Bundle (document)]]
+end
+
+|||
+
+group Pattern B: Find available overviews for patient
+  Consumer -> Responder: \tRetrieve Medication Overview [PHARM-11]\n\tGET Bundle?type=document&patient=[ref]&category=[type]
+  Consumer <-- Responder: \tBundle (searchset) of\n\t[[StructureDefinition-MedicationOverview.html{MedicationOverviewBundle} MedicationOverviewBundle]] entries
+end
+
+Consumer -[hidden]> Responder
+
+deactivate Consumer
+deactivate Responder
+
+@enduml

@@ -45,6 +45,48 @@ Description: "Whether and which type of substitution is allowed for this medicat
 * ^context[+].type = #element
 * ^context[=].expression = "MedicationRequest"
 
+Extension: ClinicalIntentType
+Id:        ihe-ext-medicationstatement-clinicalintenttype
+Title:     "MedicationStatement - Clinical Intent Type"
+Description: "The clinical intent type of the medication use - whether the medication is for therapeutic, prophylactic, or self-medication purposes."
+* ^context[+].type = #element
+* ^context[=].expression = "MedicationStatement"
+* value[x] only CodeableConcept
+* valueCodeableConcept from ClinicalIntentTypeVS (preferred)
+
+
+Extension: OffLabel
+Id:        ihe-ext-medicationstatement-offlabel
+Title:     "MedicationStatement - Off-Label Use"
+Description: "Indication that the medication is being used off-label (outside of approved indication, age group, dosage, or route) and the reason for such use. When isOffLabelUse is true, a reason SHALL be provided."
+* ^context[+].type = #element
+* ^context[=].expression = "MedicationStatement"
+* ^context[+].type = #element
+* ^context[=].expression = "MedicationRequest"
+* obeys offlabel-reason-required
+* extension contains
+    isOffLabelUse 1..1 and
+    reason 0..*
+* extension[isOffLabelUse].value[x] only boolean
+* extension[isOffLabelUse] ^short = "Whether the medication is being used off-label"
+* extension[reason].value[x] only CodeableConcept
+* extension[reason] ^short = "The reason for off-label use or dosage override"
+
+Invariant: offlabel-reason-required
+Description: "If isOffLabelUse is true, at least one reason must be provided"
+Severity: #error
+Expression: "extension.where(url='isOffLabelUse').value.ofType(boolean).where(true).exists() implies extension.where(url='reason').exists()"
+
+
+Extension: Recorder
+Id:        ihe-ext-medicationstatement-recorder
+Title:     "MedicationStatement - Recorder"
+Description: "The person who entered the medication information into the system. The recorder may be different from the clinical author (informationSource) who made the clinical decision."
+* ^context[+].type = #element
+* ^context[=].expression = "MedicationStatement"
+* value[x] only Reference(Practitioner or PractitionerRole or Patient or RelatedPerson or Organization or Device)
+
+
 Extension: MedicationClassification
 Id:        ihe-ext-medication-classification
 Title:     "Medication - Classification"

@@ -4,33 +4,62 @@ Title: "Medication Treatment Line"
 Description: "The profile for Medication Treatment Line - a single recorded item/line of a medication treatment"
 Parent: MedicationStatement
 
-* identifier MS //identifier
-* derivedFrom MS //derivedFrom
-* subject MS //medicationOverview.patient
-* informationSource MS //recordingMetadata //possible extension for all the elements in the LM?
-* dateAsserted MS //recordedTime+authoringTime
+// ── Core identifiers and references ──────────────────────────────────────────
+* identifier MS
+* derivedFrom MS
+* subject MS
+* informationSource MS // Clinical author — who made the clinical decision
+
+// ── Timing ───────────────────────────────────────────────────────────────────
+* dateAsserted MS
 * effective[x] only Period
-* effectivePeriod MS //effectivePeriod
-* status MS //status
+* effectivePeriod MS
+* effectivePeriod.start 1..1 MS // A treatment line must have a start date
 
-* medication MS //medication
-* dosage MS //usageInstructions
-* category MS //category
+// ── Status ───────────────────────────────────────────────────────────────────
+// status represents the record lifecycle status (draft, recorded, entered-in-error),
+// not the clinical treatment status. Treatment status is captured in adherence.
+* status MS
 
-//* extension contains http://hl7.org/fhir/StructureDefinition/event-basedOn named treatmentPlan 0..1 MS 
+// ── Medication and dosage ────────────────────────────────────────────────────
+* medication MS
+* dosage MS
+* dosage.text MS // Preparation instructions / patient-facing text
+* category MS
+
+// ── Adherence (treatment status) ─────────────────────────────────────────────
+// Whether the patient is actually taking the medication, and why/why not.
+// This replaces the earlier TreatmentStatus extension.
+* adherence MS
+* adherence.code MS
+* adherence.reason MS
+
+// ── Extensions ───────────────────────────────────────────────────────────────
+
+// Business version tracking
+* extension contains http://hl7.org/fhir/StructureDefinition/artifact-version named version 0..1 MS
+
+// Verification of the treatment line
+* extension contains VerificationInformation named verificationInformation 0..1 MS
+
+// Substitution allowance
+* extension contains Substitution named substitution 0..1 MS
+
+// Recorder — who entered the data (may differ from clinical author/informationSource)
+* extension contains Recorder named recorder 0..1 MS
+
+// Clinical intent type — therapeutic, prophylactic, self-medication
+* extension contains ClinicalIntentType named clinicalIntentType 0..1 MS
+
+// Off-label use reason
+* extension contains OffLabel named offLabel 0..1 MS
+
+//* extension contains http://hl7.org/fhir/StructureDefinition/event-basedOn named treatmentPlan 0..1 MS
 //* extension[treatmentPlan].valueReference only Reference(CarePlan) //medicationTreatment (any for the time being ISSUE-39)
 
-* extension contains http://hl7.org/fhir/StructureDefinition/artifact-version named version 0..1 MS //version+timestamp
-//* extension contains TreatmentStatus named TreatmentStatus 0..1 MS //treatmentStatus+treatmentStatusReasonCode+treatmentStatusReasonText
-// removed TreatmentStatus as it appears to map to adherence
-
-* extension contains VerificationInformation named verificationInformation 0..1 MS //treatmentStatus+treatmentStatusReasonCode+treatmentStatusReasonText
-* extension contains Substitution named substitution 0..1 MS //substitution
-
-* reason MS //indication + indicationtext + intendedUse
-* dosage.text MS //preparationInstructions
-* note MS //comment
-* adherence MS //treatmentStatus
+// ── Clinical context ─────────────────────────────────────────────────────────
+* reason MS // Indication (coded or text)
+* note MS
 
 Profile: MedicationTreatment
 Title: "Medication Treatment"

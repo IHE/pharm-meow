@@ -1,0 +1,21 @@
+@startuml
+
+hide footbox
+
+Participant "[[actors_and_transactions.html#13311-medication-overview-consumer Medication\nOverview\nConsumer]]" as Consumer
+Participant "[[actors_and_transactions.html#13312-medication-overview-responder Medication\nOverview\nResponder]]" as Responder
+
+activate Consumer
+activate Responder
+
+Consumer -[hidden]> Responder
+
+Consumer -> Responder: \tQuery Medication Resources [PHARM-12]\n\tGET MedicationStatement?patient=[ref]&[parameters]
+Consumer <-- Responder: \t[[StructureDefinition-MedicationTreatmentLine.html{MedicationTreatmentLine} Bundle (searchset)]] \n\tcontaining MedicationTreatmentLine resources\n\t(+ included MedicationRequest, MedicationDispense,\n\tMedicationAdministration, MedicationTreatment)
+
+Consumer -[hidden]> Responder
+
+deactivate Consumer
+deactivate Responder
+
+@enduml

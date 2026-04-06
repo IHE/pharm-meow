@@ -1,41 +1,12 @@
 @startuml
 skinparam backgroundcolor transparent
-skinparam linetype ortho
+skinparam linetype polyline
 
-skinparam rectangle {
-	roundCorner 15
-}
+title MEOW Actor Diagram
 
-rectangle "\n<b>  Medication Overview Consumer  \n" as MOvC  #Application
-rectangle "\n<b>   Medication  <b>Overview  <b>Creator   \n" as MOvR #Application
+agent "  [[actors_and_transactions.html#13311-medication-overview-consumer Medication Overview Consumer ]]" as MOvC #Application
+agent "  [[actors_and_transactions.html#13312-medication-overview-responder Medication Overview Responder ]]" as MOvR #Application
 
-rectangle "Medication\nTreatment\nPlanner" as MTP #Application
-rectangle "Medication\nOrder\nPlacer" as MOP   #Application
-rectangle "Medication\nDispenser\n" as MD  #Application
-rectangle "Medication\nTreatment\nRepository" as MTR  #Application
-rectangle "Medication\nOrder\nRepository" as MOR  #Application
-rectangle "Medication\nDispense\nRepository" as MDR  #Application
-
-'MOP -l[hidden]- MTP
-'MOP -r[hidden]- MD
-
-MOvC .u. MOP
-MOvC .u. MTP
-MOvC .u. MD
-
-MOvR -d- MOR
-MOvR -d- MTR
-MOvR -d- MDR
-
-
-'MTP -d- MTR
-MOvC -d- MOvR
-'MOP -d- MOR 
-'MD -d- MDR
-
-'rectangle "asdf" #8ac
-'rectangle "asdef" #8ac
+MOvC -- MOvR : "   [[PHARM-11.html PHARM-11 Retrieve Medication Overview]] ↓  *(option)*          \n\n   [[PHARM-12.html PHARM-12 Query Medication Resources]] ↓"
 
 @enduml
-
-
