@@ -1,6 +1,6 @@
 # MEOW Profile — Workplan
 
-This document serves as the coordination plan for the IHE Pharmacy Medication Overview (MEOW) expert group. It describes where we are, what needs to happen, what decisions the group needs to make, and what remains to be built.
+These are some ideas for the IHE Pharmacy Medication Overview (MEOW) expert group. where we are, what needs to happen, what decisions the group needs to make, and what remains to be built.
 
 ---
 
