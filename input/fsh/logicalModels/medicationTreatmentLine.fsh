@@ -6,19 +6,19 @@ Description: "Logical model for representing one line/medication in medication o
 * ^status = #active
 
 * identifier 0..* Identifier "Unique business identifier(s) for the medication treatment line"
+* subject 1..1 Reference(Patient) "The patient for whom the medication treatment line applies"
 * medication[x] 1..1 Reference(MedicinalProductLM) or CodeableConcept "Medicinal product for which the treatment line refers to. Identification or sufficient description of the product."
-* status 1..1 CodeableConcept "Status of the treatment line entry" "Status of the record, not the status of the treatment."
+* status 1..1 code "Status of the treatment line entry" "Status of the record, not the status of the treatment."
+* status from $medicationStatusCode(Required)
 * version 0..1 string "Business version of the treatment line"
 * timestamp 0..1 dateTime "Timestamp of the version of the treatment line"
-
-//* statusReason 0..1 CodeableConcept "The reason for the current entry status"
 
 
 * treatmentStatus 0..1 CodeableConcept "The state of the actual treatment - taking, not taken..."
 * treatmentStatusReasonCode 0..1 CodeableConcept "The reason - coded - for the treatment status - i.e. adverse events, refusal..."
 * treatmentStatusReasonText 0..1 string "The reason - free text - for the treatment status - i.e. adverse events, refusal..."
 
-* effectivePeriod 0..1 BackboneElement "The period of time the treatment is in effect"
+* effectivePeriod 0..1 Period "The period of time the treatment is in effect"
 
 * verificationInformation 0..* BackboneElement "Verification of medication line" "Verification of medication line. The overview is verified as a whole, but each line is equipped with the information. The actual functional meaning and impact of this validation depends on the implementation."
   * verifier 1..1 Reference "HCP (or device, if authorized) verifying the treatments/overview"
@@ -55,7 +55,6 @@ Description: "Logical model for representing one line/medication in medication o
 
   * responsibleAuthor 0..1 Reference(PractitionerLM) "HCP who takes the clinical decision for the medication treatment line. If an author is not present, the responsibility of the medication line is with the recorder."
   * authoringTime 0..1 dateTime "The time the clinical decision was made by the responsibleAuthor. Normally, the same time as recording time when it's the same person."
-
 
 //
 * derivedFrom 0..* BackboneElement "Any data object that this treatment line is derived from"
