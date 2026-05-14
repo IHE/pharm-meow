@@ -9,7 +9,7 @@ Description: "Logical model for representing one line/medication in medication o
 * subject 1..1 Reference(Patient) "The patient for whom the medication treatment line applies"
 * medication[x] 1..1 Reference(MedicinalProductLM) or CodeableConcept "Medicinal product for which the treatment line refers to. Identification or sufficient description of the product."
 * status 1..1 code "Status of the treatment line entry" "Status of the record, not the status of the treatment."
-* status from $medicationStatusCode(Required)
+* status from $medicationStatusCode (required)
 * version 0..1 string "Business version of the treatment line"
 * timestamp 0..1 dateTime "Timestamp of the version of the treatment line"
 
