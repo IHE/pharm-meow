@@ -26,9 +26,9 @@ Parent: MedicationStatement
 
 * extension contains VerificationInformation named verificationInformation 0..1 MS //treatmentStatus+treatmentStatusReasonCode+treatmentStatusReasonText
 * extension contains 
-    Substitution named substitution 0..1 MS and //substitution
+    Substitution named substitution 0..1 MS and 
     http://hl7.org/fhir/StructureDefinition/artifact-version named artifact-version 1..1 MS and
-    http://hl7.org/fhir/StructureDefinition/artifact-date named artifact-date 0..1 MS and
+    http://hl7.org/fhir/StructureDefinition/artifact-date named artifact-date 0..1 MS
 
 * reason MS //indication + indicationtext + intendedUse
 * dosage.text MS //preparationInstructions
