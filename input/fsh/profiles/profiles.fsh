@@ -13,7 +13,7 @@ Parent: MedicationStatement
 * effectivePeriod MS //effectivePeriod
 * status MS //status
 
-* medication MS //medication
+* medication[x] MS //medication
 * dosage MS //usageInstructions
 * category MS //category
 
@@ -25,19 +25,20 @@ Parent: MedicationStatement
 // removed TreatmentStatus as it appears to map to adherence
 
 * extension contains VerificationInformation named verificationInformation 0..1 MS //treatmentStatus+treatmentStatusReasonCode+treatmentStatusReasonText
-* extension contains 
-    Substitution named substitution 0..1 MS and 
+* extension contains
+    Substitution named substitution 0..1 MS and
     http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence named adherence 1..1 MS
 
-* reason MS //indication + indicationtext + intendedUse
+* reasonCode MS //indication + indicationtext + intendedUse
+* reasonReference MS //indication + indicationtext + intendedUse
 * dosage.text MS //preparationInstructions
 * note MS //comment
-* adherence MS //treatmentStatus
+// adherence is an R5 element, preadopted here as a cross-version extension (see extension[adherence] below)
 * status = #unknown
 
 * extension[adherence].extension[code] MS
 * extension[adherence].extension[code] ^short = "Indicates whether the medication is or is not being consumed or administered"
-* extension[adherence].extension[code] ^comment = """This is a FHIR R5 element, preadopted as an extension in this FHIR R4 specification. 
+* extension[adherence].extension[code] ^comment = """This is a FHIR R5 element, preadopted as an extension in this FHIR R4 specification.
 For the full definition see here: [http://hl7.org/fhir/R5/medicationstatement-definitions.html#MedicationStatement.adherence](http://hl7.org/fhir/R5/medicationstatement-definitions.html#MedicationStatement.adherence)"""
 
 Profile: MedicationTreatment

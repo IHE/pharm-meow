@@ -89,7 +89,7 @@ Description: "Device, typically an administration device, included in the medici
 * extension contains
     device 1..1 and
     quantity 1..1
-* extension[device].value[x] only CodeableReference(Device or DeviceDefinition)
+* extension[device].value[x] only Reference(Device or DeviceDefinition)
 * extension[device] ^short = "Coded or referenced device"
 * extension[quantity].value[x] only Quantity
 * extension[quantity] ^short = "Number of defined devices in te package"

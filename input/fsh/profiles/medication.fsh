@@ -23,17 +23,17 @@ Description: "Medication for clinical use cases. This could be a branded product
   * ^short = "Identifier for the medicinal product, its generic representation, or packaged product." //identifier
 * code MS 
   * ^short = "A terminology-based code for the product" // productCode
-* doseForm MS // doseForm; item.doseForm
+* form MS // R4 form (R5 doseForm); item.doseForm
   * ^short = "Dose form. For a branded product, this would most likely be authorised dose form, but it could also be administrable dose form. For package items, it could be item's individual dose form." // doseForm
-* totalVolume MS // item.amount; packSize
+* amount MS // R4 amount (R5 totalVolume); item.amount; packSize
   * ^short = "Total volume or number of package items inside a package. This element should not contain overall prescribed amount, but describe the product itself. In case of complex packages, this element could be left empty, and number of different items could be indicated in the nested Medications." //packSize (almost)
-* ingredient MS 
+* ingredient MS
   * ^short = "Ingredient or a part product. For combination packs, each ingredient can be a separate manufactured item with its own ingredients, dose form, and strength" // item
-  * item MS
+  * item[x] MS
     * ^short = "Substance (Substance resource or concept from terminology) or a medicinal product (Medication resource or concept from terminology). Medicinal product can be an ingredient in case of extemporal medications or combination packs (e.g Creme + 6 tablets)"
-  * item only CodeableReference(Substance or IHEMedication) // item.ingredient.substance; item
+  * item[x] only CodeableConcept or Reference(Substance or IHEMedication) // item.ingredient.substance; item
   * isActive MS // item.ingredient.role
-  * strength[x] MS // item.ingredient.strengthInfo (does not map exactly)
+  * strength MS // item.ingredient.strengthInfo (does not map exactly)
 
   //item.unitOfPresentation not profiled
  
