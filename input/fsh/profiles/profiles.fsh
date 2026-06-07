@@ -25,12 +25,21 @@ Parent: MedicationStatement
 // removed TreatmentStatus as it appears to map to adherence
 
 * extension contains VerificationInformation named verificationInformation 0..1 MS //treatmentStatus+treatmentStatusReasonCode+treatmentStatusReasonText
-* extension contains Substitution named substitution 0..1 MS //substitution
+* extension contains 
+    Substitution named substitution 0..1 MS //substitution and
+    http://hl7.org/fhir/StructureDefinition/artifact-version named artifact-version 1..1 MS and
+    http://hl7.org/fhir/StructureDefinition/artifact-date named artifact-date 0..1 MS and
 
 * reason MS //indication + indicationtext + intendedUse
 * dosage.text MS //preparationInstructions
 * note MS //comment
 * adherence MS //treatmentStatus
+* status = #unknown
+
+* extension[adherence].extension[code] MS
+* extension[adherence].extension[code] ^short = "Indicates whether the medication is or is not being consumed or administered"
+* extension[adherence].extension[code] ^comment = """This is a FHIR R5 element, preadopted as an extension in this FHIR R4 specification. 
+For the full definition see here: [http://hl7.org/fhir/R5/medicationstatement-definitions.html#MedicationStatement.adherence](http://hl7.org/fhir/R5/medicationstatement-definitions.html#MedicationStatement.adherence)"""
 
 Profile: MedicationTreatment
 Title: "Medication Treatment"
