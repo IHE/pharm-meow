@@ -32,7 +32,7 @@ Document Option is declared.
 * date = "2025-01-01"
 * publisher = "IHE Pharmacy"
 * kind = #requirements
-* fhirVersion = #5.0.0
+* fhirVersion = #4.0.1
 * format[+] = #application/fhir+json
 * format[+] = #application/fhir+xml
 
@@ -129,7 +129,7 @@ assembly) is an implementation concern outside the scope of this profile.
 * date = "2025-01-01"
 * publisher = "IHE Pharmacy"
 * kind = #requirements
-* fhirVersion = #5.0.0
+* fhirVersion = #4.0.1
 * format[+] = #application/fhir+json
 * format[+] = #application/fhir+xml
 

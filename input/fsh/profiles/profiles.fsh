@@ -76,7 +76,7 @@ Parent: Composition
 Id: MedicationOverviewComposition
 
 * section ^slicing.discriminator.type = #value
-* section ^slicing.discriminator.path = "type.coding.code"
+* section ^slicing.discriminator.path = "code.coding.code"
 * section ^slicing.rules = #open
 * section contains
     MedRecordTreatment 0..* MS and

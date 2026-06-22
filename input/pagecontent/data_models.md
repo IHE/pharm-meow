@@ -1,7 +1,7 @@
 
 * Actors
 
-  - [Medication Repository](actors-transactions.html#133111-medication-repository)
+  - [Medication Overview Repository](actors-transactions.html#133112-medication-repository)
 
   - [Medication Data Provider](actors-transactions.html#133112-medication-data-provider)
 
