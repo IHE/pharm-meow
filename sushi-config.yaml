@@ -29,8 +29,8 @@ license: CC-BY-4.0
 jurisdiction: 'http://unstats.un.org/unsd/methods/m49/m49.htm#001'
 dependencies:
 #  ihe.domain.logical-datatypes: current
-  ihe.pharm.mpd: current
-#  hl7.fhir.uv.xver-r5.r4: 0.1.0
+#  ihe.pharm.mpd: current
+  hl7.fhir.uv.xver-r5.r4: 0.1.0
  
 parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
   path-resource:
