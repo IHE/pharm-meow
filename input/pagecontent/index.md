@@ -39,7 +39,7 @@ The main objectives of a Medication Overview are:
 
 
 This profile 
-* Articulated with the [Pharmacy Medication Prescription and Dispense](insert-mpd-link-here) workflows.
+* Articulated with the [Pharmacy Medication Prescription and Dispense](https://profiles.ihe.net/PHARM/MPD/) workflows.
 * Supporting the different cases that are globally common: 
   * Medication lists being created from prescriptions (and/or dispenses) - evolving the IHE Pharmacy PML approach.
   * Medication lists being created from "treatment plans" and from which prescriptions are created.
