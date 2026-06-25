@@ -32,13 +32,13 @@ Table 1:33.1-1: MEOW Implementation Guide - Actors and Transactions
 
 
 <tr class="even">           
-<td rowspan="1"><a href="actors-transactions.html#133112-medication-overview-creator">Medication Overview Creator</a></td>            
-<td><a href='PHARM-x.html'>Get medication Overview [PHARM-xx]</a></td>
+<td rowspan="1"><a href="actors-transactions.html#133113-medication-overview-creator">Medication Overview Creator</a></td>            
+<td><a href='PHARM-y.html'>Submit Medication Overview [PHARM-y]</a></td>
 <td align='center'>R</td></tr>    
 
 <tr class="odd">           
 <td rowspan="1"><a href="actors-transactions.html#133112-medication-overview-repository">Medication Overview Repository</a></td>            
-<td><a href='PHARM-y.html'> [PHARM-yy]</a></td>
+<td><a href='PHARM-y.html'>Submit Medication Overview [PHARM-y]</a></td>
 <td align='center'>R</td></tr>    
 
 

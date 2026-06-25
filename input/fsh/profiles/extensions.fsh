@@ -71,7 +71,8 @@ Description: "Name of the medicinal product. Optionally the type of name (Full o
 * extension[language].value[x] only CodeableConcept
 * extension[language].valueCodeableConcept from AllLanguages
 * extension[language] ^short = "Language code of this name. A code with a combination of country and name can be used."
-
+* ^context[+].type = #element
+* ^context[=].expression = "Medication"
 
 Extension: MedicationSizeOfItem
 Id:        ihe-ext-medication-sizeofitem
@@ -79,7 +80,8 @@ Title:     "Medication - Size of Item"
 Description: "Size of a manufactured item or unit of presentation. For example, size of one vial in a package that may contain several vials."
 // Extension on Medication
 * value[x] only Quantity
-
+* ^context[+].type = #element
+* ^context[=].expression = "Medication"
 
 Extension: MedicationDevice
 Id:        ihe-ext-medication-device
@@ -92,5 +94,6 @@ Description: "Device, typically an administration device, included in the medici
 * extension[device].value[x] only Reference(Device or DeviceDefinition)
 * extension[device] ^short = "Coded or referenced device"
 * extension[quantity].value[x] only Quantity
-* extension[quantity] ^short = "Number of defined devices in te package"
-
+* extension[quantity] ^short = "Number of defined devices in the package"
+* ^context[+].type = #element
+* ^context[=].expression = "Medication"

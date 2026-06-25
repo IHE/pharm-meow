@@ -29,6 +29,7 @@ Description: "1C. Cefuroxime 1500mg (1.5g) powder for solution in a vial. Brande
 * extension[productName].extension[name].valueString = "Cefuroxime MIP 1500 mg, süste-/infusioonilahuse pulber"
 * extension[productName].extension[language].valueCodeableConcept = $bcp47#et-EE "Estonian (Estonia)"
 * amount.numerator = 10 $edqm-standardterms#15060000 "Vial"
+* amount.denominator.value = 1
 * ingredient.itemCodeableConcept = $snomed#372833007 "Cefuroxime"
 * ingredient.isActive = true
 * ingredient.strength.numerator = 1500 $ucum#mg "milligram"
@@ -59,6 +60,7 @@ Description: "2A2. Clotrimazole cream (10mg/g, 1 tube of 20g) as part of Canifug
 
 * form = $edqm-standardterms#10901000 "Vaginal cream"
 * amount.numerator = 1 $edqm-standardterms#15058000 "Tube"
+* amount.denominator.value = 1
 * extension[sizeOfItem].valueQuantity = 20 $ucum#g "gram"
 * ingredient.itemCodeableConcept = $snomed#387325003 "Clotrimazole"
 * ingredient.isActive = true
@@ -72,6 +74,7 @@ Description: "2A1. Clotrimazole pessary (6 pessaries of 100mg) as part of Canifu
 
 * form = $edqm-standardterms#10909000 "Pessary"
 * amount.numerator = 6 $edqm-standardterms#15039000 "Pessary"
+* amount.denominator.value = 1
 * ingredient.itemCodeableConcept = $snomed#387325003 "Clotrimazole"
 * ingredient.isActive = true
 * ingredient.strength.numerator = 100 $ucum#mg "milligram"
@@ -91,6 +94,7 @@ Description: "3B. Milgamma N, B-vitamin complex. Branded packaged product, defin
 * extension[productName].extension[language].valueCodeableConcept = $bcp47#et-EE "Estonian (Estonia)"
 * extension[sizeOfItem].valueQuantity = 2 $ucum#mL "milliliter"
 * amount.numerator = 5 $edqm-standardterms#15002000 "Ampoule" // possibility to use UCUM {Vial} or extension for unit of presentation.
+* amount.denominator.value = 1
 
 * ingredient[0].itemCodeableConcept = $snomed#259659006 "Thiamine"
 * ingredient[=].isActive = true

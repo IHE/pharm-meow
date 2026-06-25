@@ -1,11 +1,11 @@
 
 * Actors
 
-  - [Medication Repository](actors-transactions.html#133111-medication-repository)
+  - [Medication Overview Repository](actors-transactions.html#133112-medication-overview-repository)
 
-  - [Medication Data Provider](actors-transactions.html#133112-medication-data-provider)
+  - [Medication Overview Creator](actors-transactions.html#133113-medication-overview-creator)
 
-  - [Medication Data Consumer](actors-transactions.html#133113-medication-data-consumer)
+  - [Medication Overview Consumer](actors-transactions.html#133111-medication-overview-consumer)
 
 
 * Transactions
