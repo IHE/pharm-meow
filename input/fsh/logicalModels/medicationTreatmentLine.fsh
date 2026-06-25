@@ -26,7 +26,7 @@ Description: "Logical model for representing one line/medication in medication o
 
 * category 0..* CodeableConcept "Whatever category for the treatment line. Categorisation of treatment lines is implementation-specific."
 
-* medicationTreatment 0..* Reference(MedicationTreatmentLM) "Reference or identifier of the group of lines that belong together"
+* medicationTreatment 0..* MedicationTreatmentLM "Reference or identifier of the group of lines that belong together"
 
 * indication 0..* CodeableConcept "Reason why the product has been prescribed to the patient, or why the patient claims to be taking it"
 * indicationText 0..1 string "Textual explanation for why the medication has been prescribed or why the patient is taking it. This might not be allowed by some implementations."
@@ -39,8 +39,8 @@ Description: "Logical model for representing one line/medication in medication o
 * preparationInstructions 0..* string "Additional instructions about preparation or dispense" 
 
 * comment 0..* BackboneElement "Comment on the individual line"
-  * author 1..1 Reference "Author of the comment (Pharmacist, doctor, social carer, patient, device, related person)"
-  * date 1..1 dateTime "time of comment"
+  * author 0..1 Reference "Author of the comment (Pharmacist, doctor, social carer, patient, device, related person)"
+  * date 0..1 dateTime "time of comment"
   * commentText 1..1 string "content of the comment"
 
 * substitution 0..1 BackboneElement "Whether and which type of substitution is allowed for this medication treatment line" 
