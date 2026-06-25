@@ -4,8 +4,8 @@ Description: "Logical model for the whole medication overview (medication schema
 * ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 * ^status = #active
 
-* patient 1..1 Reference(PatientLM) "Patient"
-* medicationTreatmentLine 0..* Reference(MedicationTreatmentLineLM) "List item in the list of all current medication based treatments. Each line can be verified or unverified."
+* patient 1..1 PatientLM "Patient"
+* medicationTreatmentLine 0..* MedicationTreatmentLineLM "List item in the list of all current medication based treatments. Each line can be verified or unverified."
 * verification 0..1 BackboneElement "Verification of overview"
   * practicioner 1..1 Reference(PractitionerLM) "HCP verifying the treatments/overview"
   * verificationTime 1..1 dateTime "Time of the verification of the overview"
