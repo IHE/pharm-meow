@@ -1,83 +1,20 @@
-This section defines the actors and transactions in this implementation guide.
+This section presents the use cases that the IHE Medication Overview (MEOW) Profile is intended to support. Detailed, step-by-step use-case descriptions are being developed; this overview lists the scenarios that drive the scope of the profile.
 
-Table 1:33.1-1 lists the transactions for each actor directly involved in the MEOW Implementation Guide. To claim compliance with this guide, an actor shall support all required transactions (labeled "R") and may support the optional transactions (labeled "O").
+### Use Case Themes
 
-Table 1:33.1-1: MEOW Implementation Guide - Actors and Transactions
+The profile addresses a range of scenarios in which a patient's medication overview is created, maintained, retrieved and reconciled:
 
+1. **General practice** - a GP maintains a patient's medication overview and consults it before prescribing.
+2. **Hospital** - medication information is reconciled on admission and at discharge.
+3. **Patient access** - a patient (or their representative) views their own medication overview.
+4. **Registry / national infrastructure** - a regional or national service aggregates medication information from multiple sources.
+5. **Discharge** - a discharge medication list is produced and shared with downstream providers.
+6. **Substance vs. product** - medication is described at the level of substance or of a specific product, depending on what is known.
+7. **Adherence discrepancy** - differences between what was prescribed/dispensed and what the patient is actually taking are recorded.
 
-<table border="1" borderspacing="0" style='border: 1px solid black; border-collapse: collapse'>
-<caption>
-<b>
-Table 1:33.1-1: MEOW Implementation Guide - Actors and Transactions
-</b>
-</caption>
-<thead>
-<tr class="odd" style='background: gray;'>
-<th>Actors</th>
-<th>Transactions</th>
-<th>Optionality</th>
-</tr>
-</thead>
-<tbody>
-                
-<tr class="even">               
-<td rowspan="1"><a href="actors-transactions.html#133111-medication-overview-consumer">Medication Overview Consumer</a></td>               
-<td><a href='PHARM-x.html'>Get medication Overview [PHARM-xx]</a></td>
-<td align='center'>R</td></tr>
+Two opposite patterns for creating a Medication Overview run through these scenarios:
 
-<tr class="odd">           
-<td rowspan="1"><a href="actors-transactions.html#133112-medication-overview-repository">Medication Overview Repository</a></td>            
-<td><a href='PHARM-x.html'>Get medication Overview [PHARM-xx]</a></td>
-<td align='center'>R</td></tr>    
+- the Medication Overview is the **source of truth**, from which medication requests are derived; and
+- the Medication Overview is an **aggregation** of medication information already present in the patient's records (typically prescriptions and dispenses).
 
-
-<tr class="even">           
-<td rowspan="1"><a href="actors-transactions.html#133113-medication-overview-creator">Medication Overview Creator</a></td>            
-<td><a href='PHARM-y.html'>Submit Medication Overview [PHARM-y]</a></td>
-<td align='center'>R</td></tr>    
-
-<tr class="odd">           
-<td rowspan="1"><a href="actors-transactions.html#133112-medication-overview-repository">Medication Overview Repository</a></td>            
-<td><a href='PHARM-y.html'>Submit Medication Overview [PHARM-y]</a></td>
-<td align='center'>R</td></tr>    
-
-
-</tbody>
-</table>
-
-       
-
-### 1:33.1.1 Actor Descriptions and Actor Profile Requirements
-The actors in this profile are described in more detail in the sections below.
-
-
-#### 1:33.1.1.1 Medication Overview Consumer
-xxxxx
-
-#### 1:33.1.1.2 Medication Overview Creator
-xxxxx
-
-#### 1:33.1.1.2 Medication Overview Repository
-
-The Medication Treatment Repository is intended to capture the information about the overall treatment, including advices, comments. 
-
-
-### 1:33.1.2 Transaction Descriptions
-The transactions in this profile are summarized in the sections below.
-
-#### 1:33.1.2.1 Get Medication overview
-
-This is a transaction that relates with getting the medication overview from a "Medication overview Creator".
-
-This is a pull transaction where we get the information from this actor.
-
-It is related with medication workflow artifacts (prescriptions, dispenses, administrations and statements) being summarized with a certain logic into medication treatment lines.
-
-
-For more details see the detailed [PHARM-x transaction description](PHARM-x.html).
-
-#### 1:33.1.2.2 Creating treatment lines
-
-Transaction so and so, used for this and this.
-
-For more details see the detailed [PHARM-y transaction description](PHARM-y.html).
+A first detailed use case is presented in [Use Case 1](usecase-1.html).

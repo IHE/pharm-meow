@@ -49,7 +49,7 @@ Document Option is declared.
   // MedicationStatement (MedicationTreatmentLine) — PHARM-11
   * resource[+]
     * type = #MedicationStatement
-    * supportedProfile[+] = "http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationTreatmentLine"
+    * supportedProfile[+] = "https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationTreatmentLine"
     * documentation = "The Consumer searches for MedicationTreatmentLine resources (PHARM-11)."
     * interaction[+].code = #search-type
     * interaction[+].code = #read
@@ -82,7 +82,7 @@ Document Option is declared.
   // Bundle (MedicationOverviewBundle) — PHARM-12 Document Option
   * resource[+]
     * type = #Bundle
-    * supportedProfile[+] = "http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverview"
+    * supportedProfile[+] = "https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverview"
     * documentation = """
       Document Option (PHARM-12). The Consumer retrieves MedicationOverviewBundle documents
       by logical id or by searching with patient, type, and date parameters.
@@ -144,7 +144,7 @@ assembly) is an implementation concern outside the scope of this profile.
   // MedicationStatement (MedicationTreatmentLine) — PHARM-11 (required)
   * resource[+]
     * type = #MedicationStatement
-    * supportedProfile[+] = "http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationTreatmentLine"
+    * supportedProfile[+] = "https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationTreatmentLine"
     * documentation = """
       The Repository SHALL support search on MedicationStatement using the defined
       search parameters. The patient parameter is required on all searches.
@@ -180,7 +180,7 @@ assembly) is an implementation concern outside the scope of this profile.
   // CarePlan (MedicationTreatment) — returned via _include
   * resource[+]
     * type = #CarePlan
-    * supportedProfile[+] = "http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationTreatment"
+    * supportedProfile[+] = "https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationTreatment"
     * documentation = "Returned as an _include of MedicationStatement:partOf when MedicationTreatment grouping is present."
     * interaction[+].code = #read
 
@@ -205,14 +205,14 @@ assembly) is an implementation concern outside the scope of this profile.
   // Medication — returned via _include (optional)
   * resource[+]
     * type = #Medication
-    * supportedProfile[+] = "http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/IHEMedication"
+    * supportedProfile[+] = "https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/IHEMedication"
     * documentation = "Optionally returned as _include of MedicationStatement:medication."
     * interaction[+].code = #read
 
   // Bundle (MedicationOverviewBundle) — PHARM-12 Document Option
   * resource[+]
     * type = #Bundle
-    * supportedProfile[+] = "http://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverview"
+    * supportedProfile[+] = "https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverview"
     * documentation = """
       Document Option (PHARM-12). The Repository stores and serves MedicationOverviewBundle
       documents. Supports retrieval by logical id and by patient/type/date search.

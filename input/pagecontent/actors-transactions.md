@@ -5,16 +5,19 @@ The figure below shows the actors directly involved in the MEOW Profile and the 
 ```plantuml
 @startuml
 skinparam backgroundColor transparent
+skinparam shadowing false
 skinparam rectangle {
+  BackgroundColor #E6F2FF
+  BorderColor #336699
   roundCorner 15
 }
 
-rectangle "Medication Overview\nCreator" as Cr #Application
-rectangle "Medication Overview\nRepository" as R #Application
-rectangle "Medication Overview\nConsumer" as C #Application
+rectangle "Medication Overview\nCreator" as Cr
+rectangle "Medication Overview\nConsumer" as C
+rectangle "Medication Overview\nRepository" as R
 
-Cr -right- R : Submit Medication Overview [PHARM-y]
-R -right- C : Get Medication Overview [PHARM-x]
+Cr -down- R : Submit Medication Overview\n[PHARM-y]
+C -down- R : Get Medication Overview\n[PHARM-x]
 @enduml
 ```
 

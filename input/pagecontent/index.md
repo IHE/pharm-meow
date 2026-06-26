@@ -1,11 +1,11 @@
-<div>
-<span style="text-align:center">
+<div class="stu-note" markdown="1">
+**Preview Release — for review and comment**
 
-<p style="text-align:center"><strong>IHE Pharmacy</strong></p>
-<p style="text-align:center"><strong>{{site.data.profile.profile.name}}</strong></p>
-<p style="text-align:center"><strong>({{site.data.profile.profile.acronym}})</strong></p>
-</span>
+This is a **preview release** of the IHE Pharmacy Medication Overview (MEOW) Implementation Guide. It is **not a draft for formal ballot**, and it is not a final publication.
 
+It is published to **advance work on the topic and to collect input** from implementers, clinical experts, and the broader community. The content is deliberately incomplete and subject to change: several design decisions are still open, and a number of pages, terminology artifacts, examples, and conformance details are not yet finalized.
+
+Comments and suggestions are welcome through the [issue tracker](https://github.com/IHE/pharm-meow/issues).
 </div>
 
 The IHE Medication Overview profile describes the content and transactions for consistent capture and exchange of patient's medication overviews - also referred as medication lists, or medication schemes.

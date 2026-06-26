@@ -2,17 +2,17 @@
 # | documentation of this sushi-config.yaml file https://fshschool.org/docs/sushi/configuration/               |
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 
-id: ihe.pharm.meow.r4
-canonical: http://profiles.ihe.net/PHARM/MEOW
+id: ihe.pharm.meow
+canonical: https://profiles.ihe.net/PHARM/MEOW
 name: IHE_PHARM_MEOW
-version: 0.1.0
+version: 1.0.0-preview
 fhirVersion: 4.0.1
 status: active
 title: "IHE Pharmacy Medication Overview"
 description: ImplementationGuide for IHE Pharmacy Medication Overview
 copyright: IHE http://www.ihe.net/Governance/#Intellectual_Property
 copyrightYear: 2022+
-releaseLabel: ci-build
+releaseLabel: Preview
 #releaseLabel: Trial-Implementation
 #date: 2022-03-01
 publisher:
@@ -49,8 +49,9 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
   usage-stats-opt-out: 'true'
   autoload-resources: 'true'
   #shownav: 'true'
-  generate-version:
-    - r4  
+  
+  # generate-version:
+  #  - r4  
 
 # additional examples that need descriptions
 #resources:
@@ -69,9 +70,7 @@ pages:
     usecases.md:
       title: "Use Case overview"
       usecase-1.md:
-        title: "Use Case 1 - ..."
-    glossary.md:
-      title: "Glossary"
+        title: "Use Case 1 - Consulting the Overview"
     medication_concepts.md:
       title: "Medication Concepts"
     medication_treatment_lifecycle.md:
@@ -95,9 +94,9 @@ pages:
   volume2.md:
     title: "Volume 2: Transactions"
     PHARM-x.md:
-      title: "PHARM xxx"
+      title: "Get Medication Overview [PHARM-x]"
     PHARM-y.md:
-      title: "PHARM yyy"
+      title: "Submit Medication Overview [PHARM-y]"
   issues.md:
     title: "Issues"
     extension: 
@@ -117,7 +116,6 @@ menu:
   MEOw Home: index.html
   Volume 1: 
     "Volume 1 Overview": volume1.html
-    "Glossary": glossary.html
     "Use Case Overview": usecases.html
     "Medication Concepts": medication_concepts.html
     "Medication Treatment Lifecycle": medication_treatment_lifecycle.html
@@ -132,8 +130,8 @@ menu:
 
   Volume 2:
     "Volume 2 Overview": volume2.html
-    "PHARM xxx": PHARM-x.html
-    "PHARM yyy": PHARM-y.html
+    "Get Medication Overview [PHARM-x]": PHARM-x.html
+    "Submit Medication Overview [PHARM-y]": PHARM-y.html
   #  "Find Document References [ITI-67]": ITI-67.html
   #  "Retrieve Document [ITI-68]": ITI-68.html
 #  Test Plan: testplan.html
