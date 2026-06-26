@@ -2,7 +2,7 @@
 # | documentation of this sushi-config.yaml file https://fshschool.org/docs/sushi/configuration/               |
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 
-id: ihe.pharm.meow
+id: ihe.pharm.meow.r4
 canonical: http://profiles.ihe.net/PHARM/MEOW
 name: IHE_PHARM_MEOW
 version: 0.1.0
