@@ -6,7 +6,10 @@ Description: "Logical model for representing one line/medication in medication o
 * ^status = #active
 
 * identifier 0..* Identifier "Unique business identifier(s) for the medication treatment line"
-* subject 1..1 Reference(Patient) "The patient for whom the medication treatment line applies"
+// subject is a link to the patient (who lives at MedicationOverviewLM level), not inline
+// content — so it stays a Reference, targeting the LM. It is optional because sources
+// like the compact PH4H MedicationOverviewMin carry the patient only at overview level.
+* subject 0..1 Reference(PatientLM) "The patient for whom the medication treatment line applies"
 * medication[x] 1..1 Reference(MedicinalProductLM) or CodeableConcept "Medicinal product for which the treatment line refers to. Identification or sufficient description of the product."
 * status 1..1 code "Status of the treatment line entry" "Status of the record, not the status of the treatment."
 * status from $medicationStatusCode (required)
@@ -49,7 +52,7 @@ Description: "Logical model for representing one line/medication in medication o
   * substitutionTypeReasonText 0..1 string "Textual reason for the substitution requirement"
 
 * recordingMetadata 1..1 BackboneElement "Metadata about reporting/authoring of the treatment line"
-  * recorder 1..1 Reference "Person entering the statement by initiating a treatment or documenting a statement by a patient or another professional. The recorder may be different from the author."
+  * recorder 0..1 Reference "Person entering the statement by initiating a treatment or documenting a statement by a patient or another professional. The recorder may be different from the author. Optional because minimal sources (e.g. PH4H MedicationOverviewMin) do not carry a recorder."
   * recordedTime 1..1 dateTime "Time of creation of the treatment line"
   * patientReported 0..1 boolean "The treatment line has been documented according to patient's statement"
 
