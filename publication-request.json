@@ -1,10 +1,10 @@
 {
   "package-id": "ihe.pharm.meow",
-  "version": "1.0.0-preview",
-  "path": "https://profiles.ihe.net/PHARM/MEOW/1.0.0-preview",
+  "version": "1.0.0-preview2",
+  "path": "https://profiles.ihe.net/PHARM/MEOW/1.0.0-preview2",
   "status": "preview",
   "sequence": "FHIR R4",
-  "first": true,
+  "first": false,
   "title": "IHE Pharmacy Medication Overview",
   "desc": "Preview release - for initial assessment and feedback.",
   "registry-description": "IHE Pharmacy Medication Overview (MEOW) profile, allowing the exchange of a patient's medication information across systems.",
@@ -13,5 +13,6 @@
   "ci-build": "https://build.fhir.org/ig/IHE/pharm-meow",
   "introduction": "Preview release of the IHE Pharmacy Medication Overview (MEOW) Implementation Guide, published to advance work on the topic and to collect input from implementers and the community. Content is incomplete and subject to change; this is not a draft for formal ballot.",
   "category": "Medication",
-  "milestone": true
+  "milestone": true,
+  "mode":"milestone"
 }

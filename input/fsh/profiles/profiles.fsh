@@ -101,19 +101,23 @@ Description: "The profile for the full Medication overview as a Bundle type Docu
 * type ^definition = "Bundle is a document"
 * total 0..0
 * link 0..0 SU
-* entry ^slicing.discriminator.type = #profile
+// Discriminate by resource TYPE, not by declared profile: this lets a producer's
+// entries slice correctly without stamping meta.profile on every resource (mirrors
+// hl7.fhir.uv.ips Bundle-uv-ips). Every slice below now has a unique resource type,
+// so #type alone is unambiguous. (A #profile leg was intentionally NOT added: it
+// would re-require meta.profile on instances, which is what we are avoiding here.)
+* entry ^slicing.discriminator.type = #type
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #open
-* entry ^slicing.description = "Slicing based on the profile conformance of the sliced element"
+* entry ^slicing.description = "Slicing based on the resource type of the sliced element"
 * entry contains
     Composition 1..1 and
     Patient 1..1 and
     MedRecordTreatment 0..* and
-    MedRecordTreatmentLine 0..* and 
+    MedRecordTreatmentLine 0..* and
     MedRecordOrder 0..* and
     MedRecordDispense 0..* and
-    MedRecordAdministration 0..* and
-    MedRecordUsage 0..* 
+    MedRecordAdministration 0..*
 * entry[Composition] ^short = "Composition"
 * entry[Composition].resource 1.. MS
 * entry[Composition].resource only MedicationOverviewComposition
@@ -144,7 +148,8 @@ Description: "The profile for the full Medication overview as a Bundle type Docu
 * entry[MedRecordAdministration].resource 1.. MS
 * entry[MedRecordAdministration].resource only MedicationAdministration
 
-
-* entry[MedRecordUsage] ^short = "Medication summaries associated with the patient"
-* entry[MedRecordUsage].resource 1.. MS
-* entry[MedRecordUsage].resource only MedicationStatement
+// MedRecordUsage (bare MedicationStatement) removed: it is the supertype of
+// MedRecordTreatmentLine (a MedicationStatement profile), so any treatment line
+// also matched Usage → unresolvable "matches more than one slice". Raw usage
+// MedicationStatements, if needed, are still permitted by the open slicing and
+// can be referenced from the Composition detailsRecord section.
