@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ihe-vs-clinicalintenttype"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ihe-vs-clinicalintenttype</b></p><a name="ihe-vs-clinicalintenttype"> </a><a name="hcihe-vs-clinicalintenttype"> </a><ul><li>Include all codes defined in <a href="CodeSystem-ihe-cs-clinicalintenttype.html"><code>http://profiles.ihe.net/PHARM/MEOW/CodeSystem/ihe-cs-clinicalintenttype</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span></li></ul></div>
+  </text>
+  <url value="http://profiles.ihe.net/PHARM/MEOW/ValueSet/ihe-vs-clinicalintenttype"/>
+  <version value="0.1.0"/>
+  <name value="ClinicalIntentTypeVS"/>
+  <title value="Clinical Intent Type ValueSet"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-04-07T21:03:28+00:00"/>
+  <publisher value="Integrating the Healthcare Enterprise (IHE)"/>
+  <contact>
+    <name value="Integrating the Healthcare Enterprise (IHE)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ihe.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="secretary@ihe.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Jose Costa Teixeira"/>
+    <telecom>
+      <system value="email"/>
+      <value value="jose.a.teixeira@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="The clinical intent type of the medication use - therapeutic, prophylactic, or self-medication."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="IHE http://www.ihe.net/Governance/#Intellectual_Property"/>
+  <compose>
+    <include>
+      <system value="http://profiles.ihe.net/PHARM/MEOW/CodeSystem/ihe-cs-clinicalintenttype"/>
+    </include>
+  </compose>
+</ValueSet>

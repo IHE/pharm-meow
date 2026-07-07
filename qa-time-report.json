@@ -1,0 +1,1576 @@
+{
+  "date" : "Thu, 14 May, 2026 05:50:16 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [{
+    "name" : "/fsh-generated/resources/ImplementationGuide-ihe.pharm.meow.json",
+    "size" : 17127,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 36,
+      "length" : 9
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 36,
+      "length" : 13
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 36,
+      "length" : 81
+    },
+    {
+      "activity" : "validate",
+      "start" : 48,
+      "length" : 1895
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 50,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 53,
+      "length" : 66
+    },
+    {
+      "activity" : "generate2",
+      "start" : 59,
+      "length" : 62
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 72,
+      "length" : 3
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Medication-01A-Cefuroxime1500GenericExplicit.json",
+    "size" : 1409,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 36,
+      "length" : 5
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 36,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 36,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 36,
+      "length" : 1892
+    },
+    {
+      "activity" : "validate",
+      "start" : 50,
+      "length" : 1432
+    },
+    {
+      "activity" : "generate1",
+      "start" : 53,
+      "length" : 9
+    },
+    {
+      "activity" : "generate2",
+      "start" : 59,
+      "length" : 12
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 72,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Medication-01B-Cefuroxime1500GenericConcept.json",
+    "size" : 425,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 36,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 38,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 51,
+      "length" : 162
+    },
+    {
+      "activity" : "generate1",
+      "start" : 53,
+      "length" : 4
+    },
+    {
+      "activity" : "generate2",
+      "start" : 59,
+      "length" : 5
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Medication-01C-Cefuroxime1500Branded.json",
+    "size" : 2280,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 36,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 38,
+      "length" : 122
+    },
+    {
+      "activity" : "validate",
+      "start" : 51,
+      "length" : 585
+    },
+    {
+      "activity" : "generate1",
+      "start" : 53,
+      "length" : 9
+    },
+    {
+      "activity" : "generate2",
+      "start" : 59,
+      "length" : 8
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Medication-02A-ClotrimazoleCanifugCremolum.json",
+    "size" : 1652,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 36,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 36,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 38,
+      "length" : 4
+    },
+    {
+      "activity" : "validate",
+      "start" : 52,
+      "length" : 29
+    },
+    {
+      "activity" : "generate1",
+      "start" : 53,
+      "length" : 9
+    },
+    {
+      "activity" : "generate2",
+      "start" : 59,
+      "length" : 9
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Medication-02A1-CanifugCremolumCreamItem.json",
+    "size" : 1423,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 36,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 38,
+      "length" : 166
+    },
+    {
+      "activity" : "validate",
+      "start" : 52,
+      "length" : 164
+    },
+    {
+      "activity" : "generate1",
+      "start" : 53,
+      "length" : 7
+    },
+    {
+      "activity" : "generate2",
+      "start" : 59,
+      "length" : 7
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Medication-02A2-CanifugCremolumPessaryItem.json",
+    "size" : 1156,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 36,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 36,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 39,
+      "length" : 5
+    },
+    {
+      "activity" : "validate",
+      "start" : 52,
+      "length" : 3
+    },
+    {
+      "activity" : "generate1",
+      "start" : 53,
+      "length" : 6
+    },
+    {
+      "activity" : "generate2",
+      "start" : 59,
+      "length" : 6
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Medication-03B-VitaminBComplexBranded.json",
+    "size" : 4362,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 36,
+      "length" : 3
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 36,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 39,
+      "length" : 169
+    },
+    {
+      "activity" : "validate",
+      "start" : 52,
+      "length" : 663
+    },
+    {
+      "activity" : "generate1",
+      "start" : 53,
+      "length" : 15
+    },
+    {
+      "activity" : "generate2",
+      "start" : 59,
+      "length" : 12
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-DosagingInformation.json",
+    "size" : 18303,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 36,
+      "length" : 14
+    },
+    {
+      "activity" : "load",
+      "start" : 36,
+      "length" : 8
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 36,
+      "length" : 35
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 39,
+      "length" : 100
+    },
+    {
+      "activity" : "validate",
+      "start" : 39,
+      "length" : 2490
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 50,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 50,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 53,
+      "length" : 264
+    },
+    {
+      "activity" : "generate2",
+      "start" : 59,
+      "length" : 1212
+    },
+    {
+      "activity" : "generate2",
+      "start" : 63,
+      "length" : 929
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 72,
+      "length" : 9
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-IHEMedication.json",
+    "size" : 5508,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 36,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 36,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 36,
+      "length" : 38
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 39,
+      "length" : 24
+    },
+    {
+      "activity" : "validate",
+      "start" : 42,
+      "length" : 256
+    },
+    {
+      "activity" : "generate1",
+      "start" : 53,
+      "length" : 132
+    },
+    {
+      "activity" : "generate2",
+      "start" : 60,
+      "length" : 255
+    },
+    {
+      "activity" : "generate2",
+      "start" : 64,
+      "length" : 247
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 72,
+      "length" : 11
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 87,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-MedicationOverview.json",
+    "size" : 5782,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 36,
+      "length" : 5
+    },
+    {
+      "activity" : "load",
+      "start" : 36,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 36,
+      "length" : 150
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 39,
+      "length" : 75
+    },
+    {
+      "activity" : "validate",
+      "start" : 42,
+      "length" : 1166
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 50,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 50,
+      "length" : 4
+    },
+    {
+      "activity" : "generate1",
+      "start" : 53,
+      "length" : 643
+    },
+    {
+      "activity" : "generate2",
+      "start" : 60,
+      "length" : 1223
+    },
+    {
+      "activity" : "generate2",
+      "start" : 65,
+      "length" : 1039
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 72,
+      "length" : 40
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 87,
+      "length" : 1
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 87,
+      "length" : 3
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-MedicationOverviewComposition.json",
+    "size" : 3086,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 36,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 36,
+      "length" : 1
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 36,
+      "length" : 36
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 36,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 39,
+      "length" : 32
+    },
+    {
+      "activity" : "validate",
+      "start" : 43,
+      "length" : 311
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 50,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 54,
+      "length" : 266
+    },
+    {
+      "activity" : "generate2",
+      "start" : 61,
+      "length" : 434
+    },
+    {
+      "activity" : "generate2",
+      "start" : 66,
+      "length" : 270
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 72,
+      "length" : 10
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 87,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-MedicationOverviewLM.json",
+    "size" : 5418,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 36,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 36,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 36,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 36,
+      "length" : 8
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 39,
+      "length" : 10
+    },
+    {
+      "activity" : "validate",
+      "start" : 43,
+      "length" : 74
+    },
+    {
+      "activity" : "generate1",
+      "start" : 54,
+      "length" : 66
+    },
+    {
+      "activity" : "generate2",
+      "start" : 62,
+      "length" : 102
+    },
+    {
+      "activity" : "generate2",
+      "start" : 66,
+      "length" : 49
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 72,
+      "length" : 3
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-MedicationTreatment.json",
+    "size" : 2947,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 36,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 36,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 36,
+      "length" : 14
+    },
+    {
+      "activity" : "scan",
+      "start" : 36,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 39,
+      "length" : 21
+    },
+    {
+      "activity" : "validate",
+      "start" : 43,
+      "length" : 136
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 50,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 54,
+      "length" : 150
+    },
+    {
+      "activity" : "generate2",
+      "start" : 62,
+      "length" : 200
+    },
+    {
+      "activity" : "generate2",
+      "start" : 66,
+      "length" : 100
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 72,
+      "length" : 6
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 87,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-MedicationTreatmentLM.json",
+    "size" : 2659,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 36,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 36,
+      "length" : 1
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 36,
+      "length" : 3
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 39,
+      "length" : 6
+    },
+    {
+      "activity" : "validate",
+      "start" : 44,
+      "length" : 22
+    },
+    {
+      "activity" : "generate1",
+      "start" : 54,
+      "length" : 29
+    },
+    {
+      "activity" : "generate2",
+      "start" : 62,
+      "length" : 55
+    },
+    {
+      "activity" : "generate2",
+      "start" : 66,
+      "length" : 28
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 72,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-MedicationTreatmentLine.json",
+    "size" : 4420,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 36,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 36,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 36,
+      "length" : 12
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 39,
+      "length" : 20
+    },
+    {
+      "activity" : "validate",
+      "start" : 44,
+      "length" : 191
+    },
+    {
+      "activity" : "generate1",
+      "start" : 54,
+      "length" : 181
+    },
+    {
+      "activity" : "generate2",
+      "start" : 62,
+      "length" : 271
+    },
+    {
+      "activity" : "generate2",
+      "start" : 66,
+      "length" : 141
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 72,
+      "length" : 8
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 87,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-MedicationTreatmentLineLM.json",
+    "size" : 20718,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 36,
+      "length" : 5
+    },
+    {
+      "activity" : "load",
+      "start" : 36,
+      "length" : 4
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 36,
+      "length" : 12
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 39,
+      "length" : 38
+    },
+    {
+      "activity" : "validate",
+      "start" : 44,
+      "length" : 230
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 50,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 55,
+      "length" : 209
+    },
+    {
+      "activity" : "generate2",
+      "start" : 62,
+      "length" : 168
+    },
+    {
+      "activity" : "generate2",
+      "start" : 66,
+      "length" : 106
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 72,
+      "length" : 11
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-MedicinalProductLM.json",
+    "size" : 13007,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 36,
+      "length" : 5
+    },
+    {
+      "activity" : "load",
+      "start" : 36,
+      "length" : 5
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 36,
+      "length" : 12
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 39,
+      "length" : 25
+    },
+    {
+      "activity" : "validate",
+      "start" : 44,
+      "length" : 118
+    },
+    {
+      "activity" : "generate1",
+      "start" : 55,
+      "length" : 159
+    },
+    {
+      "activity" : "generate2",
+      "start" : 63,
+      "length" : 157
+    },
+    {
+      "activity" : "generate2",
+      "start" : 66,
+      "length" : 83
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 72,
+      "length" : 6
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-PatientLM.json",
+    "size" : 2850,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 36,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 36,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 36,
+      "length" : 3
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 39,
+      "length" : 6
+    },
+    {
+      "activity" : "validate",
+      "start" : 44,
+      "length" : 17
+    },
+    {
+      "activity" : "generate1",
+      "start" : 55,
+      "length" : 31
+    },
+    {
+      "activity" : "generate2",
+      "start" : 63,
+      "length" : 55
+    },
+    {
+      "activity" : "generate2",
+      "start" : 66,
+      "length" : 25
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 72,
+      "length" : 1
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 87,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-PractitionerLM.json",
+    "size" : 4973,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 36,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 36,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 36,
+      "length" : 6
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 39,
+      "length" : 9
+    },
+    {
+      "activity" : "validate",
+      "start" : 44,
+      "length" : 66
+    },
+    {
+      "activity" : "generate1",
+      "start" : 55,
+      "length" : 63
+    },
+    {
+      "activity" : "generate2",
+      "start" : 63,
+      "length" : 81
+    },
+    {
+      "activity" : "generate2",
+      "start" : 66,
+      "length" : 39
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 72,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ihe-ext-medication-classification.json",
+    "size" : 1733,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 36,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 36,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 36,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 39,
+      "length" : 5
+    },
+    {
+      "activity" : "validate",
+      "start" : 44,
+      "length" : 2916
+    },
+    {
+      "activity" : "generate1",
+      "start" : 55,
+      "length" : 28
+    },
+    {
+      "activity" : "generate2",
+      "start" : 63,
+      "length" : 58
+    },
+    {
+      "activity" : "generate2",
+      "start" : 67,
+      "length" : 24
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 72,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ihe-ext-medication-device.json",
+    "size" : 3074,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 36,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 36,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 36,
+      "length" : 4
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 39,
+      "length" : 17
+    },
+    {
+      "activity" : "validate",
+      "start" : 47,
+      "length" : 166
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 50,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 55,
+      "length" : 67
+    },
+    {
+      "activity" : "generate2",
+      "start" : 63,
+      "length" : 88
+    },
+    {
+      "activity" : "generate2",
+      "start" : 67,
+      "length" : 38
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 72,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ihe-ext-medication-productname.json",
+    "size" : 4171,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 36,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 36,
+      "length" : 5
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 36,
+      "length" : 5
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 36,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 39,
+      "length" : 13
+    },
+    {
+      "activity" : "validate",
+      "start" : 47,
+      "length" : 107
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 50,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 55,
+      "length" : 86
+    },
+    {
+      "activity" : "generate2",
+      "start" : 63,
+      "length" : 96
+    },
+    {
+      "activity" : "generate2",
+      "start" : 67,
+      "length" : 46
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 72,
+      "length" : 3
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ihe-ext-medication-sizeofitem.json",
+    "size" : 1665,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 36,
+      "length" : 4
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 36,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 39,
+      "length" : 6
+    },
+    {
+      "activity" : "validate",
+      "start" : 47,
+      "length" : 33
+    },
+    {
+      "activity" : "generate1",
+      "start" : 55,
+      "length" : 29
+    },
+    {
+      "activity" : "generate2",
+      "start" : 63,
+      "length" : 51
+    },
+    {
+      "activity" : "generate2",
+      "start" : 67,
+      "length" : 23
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 72,
+      "length" : 2
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 87,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ihe-ext-medicationstatement-substitution.json",
+    "size" : 2956,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 36,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 36,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 36,
+      "length" : 3
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 39,
+      "length" : 10
+    },
+    {
+      "activity" : "validate",
+      "start" : 47,
+      "length" : 148
+    },
+    {
+      "activity" : "generate1",
+      "start" : 55,
+      "length" : 66
+    },
+    {
+      "activity" : "generate2",
+      "start" : 63,
+      "length" : 79
+    },
+    {
+      "activity" : "generate2",
+      "start" : 67,
+      "length" : 40
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 72,
+      "length" : 5
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 87,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-ihe-ext-medicationstatement-verificationinformation.json",
+    "size" : 3305,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 36,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 36,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 36,
+      "length" : 4
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 39,
+      "length" : 10
+    },
+    {
+      "activity" : "validate",
+      "start" : 48,
+      "length" : 84
+    },
+    {
+      "activity" : "generate1",
+      "start" : 55,
+      "length" : 69
+    },
+    {
+      "activity" : "generate2",
+      "start" : 63,
+      "length" : 84
+    },
+    {
+      "activity" : "generate2",
+      "start" : 67,
+      "length" : 39
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 72,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "/fsh-generated/includes/fsh-link-references.md",
+    "size" : 1886,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 63,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/fsh-generated/includes/menu.xml",
+    "size" : 2865
+  },
+  {
+    "name" : "/input/data/publication.yml",
+    "size" : 236
+  },
+  {
+    "name" : "/input/data/profile.yml",
+    "size" : 60
+  },
+  {
+    "name" : "/input/pagecontent/data_models.md",
+    "size" : 533,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 63,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/actors-transactions.md",
+    "size" : 4223
+  },
+  {
+    "name" : "/input/pagecontent/PHARM-x.md",
+    "size" : 426
+  },
+  {
+    "name" : "/input/pagecontent/aggregation_and_medication_reconcilliation.md",
+    "size" : 31
+  },
+  {
+    "name" : "/input/pagecontent/index.md",
+    "size" : 2956
+  },
+  {
+    "name" : "/input/pagecontent/medication_concepts.md",
+    "size" : 2145
+  },
+  {
+    "name" : "/input/pagecontent/changes.xml",
+    "size" : 469,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 63,
+      "length" : 32
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/usecase-1.md",
+    "size" : 0,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 53,
+      "length" : 1
+    },
+    {
+      "activity" : "generate2",
+      "start" : 63,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/transactions.md",
+    "size" : 0
+  },
+  {
+    "name" : "/input/pagecontent/PHARM-O1.md",
+    "size" : 0
+  },
+  {
+    "name" : "/input/pagecontent/actor_required_grouping.md",
+    "size" : 0
+  },
+  {
+    "name" : "/input/pagecontent/medication_treatment_lifecycle.md",
+    "size" : 0
+  },
+  {
+    "name" : "/input/pagecontent/issues.md",
+    "size" : 233
+  },
+  {
+    "name" : "/input/pagecontent/actor_options.md",
+    "size" : 0
+  },
+  {
+    "name" : "/input/pagecontent/volume1.md",
+    "size" : 81
+  },
+  {
+    "name" : "/input/pagecontent/downloads.xml",
+    "size" : 1334,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 63,
+      "length" : 20
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/security_considerations.md",
+    "size" : 0
+  },
+  {
+    "name" : "/input/pagecontent/testplan.md",
+    "size" : 1037
+  },
+  {
+    "name" : "/input/pagecontent/usecases.md",
+    "size" : 3151
+  },
+  {
+    "name" : "/input/pagecontent/volume2.md",
+    "size" : 6
+  },
+  {
+    "name" : "/input/pagecontent/glossary.md",
+    "size" : 2827,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 63,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/cross_profile_considerations.md",
+    "size" : 0
+  },
+  {
+    "name" : "/input/pagecontent/PHARM-y.md",
+    "size" : 1485
+  },
+  {
+    "name" : "/input/pagecontent",
+    "size" : 0
+  },
+  {
+    "name" : "/input/pagecontent/data_models.md",
+    "size" : 533
+  },
+  {
+    "name" : "/input/pagecontent/actors-transactions.md",
+    "size" : 4223
+  },
+  {
+    "name" : "/input/pagecontent/PHARM-x.md",
+    "size" : 426,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 63,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/aggregation_and_medication_reconcilliation.md",
+    "size" : 31
+  },
+  {
+    "name" : "/input/pagecontent/index.md",
+    "size" : 2956
+  },
+  {
+    "name" : "/input/pagecontent/medication_concepts.md",
+    "size" : 2145
+  },
+  {
+    "name" : "/input/pagecontent/changes.xml",
+    "size" : 469
+  },
+  {
+    "name" : "/input/pagecontent/usecase-1.md",
+    "size" : 0,
+    "processes" : [{
+      "activity" : "scan",
+      "start" : 36,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/transactions.md",
+    "size" : 0
+  },
+  {
+    "name" : "/input/pagecontent/PHARM-O1.md",
+    "size" : 0
+  },
+  {
+    "name" : "/input/pagecontent/actor_required_grouping.md",
+    "size" : 0
+  },
+  {
+    "name" : "/input/pagecontent/medication_treatment_lifecycle.md",
+    "size" : 0
+  },
+  {
+    "name" : "/input/pagecontent/issues.md",
+    "size" : 233,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 63,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/actor_options.md",
+    "size" : 0
+  },
+  {
+    "name" : "/input/pagecontent/volume1.md",
+    "size" : 81
+  },
+  {
+    "name" : "/input/pagecontent/downloads.xml",
+    "size" : 1334
+  },
+  {
+    "name" : "/input/pagecontent/security_considerations.md",
+    "size" : 0
+  },
+  {
+    "name" : "/input/pagecontent/testplan.md",
+    "size" : 1037
+  },
+  {
+    "name" : "/input/pagecontent/usecases.md",
+    "size" : 3151
+  },
+  {
+    "name" : "/input/pagecontent/volume2.md",
+    "size" : 6
+  },
+  {
+    "name" : "/input/pagecontent/glossary.md",
+    "size" : 2827
+  },
+  {
+    "name" : "/input/pagecontent/cross_profile_considerations.md",
+    "size" : 0
+  },
+  {
+    "name" : "/input/pagecontent/PHARM-y.md",
+    "size" : 1485,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 63,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/fsh-generated/includes",
+    "size" : 0
+  },
+  {
+    "name" : "/fsh-generated/includes/fsh-link-references.md",
+    "size" : 1886
+  },
+  {
+    "name" : "/fsh-generated/includes/menu.xml",
+    "size" : 2865
+  },
+  {
+    "name" : "/template/config",
+    "size" : 0
+  },
+  {
+    "name" : "/template/config/_config.yml",
+    "size" : 140
+  },
+  {
+    "name" : "/input/images",
+    "size" : 0
+  },
+  {
+    "name" : "/input/images/pharm-y-1.png",
+    "size" : 59473
+  },
+  {
+    "name" : "/input/images/overview.png",
+    "size" : 95487,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 63,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/images/ihe_front.jpg",
+    "size" : 0
+  },
+  {
+    "name" : "/input/images/pharm-y-2.png",
+    "size" : 35033
+  },
+  {
+    "name" : "/temp/pages/_includes/artifacts.xml",
+    "size" : 13921
+  }]
+}

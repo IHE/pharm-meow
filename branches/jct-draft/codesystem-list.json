@@ -1,0 +1,10 @@
+{
+  "codeSystems" : [{
+    "url" : "http://profiles.ihe.net/PHARM/MEOW/CodeSystem/ihe-cs-clinicalintenttype",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "ClinicalIntentTypeCS",
+    "title" : "Clinical Intent Type CodeSystem",
+    "description" : "Codes for the clinical intent type of medication use."
+  }]
+}

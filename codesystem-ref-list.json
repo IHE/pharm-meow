@@ -1,0 +1,14 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/CodeSystem/medication-statement-status",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "MedicationStatementStatusCodes",
+    "title" : "MedicationStatement Status Codes",
+    "description" : "MedicationStatement Status Codes",
+    "oids" : ["2.16.840.1.113883.4.642.4.1980"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-medication-statement-status.html" : "MedicationStatement Status Codes"
+  }]
+}

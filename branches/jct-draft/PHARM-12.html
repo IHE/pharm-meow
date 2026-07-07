@@ -1,0 +1,753 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>PHARM-12 Query Medication Resources - IHE Pharmacy Medication Overview v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/ihe.css"/>
+
+<script async="null" src="https://www.googletagmanager.com/gtag/js?id=G-HLBNC861DJ" type="text/javascript"> </script> 
+
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"3.2"}
+    h3,h4,h5,h6{--heading-prefix:"3.2"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="ihe-logo" href="http://profiles.ihe.net" data-no-external="true">
+    <img src="assets/images/ihe-international.png" alt="Visit the IHE website" height="71"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" href="http://hl7.org/fhir" data-no-external="true"><img src="assets/images/fhir-logo.png" alt="Visit the FHIR website" height="30"/> </a>
+</div>
+  <!-- <div id="hl7-search">
+  <a id="hl7-search-lnk" data-no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div> -->
+<div id="project-nav">
+  
+  
+    <a id="project-logo" href="http://profiles.ihe.net/PHARM/index.html" data-no-external="true"><img src="assets/images/PHARM.png" alt="Visit the PHARM website" height="70"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">IHE Pharmacy Medication Overview</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img src="assets/images/001.svg" alt="International flag" title="International" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R5/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">MEOw Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 1
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="volume1.html">Volume 1 Overview</a>
+      </li>
+      <li>
+        <a href="glossary.html">Glossary</a>
+      </li>
+      <li>
+        <a href="usecases.html">Use Case Overview</a>
+      </li>
+      <li>
+        <a href="medication_concepts.html">Medication Concepts</a>
+      </li>
+      <li>
+        <a href="medication_treatment_lifecycle.html">Medication Treatment Lifecycle</a>
+      </li>
+      <li>
+        <a href="aggregation_and_medication_reconcilliation.html">Aggregation and Medication Reconcilliation</a>
+      </li>
+      <li>
+        <a href="data_models.html">Data Models</a>
+      </li>
+      <li>
+        <a href="actors-transactions.html">Actors and Transactions</a>
+      </li>
+      <li>
+        <a href="actor_options.html">Actor Options</a>
+      </li>
+      <li><a name="l237">​</a>
+        <a href="required_grouping.html">Actor Required Grouping</a>
+      </li>
+      <li>
+        <a href="security_considerations.html">Security Considerations</a>
+      </li>
+      <li>
+        <a href="cross_profile_considerations.html">Cross Profile Considerations</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 2
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="volume2.html">Volume 2 Overview</a>
+      </li>
+      <li>
+        <a href="PHARM-11.html">PHARM-11 Retrieve Medication Overview</a>
+      </li>
+      <li>
+        <a href="PHARM-12.html">PHARM-12 Query Medication Resources</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artifact Index</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="volume2.html"><b>Volume 2: Transactions</b></a></li><li><b>PHARM-12 Query Medication Resources</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">IHE Pharmacy Medication Overview, published by Integrating the Healthcare Enterprise (IHE). This guide is not an authorized publication; it is the continuous build for version 0.1.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href="https://github.com/IHE/pharm-meow/tree/jct-draft">https://github.com/IHE/pharm-meow/tree/jct-draft</a> and changes regularly. See the <a href="http://profiles.ihe.net/PHARM/MEOW/history.html">Directory of published versions</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/IHE/pharm-meow/commit/62c0f39405df9e4fd32f0190ebb2d3ff69dc6805"><code>62c0f394</code></a>. &nbsp; Branch: <a href="https://github.com/IHE/pharm-meow/tree/jct-draft"><code>jct-draft</code></a>.</span></p>  <!-- EndReleaseHeader -->
+  <h2>PHARM-12 Query Medication Resources</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#pharm-12-query-medication-resources" id="markdown-toc-pharm-12-query-medication-resources">PHARM-12: Query Medication Resources</a>    <ul>
+      <li><a href="#scope" id="markdown-toc-scope">Scope</a></li>
+      <li><a href="#actors-and-roles" id="markdown-toc-actors-and-roles">Actors and Roles</a></li>
+      <li><a href="#referenced-standards" id="markdown-toc-referenced-standards">Referenced Standards</a></li>
+      <li><a href="#interaction-diagram" id="markdown-toc-interaction-diagram">Interaction Diagram</a></li>
+      <li><a href="#request-message" id="markdown-toc-request-message">Request Message</a></li>
+      <li><a href="#response-message" id="markdown-toc-response-message">Response Message</a></li>
+      <li><a href="#expected-actions" id="markdown-toc-expected-actions">Expected Actions</a></li>
+      <li><a href="#capabilitystatement-requirements" id="markdown-toc-capabilitystatement-requirements">CapabilityStatement Requirements</a></li>
+      <li><a href="#security-considerations" id="markdown-toc-security-considerations">Security Considerations</a></li>
+      <li><a href="#open-issues" id="markdown-toc-open-issues">Open Issues</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h2 id="pharm-12-query-medication-resources">PHARM-12: Query Medication Resources</h2>
+
+<h3 id="scope">Scope</h3>
+
+<p>The <strong>Query Medication Resources</strong> transaction [PHARM-12] allows a <strong>Medication Overview Consumer</strong> to search a <strong>Medication Overview Responder</strong> for the FHIR resources constituting a patient's medication overview.</p>
+
+<p>The response is a FHIR searchset <code class="language-plaintext highlighter-rouge">Bundle</code>. The Responder SHALL return medication resources matching the query parameters. The exact set of resource types returned depends on the query — the Consumer may ask for:</p>
+
+<ul>
+  <li><strong>Treatment lines only</strong> — <code class="language-plaintext highlighter-rouge">MedicationTreatmentLine</code> (MedicationStatement) resources, which are the clinician-determined treatment lines; the mandatory content of any medication overview.</li>
+  <li><strong>Patient-reported statements</strong> — <code class="language-plaintext highlighter-rouge">MedicationStatement</code> resources representing self-reported usage that are not (yet) reconciled into a treatment line.</li>
+  <li><strong>Both</strong> — when the Consumer wants the full picture including both treatment lines and patient-reported data.</li>
+  <li><strong>Related workflow resources</strong> — <code class="language-plaintext highlighter-rouge">MedicationRequest</code>, <code class="language-plaintext highlighter-rouge">MedicationDispense</code>, <code class="language-plaintext highlighter-rouge">MedicationAdministration</code> linked to the above, via <code class="language-plaintext highlighter-rouge">_include</code>/<code class="language-plaintext highlighter-rouge">_revinclude</code>.</li>
+  <li><strong>A named List</strong> — via <code class="language-plaintext highlighter-rouge">_list</code>, to retrieve a pre-defined or server-maintained list of resources (e.g. a patient's active medication list, a discharge list).</li>
+</ul>
+
+<p>This transaction is appropriate for live, current-state queries — displaying a patient's active medication list, feeding clinical decision support, or synchronising medication data between systems.</p>
+
+<p>For pre-assembled overviews, see <a href="PHARM-11.html">PHARM-11</a>.</p>
+
+<hr/>
+
+<h3 id="actors-and-roles">Actors and Roles</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Actor</th>
+      <th>Role</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Medication Overview Consumer</strong></td>
+      <td>Initiates the query; processes the searchset response</td>
+    </tr>
+    <tr>
+      <td><strong>Medication Overview Responder</strong></td>
+      <td>Receives the query; returns matching resources</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr/>
+
+<h3 id="referenced-standards">Referenced Standards</h3>
+
+<ul>
+  <li>HL7 FHIR R5 — RESTful search interactions (<code class="language-plaintext highlighter-rouge">search-type</code>), <code class="language-plaintext highlighter-rouge">List</code> resource, <code class="language-plaintext highlighter-rouge">_list</code> search parameter</li>
+  <li>IHE ITI Appendix Z — FHIR Common Implementation Material (patient identity, error handling)</li>
+  <li>IHE ITI IUA — Authorization token (grouping requirement)</li>
+  <li>IHE ITI ATNA — Audit trail (grouping requirement)</li>
+</ul>
+
+<hr/>
+
+<h3 id="interaction-diagram">Interaction Diagram</h3>
+
+<div><a name="l604">​</a>
+<img src="PHARM-12.png" alt="Figure: PHARM-12 Query Medication Resources" width="70%"/>
+</div>
+
+<hr/>
+
+<h3 id="request-message">Request Message</h3>
+
+<h4 id="http-verb-and-endpoint">HTTP Verb and Endpoint</h4>
+
+<p>Primary resource query:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/MedicationStatement?[parameters]
+</code></pre></div></div>
+
+<p>List-based query (retrieve a named or server-defined medication list):</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/MedicationStatement?_list=[list-id]&amp;[parameters]
+GET [base]/List?patient=[ref]&amp;code=[list-type-code]
+</code></pre></div></div>
+
+<hr/>
+
+<h4 id="required-query-parameters">Required Query Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Type</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">patient</code></td>
+      <td><code class="language-plaintext highlighter-rouge">reference</code></td>
+      <td><strong>Required.</strong> The patient whose medication overview is requested. Supports local reference (<code class="language-plaintext highlighter-rouge">Patient/[id]</code>) or identifier token (<code class="language-plaintext highlighter-rouge">patient.identifier=[system]\|[value]</code>).</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr/>
+
+<h4 id="filter-parameters">Filter Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">status</code></td>
+      <td><code class="language-plaintext highlighter-rouge">token</code></td>
+      <td>Filter by resource status (e.g. <code class="language-plaintext highlighter-rouge">active</code>, <code class="language-plaintext highlighter-rouge">completed</code>, <code class="language-plaintext highlighter-rouge">stopped</code>). Multiple values are OR'd.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">effective</code></td>
+      <td><code class="language-plaintext highlighter-rouge">date</code></td>
+      <td>Filter by the effective period. Supports <code class="language-plaintext highlighter-rouge">gt</code>, <code class="language-plaintext highlighter-rouge">lt</code>, <code class="language-plaintext highlighter-rouge">ge</code>, <code class="language-plaintext highlighter-rouge">le</code> prefixes.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">category</code></td>
+      <td><code class="language-plaintext highlighter-rouge">token</code></td>
+      <td>Filter by medication list category / list type. See ValueSet (open issue <a href="https://github.com/IHE/pharm-meow/issues/42">#42</a>).</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">_lastUpdated</code></td>
+      <td><code class="language-plaintext highlighter-rouge">date</code></td>
+      <td>Filter resources modified since a given instant. Supports incremental synchronisation.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr/>
+
+<h4 id="statement-type-parameter">Statement Type Parameter</h4>
+
+<p>A key distinction in MEOW is between two kinds of <code class="language-plaintext highlighter-rouge">MedicationStatement</code>:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Profile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Treatment line</strong></td>
+      <td>Clinician-determined treatment item; the central entity of the medication overview. May link to prescriptions, dispenses, administrations.</td>
+      <td><a href="StructureDefinition-MedicationTreatmentLine.html">MedicationTreatmentLine</a></td>
+    </tr>
+    <tr>
+      <td><strong>Patient-reported statement</strong></td>
+      <td>Self-reported medication use; not yet reconciled into a treatment line.</td>
+      <td>Base <code class="language-plaintext highlighter-rouge">MedicationStatement</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The Consumer uses the <code class="language-plaintext highlighter-rouge">category</code> parameter to select which type to retrieve:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Treatment lines only
+GET [base]/MedicationStatement?patient=Patient/123&amp;category=treatment-line
+
+// Patient-reported statements only
+GET [base]/MedicationStatement?patient=Patient/123&amp;category=patient-reported
+
+// Both (full picture)
+GET [base]/MedicationStatement?patient=Patient/123
+</code></pre></div></div>
+
+<blockquote>
+  <p><strong>Open issue:</strong> The code values for the <code class="language-plaintext highlighter-rouge">category</code> slice that distinguishes treatment lines from patient-reported statements need to be defined in a ValueSet. This is related to issue <a href="https://github.com/IHE/pharm-meow/issues/42">#42</a>.</p>
+</blockquote>
+
+<hr/>
+
+<h4 id="list-based-queries">List-Based Queries</h4>
+
+<p>The Consumer MAY use the <code class="language-plaintext highlighter-rouge">_list</code> parameter or query the <code class="language-plaintext highlighter-rouge">List</code> resource directly to retrieve a named, server-defined medication list rather than performing an open search.</p>
+
+<p>This supports scenarios where the Responder maintains named lists such as:</p>
+<ul>
+  <li>The patient's current active medication list</li>
+  <li>The discharge medication list from a specific encounter</li>
+  <li>A reconciled medication list produced at a specific date</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Retrieve resources belonging to a known List
+GET [base]/MedicationStatement?patient=Patient/123&amp;_list=List/456
+
+// Find available medication lists for a patient
+GET [base]/List?patient=Patient/123&amp;code=http://loinc.org|10160-0
+
+// Retrieve all resources in a List by expanding it
+GET [base]/List/456?_include=List:item
+</code></pre></div></div>
+
+<p>The Responder MAY maintain lists automatically (e.g. a continuously updated "active medication list" per patient) or MAY require the Consumer to discover list identifiers via a prior <code class="language-plaintext highlighter-rouge">List</code> search.</p>
+
+<hr/>
+
+<h4 id="include-parameters-related-resources">Include Parameters (Related Resources)</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Direction</th>
+      <th>Resources returned</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">_include=MedicationStatement:medication</code></td>
+      <td>forward</td>
+      <td><code class="language-plaintext highlighter-rouge">Medication</code> product details</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">_include=MedicationStatement:basedOn</code></td>
+      <td>forward</td>
+      <td><code class="language-plaintext highlighter-rouge">MedicationRequest</code> (prescriptions)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">_include=MedicationStatement:partOf</code></td>
+      <td>forward</td>
+      <td><code class="language-plaintext highlighter-rouge">CarePlan</code> (<code class="language-plaintext highlighter-rouge">MedicationTreatment</code> groupings)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">_revinclude=MedicationDispense:prescription</code></td>
+      <td>reverse</td>
+      <td><code class="language-plaintext highlighter-rouge">MedicationDispense</code> linked to returned prescriptions</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">_revinclude=MedicationAdministration:request</code></td>
+      <td>reverse</td>
+      <td><code class="language-plaintext highlighter-rouge">MedicationAdministration</code> linked to returned prescriptions</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The Responder SHALL support the includes it declares in its CapabilityStatement. Unsupported includes SHALL NOT cause an error — the Responder returns base resources and MAY include an <code class="language-plaintext highlighter-rouge">OperationOutcome</code> noting the unsupported parameter.</p>
+
+<hr/>
+
+<h4 id="example-requests">Example Requests</h4>
+
+<p>All active treatment lines:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/MedicationStatement?patient=Patient/123&amp;category=treatment-line&amp;status=active
+</code></pre></div></div>
+
+<p>Treatment lines with their prescriptions and dispenses:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/MedicationStatement?patient=Patient/123&amp;category=treatment-line
+    &amp;_include=MedicationStatement:basedOn
+    &amp;_revinclude=MedicationDispense:prescription
+</code></pre></div></div>
+
+<p>Full picture — treatment lines and patient-reported statements, with grouping:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/MedicationStatement?patient=Patient/123
+    &amp;_include=MedicationStatement:partOf
+    &amp;_include=MedicationStatement:medication
+</code></pre></div></div>
+
+<p>All resources in a named active medication list:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/MedicationStatement?patient=Patient/123&amp;_list=List/active-meds-123
+    &amp;_include=MedicationStatement:basedOn
+</code></pre></div></div>
+
+<p>Using a national patient identifier:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/MedicationStatement
+    ?patient.identifier=urn:oid:2.16.840.1.113883.2.51.1|A123456789
+    &amp;category=treatment-line&amp;status=active
+</code></pre></div></div>
+
+<hr/>
+
+<h3 id="response-message">Response Message</h3>
+
+<h4 id="success--200-ok">Success — <code class="language-plaintext highlighter-rouge">200 OK</code></h4>
+
+<p>A <code class="language-plaintext highlighter-rouge">Bundle</code> of type <code class="language-plaintext highlighter-rouge">searchset</code> is returned.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Bundle.total</code> reflects the count of matching <code class="language-plaintext highlighter-rouge">MedicationStatement</code> resources (not includes).</li>
+  <li><code class="language-plaintext highlighter-rouge">MedicationTreatmentLine</code> resources SHALL conform to <a href="StructureDefinition-MedicationTreatmentLine.html">MedicationTreatmentLine</a>.</li>
+  <li>Included <code class="language-plaintext highlighter-rouge">CarePlan</code> resources SHALL conform to <a href="StructureDefinition-MedicationTreatment.html">MedicationTreatment</a>.</li>
+  <li>Included <code class="language-plaintext highlighter-rouge">Medication</code> resources SHALL conform to <a href="StructureDefinition-IHEMedication.html">IHEMedication</a>.</li>
+  <li>Included <code class="language-plaintext highlighter-rouge">MedicationRequest</code>, <code class="language-plaintext highlighter-rouge">MedicationDispense</code>, <code class="language-plaintext highlighter-rouge">MedicationAdministration</code> MAY conform to profiles from <a href="https://profiles.ihe.net/PHARM/MPD">IHE PHARM MPD</a> where applicable.</li>
+</ul>
+
+<h4 id="no-results--200-ok">No Results — <code class="language-plaintext highlighter-rouge">200 OK</code></h4>
+
+<p>An empty <code class="language-plaintext highlighter-rouge">Bundle</code> (<code class="language-plaintext highlighter-rouge">total = 0</code>). The Responder SHALL NOT return <code class="language-plaintext highlighter-rouge">404</code> when there are simply no matching resources for a valid patient.</p>
+
+<h4 id="errors">Errors</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>HTTP Status</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">400 Bad Request</code></td>
+      <td>Missing required <code class="language-plaintext highlighter-rouge">patient</code> parameter, or malformed query</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">401 Unauthorized</code></td>
+      <td>Missing or invalid IUA authorization token</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">403 Forbidden</code></td>
+      <td>Requester is not authorized to access this patient's data</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">404 Not Found</code></td>
+      <td>Patient reference or List id cannot be resolved</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">422 Unprocessable Entity</code></td>
+      <td>Query is syntactically valid but semantically rejected</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>All error responses SHALL include an <code class="language-plaintext highlighter-rouge">OperationOutcome</code>.</p>
+
+<hr/>
+
+<h3 id="expected-actions">Expected Actions</h3>
+
+<h4 id="medication-overview-responder">Medication Overview Responder</h4>
+
+<ul>
+  <li>SHALL reject requests missing the <code class="language-plaintext highlighter-rouge">patient</code> parameter with <code class="language-plaintext highlighter-rouge">400 Bad Request</code>.</li>
+  <li>SHALL return <code class="language-plaintext highlighter-rouge">MedicationStatement</code> resources matching the query parameters for the identified patient.</li>
+  <li>SHALL support the <code class="language-plaintext highlighter-rouge">category</code> parameter to distinguish treatment lines from patient-reported statements.</li>
+  <li>SHOULD support <code class="language-plaintext highlighter-rouge">_list</code> parameter to allow retrieval of named medication lists.</li>
+  <li>SHALL perform patient identity resolution per IHE ITI Appendix Z.</li>
+  <li>SHALL honour <code class="language-plaintext highlighter-rouge">_include</code> and <code class="language-plaintext highlighter-rouge">_revinclude</code> parameters declared in its CapabilityStatement.</li>
+  <li>SHALL record an ATNA PHI-query audit event per transaction.</li>
+  <li>SHALL NOT return resources belonging to patients other than the one specified.</li>
+</ul>
+
+<h4 id="medication-overview-consumer">Medication Overview Consumer</h4>
+
+<ul>
+  <li>SHALL include the <code class="language-plaintext highlighter-rouge">patient</code> parameter on every request.</li>
+  <li>SHALL be capable of processing a mixed-type searchset <code class="language-plaintext highlighter-rouge">Bundle</code>.</li>
+  <li>SHALL handle an empty result set without treating it as an error.</li>
+  <li>SHALL handle <code class="language-plaintext highlighter-rouge">OperationOutcome</code> entries in the response appropriately.</li>
+  <li>SHALL present an IUA authorization token when accessing a protected endpoint.</li>
+</ul>
+
+<hr/>
+
+<h3 id="capabilitystatement-requirements">CapabilityStatement Requirements</h3>
+
+<p>The Medication Overview Responder actor SHALL declare the following in its CapabilityStatement:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MedicationStatement"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"interaction"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w"> </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"search-type"</span><span class="w"> </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w"> </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"read"</span><span class="w"> </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"searchParam"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w"> </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"patient"</span><span class="p">,</span><span class="w">      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"reference"</span><span class="p">,</span><span class="w"> </span><span class="nl">"documentation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Required"</span><span class="w"> </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w"> </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"status"</span><span class="p">,</span><span class="w">       </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token"</span><span class="w"> </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w"> </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"effective"</span><span class="p">,</span><span class="w">    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"date"</span><span class="w"> </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w"> </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"category"</span><span class="p">,</span><span class="w">     </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token"</span><span class="p">,</span><span class="w"> </span><span class="nl">"documentation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Used to distinguish treatment lines from patient-reported statements"</span><span class="w"> </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w"> </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"_list"</span><span class="p">,</span><span class="w">        </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"special"</span><span class="p">,</span><span class="w"> </span><span class="nl">"documentation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Retrieve resources belonging to a named List"</span><span class="w"> </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"searchInclude"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"MedicationStatement:medication"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"MedicationStatement:basedOn"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"MedicationStatement:partOf"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"searchRevInclude"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"MedicationDispense:prescription"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"MedicationAdministration:request"</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>If <code class="language-plaintext highlighter-rouge">List</code>-based queries are supported:</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"List"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"interaction"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w"> </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"search-type"</span><span class="w"> </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w"> </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"read"</span><span class="w"> </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"searchParam"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w"> </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"patient"</span><span class="p">,</span><span class="w"> </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"reference"</span><span class="w"> </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w"> </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"code"</span><span class="p">,</span><span class="w">    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token"</span><span class="w"> </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<hr/>
+
+<h3 id="security-considerations">Security Considerations</h3>
+
+<ul>
+  <li>All exchanges SHALL use TLS (HTTPS).</li>
+  <li>The Consumer SHALL present an IUA access token scoped to the patient being queried.</li>
+  <li>The Responder SHALL enforce patient-level access control.</li>
+  <li>Both actors SHALL record ATNA PHI-query audit events per transaction.</li>
+</ul>
+
+<hr/>
+
+<h3 id="open-issues">Open Issues</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Issue</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://github.com/IHE/pharm-meow/issues/42">#42</a></td>
+      <td>Define <code class="language-plaintext highlighter-rouge">category</code> ValueSet including treatment-line vs. patient-reported distinction and list type codes</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/IHE/pharm-meow/issues/37">#37</a></td>
+      <td>Clarify Must Support implications for returned resource types</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/IHE/pharm-meow/issues/19">#19</a></td>
+      <td>Routes of administration binding</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/IHE/pharm-meow/issues/16">#16</a></td>
+      <td>Decide whether <code class="language-plaintext highlighter-rouge">_revinclude</code> for MedicationAdministration is mandatory</td>
+    </tr>
+    <tr>
+      <td>—</td>
+      <td>Define mandatory vs. optional support level for each <code class="language-plaintext highlighter-rouge">_include</code>/<code class="language-plaintext highlighter-rouge">_revinclude</code></td>
+    </tr>
+    <tr>
+      <td>—</td>
+      <td>Specify how the Responder signals which <code class="language-plaintext highlighter-rouge">List</code> resources it maintains per patient</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://ihe.net">Integrating the Healthcare Enterprise (IHE)</a>.  Package ihe.pharm.meow#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Apr 7, 2026 21:03+0000">2026-04-07</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 <a style="color: var(--footer-hyperlink-text-color)" href="http://profiles.ihe.net/PHARM/MEOW/history.html" target="_blank">Version History</a> |
+                 <a rel="license" style="color: var(--footer-hyperlink-text-color)" href="https://profiles.ihe.net/GeneralIntro/ch-9.html"><img src="assets/images/cc-by.png" alt="CC0" style="border-style: none;" height="17"/></a> |
+                  <!-- <a style="color: var(--footer-hyperlink-text-color)" href="searchform.html">Search</a> | -->
+                 <a style="color: var(--footer-hyperlink-text-color)" href="https://www.ihe.net/resources/public_comment/" target="_blank">Propose a change<img src="external.png" alt="external" style="vertical-align: baseline"/></a>
+                 <script src=".assets/js/google-analytics.js" type="text/javascript"> </script>
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

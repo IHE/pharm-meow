@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ihe-cs-clinicalintenttype"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ihe-cs-clinicalintenttype</b></p><a name="ihe-cs-clinicalintenttype"> </a><a name="hcihe-cs-clinicalintenttype"> </a><p>This case-sensitive code system <code>http://profiles.ihe.net/PHARM/MEOW/CodeSystem/ihe-cs-clinicalintenttype</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">therapeutic<a name="ihe-cs-clinicalintenttype-therapeutic"> </a></td><td>Therapeutic</td><td>Medication used for treatment of a condition</td></tr><tr><td style="white-space:nowrap">prophylactic<a name="ihe-cs-clinicalintenttype-prophylactic"> </a></td><td>Prophylactic</td><td>Medication used for prevention of a condition</td></tr><tr><td style="white-space:nowrap">self-medication<a name="ihe-cs-clinicalintenttype-self-medication"> </a></td><td>Self-medication</td><td>Medication taken by the patient on their own initiative, without a prescription</td></tr></table></div>
+  </text>
+  <url value="http://profiles.ihe.net/PHARM/MEOW/CodeSystem/ihe-cs-clinicalintenttype"/>
+  <version value="0.1.0"/>
+  <name value="ClinicalIntentTypeCS"/>
+  <title value="Clinical Intent Type CodeSystem"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-04-07T21:03:28+00:00"/>
+  <publisher value="Integrating the Healthcare Enterprise (IHE)"/>
+  <contact>
+    <name value="Integrating the Healthcare Enterprise (IHE)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ihe.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="secretary@ihe.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Jose Costa Teixeira"/>
+    <telecom>
+      <system value="email"/>
+      <value value="jose.a.teixeira@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes for the clinical intent type of medication use."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="IHE http://www.ihe.net/Governance/#Intellectual_Property"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="therapeutic"/>
+    <display value="Therapeutic"/>
+    <definition value="Medication used for treatment of a condition"/>
+  </concept>
+  <concept>
+    <code value="prophylactic"/>
+    <display value="Prophylactic"/>
+    <definition value="Medication used for prevention of a condition"/>
+  </concept>
+  <concept>
+    <code value="self-medication"/>
+    <display value="Self-medication"/>
+    <definition value="Medication taken by the patient on their own initiative, without a prescription"/>
+  </concept>
+</CodeSystem>

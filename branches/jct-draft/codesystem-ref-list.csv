@@ -1,0 +1,3 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://profiles.ihe.net/PHARM/MEOW/CodeSystem/ihe-cs-clinicalintenttype,0.1.0,active,,ClinicalIntentTypeCS,Clinical Intent Type CodeSystem,"Codes for the clinical intent type of medication use.","ValueSet/ihe-vs-clinicalintenttype"
+urn:ietf:bcp:47,2.0.1,active,"2.16.840.1.113883.6.121",Ietf3066,Tags for the Identification of Languages,"Older value from OID registry.  Superceded; see recommendations in BCP-47.","ValueSet/all-languages"

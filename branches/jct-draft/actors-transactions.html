@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Actors and Transactions - IHE Pharmacy Medication Overview v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/ihe.css"/>
+
+<script async="null" src="https://www.googletagmanager.com/gtag/js?id=G-HLBNC861DJ" type="text/javascript"> </script> 
+
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"2.7"}
+    h3,h4,h5,h6{--heading-prefix:"2.7"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="ihe-logo" href="http://profiles.ihe.net" data-no-external="true">
+    <img src="assets/images/ihe-international.png" alt="Visit the IHE website" height="71"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" href="http://hl7.org/fhir" data-no-external="true"><img src="assets/images/fhir-logo.png" alt="Visit the FHIR website" height="30"/> </a>
+</div>
+  <!-- <div id="hl7-search">
+  <a id="hl7-search-lnk" data-no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div> -->
+<div id="project-nav">
+  
+  
+    <a id="project-logo" href="http://profiles.ihe.net/PHARM/index.html" data-no-external="true"><img src="assets/images/PHARM.png" alt="Visit the PHARM website" height="70"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">IHE Pharmacy Medication Overview</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img src="assets/images/001.svg" alt="International flag" title="International" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R5/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">MEOw Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 1
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="volume1.html">Volume 1 Overview</a>
+      </li>
+      <li>
+        <a href="glossary.html">Glossary</a>
+      </li>
+      <li>
+        <a href="usecases.html">Use Case Overview</a>
+      </li>
+      <li>
+        <a href="medication_concepts.html">Medication Concepts</a>
+      </li>
+      <li>
+        <a href="medication_treatment_lifecycle.html">Medication Treatment Lifecycle</a>
+      </li>
+      <li>
+        <a href="aggregation_and_medication_reconcilliation.html">Aggregation and Medication Reconcilliation</a>
+      </li>
+      <li>
+        <a href="data_models.html">Data Models</a>
+      </li>
+      <li>
+        <a href="actors-transactions.html">Actors and Transactions</a>
+      </li>
+      <li>
+        <a href="actor_options.html">Actor Options</a>
+      </li>
+      <li><a name="l237">​</a>
+        <a href="required_grouping.html">Actor Required Grouping</a>
+      </li>
+      <li>
+        <a href="security_considerations.html">Security Considerations</a>
+      </li>
+      <li>
+        <a href="cross_profile_considerations.html">Cross Profile Considerations</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 2
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="volume2.html">Volume 2 Overview</a>
+      </li>
+      <li>
+        <a href="PHARM-11.html">PHARM-11 Retrieve Medication Overview</a>
+      </li>
+      <li>
+        <a href="PHARM-12.html">PHARM-12 Query Medication Resources</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artifact Index</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="volume1.html"><b>Volume 1 Overview</b></a></li><li><b>Actors and Transactions</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">IHE Pharmacy Medication Overview, published by Integrating the Healthcare Enterprise (IHE). This guide is not an authorized publication; it is the continuous build for version 0.1.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href="https://github.com/IHE/pharm-meow/tree/jct-draft">https://github.com/IHE/pharm-meow/tree/jct-draft</a> and changes regularly. See the <a href="http://profiles.ihe.net/PHARM/MEOW/history.html">Directory of published versions</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/IHE/pharm-meow/commit/62c0f39405df9e4fd32f0190ebb2d3ff69dc6805"><code>62c0f394</code></a>. &nbsp; Branch: <a href="https://github.com/IHE/pharm-meow/tree/jct-draft"><code>jct-draft</code></a>.</span></p>  <!-- EndReleaseHeader -->
+  <h2>Actors and Transactions</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#13311-actor-descriptions-and-actor-profile-requirements" id="markdown-toc-13311-actor-descriptions-and-actor-profile-requirements">1:33.1.1 Actor Descriptions and Actor Profile Requirements</a></li>
+  <li><a href="#13312-transaction-descriptions" id="markdown-toc-13312-transaction-descriptions">1:33.1.2 Transaction Descriptions</a></li>
+</ul>
+
+</div>
+<p>This section defines the actors and transactions in the MEOW profile.</p>
+
+<p>The figure below shows the actors directly involved in the MEOW Profile and the relevant transactions between them.</p>
+
+<div><a name="l408">​</a>
+<img src="actors_and_transactions.png" alt="Figure: MEOW Actors and Transactions" width="70%"/>
+</div>
+
+<p><strong>Table 1:33.1-1</strong> lists the transactions for each actor. To claim compliance with this profile, an actor SHALL support all required transactions (labeled <strong>R</strong>) and MAY support the optional transactions (labeled <strong>O</strong>).</p>
+
+<table border="1" borderspacing="0" style="border: 1px solid black; border-collapse: collapse">
+<caption><b>Table 1:33.1-1: MEOW Profile — Actors and Transactions</b></caption>
+<thead>
+<tr style="background: gray;">
+<th>Actor</th>
+<th>Transaction</th>
+<th>Optionality</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td rowspan="2"><a name="l452">​</a><a href="#13311-medication-overview-consumer">Medication Overview Consumer</a></td>
+<td><a href="PHARM-11.html">Retrieve Medication Overview [PHARM-11]</a></td>
+<td align="center">O</td>
+<td>Section 2:3.11</td>
+</tr>
+<tr>
+<td><a href="PHARM-12.html">Query Medication Resources [PHARM-12]</a></td>
+<td align="center">R</td>
+<td>Section 2:3.12</td>
+</tr>
+
+<tr>
+<td rowspan="2"><a name="l482">​</a><a href="#13312-medication-overview-responder">Medication Overview Responder</a></td>
+<td><a href="PHARM-11.html">Retrieve Medication Overview [PHARM-11]</a></td>
+<td align="center">O</td>
+<td>Section 2:3.11</td>
+</tr>
+<tr>
+<td><a href="PHARM-12.html">Query Medication Resources [PHARM-12]</a></td>
+<td align="center">R</td>
+<td>Section 2:3.12</td>
+</tr>
+
+</tbody>
+</table>
+
+<blockquote>
+  <p><strong>Future actors:</strong> A <strong>Medication Overview Source</strong> and <strong>Medication Overview Receiver</strong> actor pair will be added in a future version to support push-based exchange of treatment lines [PHARM-13]. See <a href="cross_profile_considerations.html">Cross-Profile Considerations</a>.</p>
+</blockquote>
+
+<hr/>
+
+<h3 id="13311-actor-descriptions-and-actor-profile-requirements">1:33.1.1 Actor Descriptions and Actor Profile Requirements</h3>
+
+<h4 id="133111-medication-overview-consumer">1:33.1.1.1 Medication Overview Consumer</h4>
+
+<p>The <strong>Medication Overview Consumer</strong> is a system that retrieves medication overview information for a patient. Typical Consumer systems include electronic health records (EHRs), clinical decision support tools, dispensing systems, patient-facing apps, and care coordination platforms.</p>
+
+<p>The Consumer initiates <a href="PHARM-12.html">PHARM-12</a> queries to retrieve the individual FHIR resources constituting a patient's medication overview — principally <code class="language-plaintext highlighter-rouge">MedicationTreatmentLine</code> entries, with optional inclusion of related prescriptions, dispenses, and administrations. If the Consumer declares the <strong>Document Option</strong>, it also supports <a href="PHARM-11.html">PHARM-11</a> to retrieve pre-assembled medication overviews.</p>
+
+<p>The Consumer is responsible for:</p>
+<ul>
+  <li>Supplying a valid patient identifier on every request.</li>
+  <li>Presenting an authorization token per IHE IUA.</li>
+  <li>Processing returned resources or document Bundles and rendering or using them appropriately.</li>
+  <li>Handling partial results, empty result sets, and <code class="language-plaintext highlighter-rouge">OperationOutcome</code> error responses gracefully.</li>
+</ul>
+
+<p>A conformant Medication Overview Consumer SHALL satisfy the requirements in CapabilityStatement <a href="CapabilityStatement-MedicationOverviewConsumer.html">MedicationOverviewConsumer</a>.</p>
+
+<hr/>
+
+<h4 id="133112-medication-overview-responder">1:33.1.1.2 Medication Overview Responder</h4>
+
+<p>The <strong>Medication Overview Responder</strong> is a system that stores and/or assembles medication overview data for patients and serves it in response to Consumer requests.</p>
+
+<p>A Responder may hold or generate:</p>
+<ul>
+  <li><strong>MedicationTreatmentLine</strong> resources (profiles on <code class="language-plaintext highlighter-rouge">MedicationStatement</code>) — the mandatory content of any medication overview.</li>
+  <li><strong>MedicationTreatment</strong> resources (profiles on <code class="language-plaintext highlighter-rouge">CarePlan</code>) — conditional; present when treatment grouping is clinically relevant.</li>
+  <li><strong>MedicationRequest</strong>, <strong>MedicationDispense</strong>, <strong>MedicationAdministration</strong> — optional linked resources returned via <code class="language-plaintext highlighter-rouge">_include</code>/<code class="language-plaintext highlighter-rouge">_revinclude</code>.</li>
+  <li><strong>MedicationOverviewBundle</strong> documents — present only if the <strong>Document Option</strong> is declared.</li>
+</ul>
+
+<p>How the Responder obtains its data is an implementation concern, not an interoperability requirement of this profile. A Responder may:</p>
+<ul>
+  <li>Maintain a continuously updated store of treatment lines fed by clinical systems.</li>
+  <li>Aggregate and reconcile source data (prescriptions, dispenses, administrations) on demand at query time.</li>
+  <li>Store pre-assembled documents produced by a clinical authoring process.</li>
+</ul>
+
+<p>The Responder is responsible for:</p>
+<ul>
+  <li>Responding to PHARM-12 queries with conformant searchset Bundles.</li>
+  <li>Enforcing patient-level access control.</li>
+  <li>Performing patient identity resolution per IHE ITI Appendix Z.</li>
+  <li>Recording ATNA audit events for every transaction.</li>
+  <li>If the <strong>Document Option</strong> is declared: storing and serving <code class="language-plaintext highlighter-rouge">MedicationOverviewBundle</code> overviews in response to PHARM-11 requests.</li>
+</ul>
+
+<p>A conformant Medication Overview Responder SHALL satisfy the requirements in CapabilityStatement <a href="CapabilityStatement-MedicationOverviewResponder.html">MedicationOverviewResponder</a>.</p>
+
+<hr/>
+
+<h3 id="13312-transaction-descriptions">1:33.1.2 Transaction Descriptions</h3>
+
+<h4 id="133121-retrieve-medication-overview-pharm-11">1:33.1.2.1 Retrieve Medication Overview [PHARM-11]</h4>
+
+<p>The Consumer retrieves a pre-assembled medication overview as a <code class="language-plaintext highlighter-rouge">MedicationOverviewBundle</code> (Bundle type=document) from the Responder. This transaction supports handover, discharge summaries, cross-organisational sharing, and legal records. Requires the <strong>Document Option</strong> on both actors.</p>
+
+<p>For detailed specification see <a href="PHARM-11.html">PHARM-11</a>.</p>
+
+<h4 id="133122-query-medication-resources-pharm-12">1:33.1.2.2 Query Medication Resources [PHARM-12]</h4>
+
+<p>The Consumer searches the Responder for <code class="language-plaintext highlighter-rouge">MedicationTreatmentLine</code> resources and optionally related resources for a given patient. The response is a FHIR searchset Bundle. This transaction supports live, current-state queries — for example, displaying a patient's active medication list in an EHR or feeding a clinical decision support engine.</p>
+
+<p>For detailed specification see <a href="PHARM-12.html">PHARM-12</a>.</p>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://ihe.net">Integrating the Healthcare Enterprise (IHE)</a>.  Package ihe.pharm.meow#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Apr 7, 2026 21:03+0000">2026-04-07</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 <a style="color: var(--footer-hyperlink-text-color)" href="http://profiles.ihe.net/PHARM/MEOW/history.html" target="_blank">Version History</a> |
+                 <a rel="license" style="color: var(--footer-hyperlink-text-color)" href="https://profiles.ihe.net/GeneralIntro/ch-9.html"><img src="assets/images/cc-by.png" alt="CC0" style="border-style: none;" height="17"/></a> |
+                  <!-- <a style="color: var(--footer-hyperlink-text-color)" href="searchform.html">Search</a> | -->
+                 <a style="color: var(--footer-hyperlink-text-color)" href="https://www.ihe.net/resources/public_comment/" target="_blank">Propose a change<img src="external.png" alt="external" style="vertical-align: baseline"/></a>
+                 <script src=".assets/js/google-analytics.js" type="text/javascript"> </script>
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

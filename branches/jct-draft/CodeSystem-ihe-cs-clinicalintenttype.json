@@ -1,0 +1,61 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ihe-cs-clinicalintenttype",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ihe-cs-clinicalintenttype</b></p><a name=\"ihe-cs-clinicalintenttype\"> </a><a name=\"hcihe-cs-clinicalintenttype\"> </a><p>This case-sensitive code system <code>http://profiles.ihe.net/PHARM/MEOW/CodeSystem/ihe-cs-clinicalintenttype</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">therapeutic<a name=\"ihe-cs-clinicalintenttype-therapeutic\"> </a></td><td>Therapeutic</td><td>Medication used for treatment of a condition</td></tr><tr><td style=\"white-space:nowrap\">prophylactic<a name=\"ihe-cs-clinicalintenttype-prophylactic\"> </a></td><td>Prophylactic</td><td>Medication used for prevention of a condition</td></tr><tr><td style=\"white-space:nowrap\">self-medication<a name=\"ihe-cs-clinicalintenttype-self-medication\"> </a></td><td>Self-medication</td><td>Medication taken by the patient on their own initiative, without a prescription</td></tr></table></div>"
+  },
+  "url" : "http://profiles.ihe.net/PHARM/MEOW/CodeSystem/ihe-cs-clinicalintenttype",
+  "version" : "0.1.0",
+  "name" : "ClinicalIntentTypeCS",
+  "title" : "Clinical Intent Type CodeSystem",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-04-07T21:03:28+00:00",
+  "publisher" : "Integrating the Healthcare Enterprise (IHE)",
+  "contact" : [{
+    "name" : "Integrating the Healthcare Enterprise (IHE)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://ihe.net"
+    },
+    {
+      "system" : "email",
+      "value" : "secretary@ihe.net"
+    }]
+  },
+  {
+    "name" : "Jose Costa Teixeira",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "jose.a.teixeira@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Codes for the clinical intent type of medication use.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "copyright" : "IHE http://www.ihe.net/Governance/#Intellectual_Property",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "therapeutic",
+    "display" : "Therapeutic",
+    "definition" : "Medication used for treatment of a condition"
+  },
+  {
+    "code" : "prophylactic",
+    "display" : "Prophylactic",
+    "definition" : "Medication used for prevention of a condition"
+  },
+  {
+    "code" : "self-medication",
+    "display" : "Self-medication",
+    "definition" : "Medication taken by the patient on their own initiative, without a prescription"
+  }]
+}

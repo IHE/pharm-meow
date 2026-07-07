@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Use Case overview - IHE Pharmacy Medication Overview v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/ihe.css"/>
+
+<script async="null" src="https://www.googletagmanager.com/gtag/js?id=G-HLBNC861DJ" type="text/javascript"> </script> 
+
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"2.1"}
+    h3,h4,h5,h6{--heading-prefix:"2.1.0"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="ihe-logo" href="http://profiles.ihe.net" data-no-external="true">
+    <img src="assets/images/ihe-international.png" alt="Visit the IHE website" height="71"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" href="http://hl7.org/fhir" data-no-external="true"><img src="assets/images/fhir-logo.png" alt="Visit the FHIR website" height="30"/> </a>
+</div>
+  <!-- <div id="hl7-search">
+  <a id="hl7-search-lnk" data-no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div> -->
+<div id="project-nav">
+  
+  
+    <a id="project-logo" href="http://profiles.ihe.net/PHARM/index.html" data-no-external="true"><img src="assets/images/PHARM.png" alt="Visit the PHARM website" height="70"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">IHE Pharmacy Medication Overview</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img src="assets/images/001.svg" alt="International flag" title="International" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R5/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">MEOw Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 1
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="volume1.html">Volume 1 Overview</a>
+      </li>
+      <li>
+        <a href="glossary.html">Glossary</a>
+      </li>
+      <li>
+        <a href="usecases.html">Use Case Overview</a>
+      </li>
+      <li>
+        <a href="medication_concepts.html">Medication Concepts</a>
+      </li>
+      <li>
+        <a href="medication_treatment_lifecycle.html">Medication Treatment Lifecycle</a>
+      </li>
+      <li>
+        <a href="aggregation_and_medication_reconcilliation.html">Aggregation and Medication Reconcilliation</a>
+      </li>
+      <li>
+        <a href="data_models.html">Data Models</a>
+      </li>
+      <li>
+        <a href="actors-transactions.html">Actors and Transactions</a>
+      </li>
+      <li>
+        <a href="actor_options.html">Actor Options</a>
+      </li>
+      <li><a name="l237">​</a>
+        <a href="required_grouping.html">Actor Required Grouping</a>
+      </li>
+      <li>
+        <a href="security_considerations.html">Security Considerations</a>
+      </li>
+      <li>
+        <a href="cross_profile_considerations.html">Cross Profile Considerations</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 2
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="volume2.html">Volume 2 Overview</a>
+      </li>
+      <li>
+        <a href="PHARM-11.html">PHARM-11 Retrieve Medication Overview</a>
+      </li>
+      <li>
+        <a href="PHARM-12.html">PHARM-12 Query Medication Resources</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artifact Index</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="volume1.html"><b>Volume 1 Overview</b></a></li><li><b>Use Case overview</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">IHE Pharmacy Medication Overview, published by Integrating the Healthcare Enterprise (IHE). This guide is not an authorized publication; it is the continuous build for version 0.1.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href="https://github.com/IHE/pharm-meow/tree/jct-draft">https://github.com/IHE/pharm-meow/tree/jct-draft</a> and changes regularly. See the <a href="http://profiles.ihe.net/PHARM/MEOW/history.html">Directory of published versions</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/IHE/pharm-meow/commit/62c0f39405df9e4fd32f0190ebb2d3ff69dc6805"><code>62c0f394</code></a>. &nbsp; Branch: <a href="https://github.com/IHE/pharm-meow/tree/jct-draft"><code>jct-draft</code></a>.</span></p>  <!-- EndReleaseHeader -->
+  <h2>Use Case overview</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#why-medication-overviews-exist" id="markdown-toc-why-medication-overviews-exist">Why medication overviews exist</a></li>
+  <li><a href="#flavours-of-a-medication-overview" id="markdown-toc-flavours-of-a-medication-overview">Flavours of a medication overview</a></li>
+  <li><a href="#functions-around-medication-overviews" id="markdown-toc-functions-around-medication-overviews">Functions around medication overviews</a></li>
+  <li><a href="#two-types-of-exchanged-content" id="markdown-toc-two-types-of-exchanged-content">Two types of exchanged content</a></li>
+  <li><a href="#use-cases" id="markdown-toc-use-cases">Use cases</a></li>
+</ul>
+
+</div>
+<h3 id="why-medication-overviews-exist">Why medication overviews exist</h3>
+
+<p>A medication overview — in whatever form — serves the fundamental need to know <strong>what medications a patient is taking, has taken, or should be taking</strong>. This sounds simple, but in practice it is one of the hardest problems in health IT, because the answer depends on who is asking, what data is available, and what purpose the overview will serve.</p>
+
+<p>Different healthcare systems have developed different approaches:</p>
+
+<ul>
+  <li>In some countries, the medication overview is <strong>the plan</strong> — clinicians create and maintain treatment lines as the primary clinical artifact, and prescriptions are derived from them administratively when needed (e.g. to trigger a dispense or reimbursement). The overview drives the workflow.</li>
+  <li>In others, the overview is <strong>secondary</strong> — prescriptions and dispenses are the primary workflow objects, and the medication overview is assembled afterwards by aggregating and reconciling these workflow artifacts. The overview summarises the workflow.</li>
+  <li>In most real-world deployments, both patterns coexist: some treatment lines are clinician-authored (e.g. a hospital treatment decision), while others are derived from prescriptions and dispenses (e.g. ongoing community medications).</li>
+</ul>
+
+<p>This profile supports all of these patterns by providing a common structure for exchanging both the <strong>compiled overview</strong> and the <strong>underlying data</strong>, without prescribing how the overview is produced.</p>
+
+<hr/>
+
+<h3 id="flavours-of-a-medication-overview">Flavours of a medication overview</h3>
+
+<p>There is no single correct medication overview. What constitutes "the medication overview" depends on the context:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Flavour</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Active medication list</strong></td>
+      <td>Medications the patient is currently taking</td>
+      <td>GP's view of ongoing treatments</td>
+    </tr>
+    <tr>
+      <td><strong>Discharge medication list</strong></td>
+      <td>Medications at the point of hospital discharge</td>
+      <td>Handed to patient and community pharmacy</td>
+    </tr>
+    <tr>
+      <td><strong>Reconciled medication list</strong></td>
+      <td>Result of a formal reconciliation process comparing multiple sources</td>
+      <td>Hospital admission reconciliation</td>
+    </tr>
+    <tr>
+      <td><strong>Aggregated overview</strong></td>
+      <td>Automatically assembled from available data, not necessarily clinically reviewed</td>
+      <td>National registry's view combining prescriptions and dispenses</td>
+    </tr>
+    <tr>
+      <td><strong>Patient-maintained list</strong></td>
+      <td>What the patient believes they are taking, including OTC and supplements</td>
+      <td>Patient app or personal health record</td>
+    </tr>
+    <tr>
+      <td><strong>Preliminary report</strong></td>
+      <td>Linking of prescriptions to dispenses and administrations without clinical authorship</td>
+      <td>Middleware or registry that prepares data for clinician review</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>A key insight is that <strong>one system's compiled overview may be another system's raw data</strong>. A hospital's reconciled discharge list is an authoritative clinical document for the hospital — but for the GP receiving it, it is input data to be reviewed and incorporated into their own medication overview.</p>
+
+<hr/>
+
+<h3 id="functions-around-medication-overviews">Functions around medication overviews</h3>
+
+<p>Three fundamental functions recur across all use cases:</p>
+
+<p><strong>Collect</strong> — gathering medication-related data from available sources. This may involve querying prescription repositories, dispensing systems, administration records, patient self-reports, and other medication overviews. The output is a set of raw resources — not yet curated or reconciled.</p>
+
+<p><strong>Aggregate</strong> — linking related data together. For example: matching a dispense to the prescription it fulfils, grouping multiple prescriptions for the same medication, or linking a patient-reported statement to an existing treatment line. Aggregation may be automatic and does not necessarily involve clinical judgement. The output is a preliminary, structured view — useful for display but not yet clinically validated.</p>
+
+<p><strong>Reconcile</strong> — a clinical act in which a healthcare professional reviews the collected and aggregated data, resolves discrepancies, and produces an authoritative medication overview. Reconciliation involves judgement: deciding which medications are truly active, resolving conflicts between sources, and taking responsibility for the result.</p>
+
+<p>This profile covers the <strong>exchange</strong> of data at each of these stages — from raw resources (via <a href="PHARM-12.html">PHARM-12</a>) to compiled overviews (via <a href="PHARM-11.html">PHARM-11</a>) — without prescribing how collection, aggregation, or reconciliation are performed internally.</p>
+
+<hr/>
+
+<h3 id="two-types-of-exchanged-content">Two types of exchanged content</h3>
+
+<p>The outputs of these functions fall into two broad categories, both supported by this profile:</p>
+
+<p><strong>Processed, report-like data</strong> — a compiled and authored overview. Someone (a clinician, a system, a process) has assembled it, reviewed it, and taken responsibility for its content. It has a clear author, date, and scope. Exchanged as a document via <a href="PHARM-11.html">PHARM-11</a>.</p>
+
+<p><strong>Record-level ("raw") data</strong> — the individual medication resources (treatment lines, prescriptions, dispenses, administrations, patient-reported statements) that exist in a system. These may or may not have been reviewed or reconciled. Exchanged as a searchset of resources via <a href="PHARM-12.html">PHARM-12</a>.</p>
+
+<p>The boundary between these is not rigid. A reconciled medication list from Hospital A is a clinical document (processed data) — but when Hospital B receives it as part of a transfer, it becomes input (raw data) for Hospital B's own reconciliation process.</p>
+
+<hr/>
+
+<h3 id="use-cases">Use cases</h3>
+
+<h4 id="uc-1-patient-maintains-their-own-medication-list">UC-1: Patient maintains their own medication list</h4>
+
+<p>A patient uses a personal health application to record the medications they take, including prescription medications, OTC products, and supplements. The patient adds, removes, and updates entries based on their own knowledge.</p>
+
+<p>When the patient visits their GP, the GP's system queries the patient's medication list (<a href="PHARM-12.html">PHARM-12</a>) and displays it alongside the GP's own records. The GP sees both what the patient reports and what is in the clinical system, and can reconcile differences.</p>
+
+<p><strong>Challenges illustrated:</strong></p>
+<ul>
+  <li>The patient may report medications that are not in any clinical system (OTC, supplements, medications from another country).</li>
+  <li>The patient may say they are <strong>not taking</strong> a medication that is actually prescribed and dispensed — for example, a patient who stopped taking a statin due to muscle pain but never informed their doctor. The treatment line exists in the clinical system with status "active", but the patient's self-report says "not taking". This discrepancy is clinically critical and must be visible.</li>
+</ul>
+
+<hr/>
+
+<h4 id="uc-2-hospital-reconciliation-on-admission">UC-2: Hospital reconciliation on admission</h4>
+
+<p>A patient is admitted to hospital. The admitting pharmacist needs to determine what medications the patient is actually taking.</p>
+
+<ol>
+  <li>The hospital system queries the national or regional medication repository (<a href="PHARM-12.html">PHARM-12</a>) for all medication resources: treatment lines, prescriptions, dispenses, and patient-reported statements.</li>
+  <li>The pharmacist reviews the collected data. They notice:
+    <ul>
+      <li>A prescription for an antihypertensive issued 6 months ago with regular monthly dispenses — likely active.</li>
+      <li>A prescription for an antibiotic issued 3 weeks ago with a single dispense — likely completed.</li>
+      <li>A patient-reported entry for a herbal supplement — not in any prescription system.</li>
+      <li>A prescription for a pain medication with <strong>no dispense for 3 months</strong>, then a dispense <strong>2 weeks after the patient returned from a 2-week vacation</strong>. It is unclear whether the patient had stock at home and continued taking the medication during the gap, or whether they interrupted treatment and restarted late. The pharmacist needs to ask the patient.</li>
+    </ul>
+  </li>
+  <li>The pharmacist reconciles these into an authoritative medication list for the admission, creating treatment lines for each active medication.</li>
+  <li>The reconciled list is stored and can be retrieved as a document (<a href="PHARM-11.html">PHARM-11</a>).</li>
+</ol>
+
+<p><strong>Challenges illustrated:</strong></p>
+<ul>
+  <li>The same medication may appear in multiple sources with different levels of detail (overview on substance name, dispense on brand name).</li>
+  <li>Dispense timing does not always reflect actual medication use — gaps may indicate non-adherence, patient stockpiling, or simply different dispensing patterns.</li>
+  <li>Reconciliation is a clinical act that produces new treatment lines, not just a display of existing data.</li>
+</ul>
+
+<hr/>
+
+<h4 id="uc-3-gp-maintains-medication-overview-as-a-document">UC-3: GP maintains medication overview as a document</h4>
+
+<p>A GP maintains an ongoing medication overview for their patients. After each consultation, the GP updates the treatment lines — adding new medications, adjusting dosages, stopping discontinued treatments.</p>
+
+<p>The GP's system produces a medication overview document that is:</p>
+<ul>
+  <li>Available to the patient (e.g. as a printed medication scheme or via a patient portal).</li>
+  <li>Available to other healthcare providers via <a href="PHARM-11.html">PHARM-11</a> (e.g. a specialist querying the GP's overview before a consultation).</li>
+  <li>Suitable for feeding into a national patient summary.</li>
+</ul>
+
+<p>When the GP prescribes a new medication, the treatment line is created first, and the prescription is derived from it. The overview is the source of truth.</p>
+
+<hr/>
+
+<h4 id="uc-4-proactive-aggregation-by-a-registry-or-middleware">UC-4: Proactive aggregation by a registry or middleware</h4>
+
+<p>A national or regional medication registry receives prescriptions (<a href="https://profiles.ihe.net/PHARM/MPD">MPD PHARM-5</a>) and dispenses (<a href="https://profiles.ihe.net/PHARM/MPD">MPD PHARM-8</a>) from clinical systems. It automatically links prescriptions to their dispenses, groups related prescriptions for the same medication, and produces a preliminary aggregated view per patient.</p>
+
+<p>This aggregated view is <strong>not a clinical document</strong> — no clinician has reviewed or taken responsibility for it. But it provides a useful starting point:</p>
+<ul>
+  <li>A pharmacist querying <a href="PHARM-12.html">PHARM-12</a> can see prescriptions linked to their dispenses, making it easier to understand the patient's medication history.</li>
+  <li>A hospital admitting pharmacist can use the aggregated view as input for their reconciliation (UC-2), rather than starting from raw, unlinked prescriptions and dispenses.</li>
+  <li>A clinical system can retrieve the aggregated data and apply its own reconciliation logic.</li>
+</ul>
+
+<p>The registry may also produce preliminary treatment lines — e.g. inferring that a prescription with regular dispenses represents an active treatment — but these are marked as unverified and require clinical confirmation.</p>
+
+<p><strong>Challenges illustrated:</strong></p>
+<ul>
+  <li>Aggregation without clinical review is valuable but cannot be treated as authoritative.</li>
+  <li>The output of one system's aggregation (processed data) becomes input (raw data) for another system's reconciliation.</li>
+</ul>
+
+<hr/>
+
+<h4 id="uc-5-discharge-medication-communication">UC-5: Discharge medication communication</h4>
+
+<p>A hospital discharges a patient. The attending physician produces a discharge medication list containing all medications the patient should take after leaving the hospital. This list:</p>
+<ul>
+  <li>Is produced as a medication overview document (<a href="PHARM-11.html">PHARM-11</a>).</li>
+  <li>Includes treatment lines for each medication with dosage, duration, and instructions.</li>
+  <li>Is communicated to the patient (as a patient-facing medication scheme) and to the GP and community pharmacy.</li>
+  <li>May trigger new prescriptions for medications that require a community prescription.</li>
+</ul>
+
+<p>The GP receives the discharge list. Some medications are new (started in hospital), some are continuations of existing treatments (possibly with adjusted dosage), and some pre-admission medications may have been stopped. The GP reviews the discharge list against their existing overview and updates their records accordingly.</p>
+
+<hr/>
+
+<h4 id="uc-6-substance-level-overview-vs-product-level-workflow">UC-6: Substance-level overview vs. product-level workflow</h4>
+
+<p>A patient's medication overview records that they take "atorvastatin 20 mg once daily" — at the substance level. The most recent prescription specifies "Lipitor 20 mg tablets" — at the brand/product level. The most recent dispense records "Atorvastatine EG 20 mg" — a generic substitution.</p>
+
+<p>All three records describe the same treatment. The medication overview should present this as a single treatment line (atorvastatin 20 mg) with links to the specific prescription and dispense records that contain the product-level detail.</p>
+
+<p>This is a common pattern: <strong>overviews tend to work at the substance level, while workflow objects (prescriptions, dispenses) work at the product level</strong>. The treatment line is the entity that bridges the two.</p>
+
+<hr/>
+
+<h4 id="uc-7-discrepancy-between-prescription-and-patient-behaviour">UC-7: Discrepancy between prescription and patient behaviour</h4>
+
+<p>A patient has an active prescription for metformin 500 mg twice daily. The dispensing records show regular monthly dispenses. However:</p>
+
+<ul>
+  <li>
+    <p><strong>Scenario A:</strong> The patient tells their GP they stopped taking metformin three months ago because of gastrointestinal side effects. The prescription and dispenses suggest active treatment; the patient's report contradicts this. The GP must update the treatment line to reflect the actual status (not taking, reason: adverse effects) and may choose to stop the prescription or switch to a different formulation.</p>
+  </li>
+  <li>
+    <p><strong>Scenario B:</strong> The patient has a prescription renewed in January. The next dispense is in March — six weeks later than expected for a monthly medication. The patient went on a 2-week vacation in February. Did they have enough stock at home? Did they skip the medication for two weeks? The dispensing gap alone cannot answer this — clinical follow-up is needed. The medication overview should surface this gap so the clinician can ask.</p>
+  </li>
+</ul>
+
+<p>These scenarios illustrate why adherence status and dispense timing are important elements of the medication overview, and why a medication overview is more than just a list of active prescriptions.</p>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://ihe.net">Integrating the Healthcare Enterprise (IHE)</a>.  Package ihe.pharm.meow#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Apr 7, 2026 21:03+0000">2026-04-07</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 <a style="color: var(--footer-hyperlink-text-color)" href="http://profiles.ihe.net/PHARM/MEOW/history.html" target="_blank">Version History</a> |
+                 <a rel="license" style="color: var(--footer-hyperlink-text-color)" href="https://profiles.ihe.net/GeneralIntro/ch-9.html"><img src="assets/images/cc-by.png" alt="CC0" style="border-style: none;" height="17"/></a> |
+                  <!-- <a style="color: var(--footer-hyperlink-text-color)" href="searchform.html">Search</a> | -->
+                 <a style="color: var(--footer-hyperlink-text-color)" href="https://www.ihe.net/resources/public_comment/" target="_blank">Propose a change<img src="external.png" alt="external" style="vertical-align: baseline"/></a>
+                 <script src=".assets/js/google-analytics.js" type="text/javascript"> </script>
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

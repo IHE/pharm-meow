@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://profiles.ihe.net/PHARM/MEOW/CodeSystem/ihe-cs-clinicalintenttype> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ihe-cs-clinicalintenttype"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ihe-cs-clinicalintenttype</b></p><a name=\"ihe-cs-clinicalintenttype\"> </a><a name=\"hcihe-cs-clinicalintenttype\"> </a><p>This case-sensitive code system <code>http://profiles.ihe.net/PHARM/MEOW/CodeSystem/ihe-cs-clinicalintenttype</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">therapeutic<a name=\"ihe-cs-clinicalintenttype-therapeutic\"> </a></td><td>Therapeutic</td><td>Medication used for treatment of a condition</td></tr><tr><td style=\"white-space:nowrap\">prophylactic<a name=\"ihe-cs-clinicalintenttype-prophylactic\"> </a></td><td>Prophylactic</td><td>Medication used for prevention of a condition</td></tr><tr><td style=\"white-space:nowrap\">self-medication<a name=\"ihe-cs-clinicalintenttype-self-medication\"> </a></td><td>Self-medication</td><td>Medication taken by the patient on their own initiative, without a prescription</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://profiles.ihe.net/PHARM/MEOW/CodeSystem/ihe-cs-clinicalintenttype"^^xsd:anyURI ;
+     fhir:l <http://profiles.ihe.net/PHARM/MEOW/CodeSystem/ihe-cs-clinicalintenttype>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ClinicalIntentTypeCS"] ; # 
+  fhir:title [ fhir:v "Clinical Intent Type CodeSystem"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-04-07T21:03:28+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Integrating the Healthcare Enterprise (IHE)"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Integrating the Healthcare Enterprise (IHE)" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://ihe.net" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "secretary@ihe.net" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Jose Costa Teixeira" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "jose.a.teixeira@gmail.com" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes for the clinical intent type of medication use."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ;
+         fhir:l <http://unstats.un.org/unsd/methods/m49/m49.htm>
+       ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "IHE http://www.ihe.net/Governance/#Intellectual_Property"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "therapeutic" ] ;
+     fhir:display [ fhir:v "Therapeutic" ] ;
+     fhir:definition [ fhir:v "Medication used for treatment of a condition" ]
+  ] [
+     fhir:code [ fhir:v "prophylactic" ] ;
+     fhir:display [ fhir:v "Prophylactic" ] ;
+     fhir:definition [ fhir:v "Medication used for prevention of a condition" ]
+  ] [
+     fhir:code [ fhir:v "self-medication" ] ;
+     fhir:display [ fhir:v "Self-medication" ] ;
+     fhir:definition [ fhir:v "Medication taken by the patient on their own initiative, without a prescription" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

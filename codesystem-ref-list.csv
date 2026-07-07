@@ -1,0 +1,2 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://hl7.org/fhir/CodeSystem/medication-statement-status,5.0.0,active,"2.16.840.1.113883.4.642.4.1980",MedicationStatementStatusCodes,MedicationStatement Status Codes,"MedicationStatement Status Codes","ValueSet/medication-statement-status"

@@ -1,0 +1,11 @@
+{
+  "codeSystems" : [{
+    "url" : "http://profiles.ihe.net/PHARM/MEOW/ValueSet/ihe-vs-clinicalintenttype",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "ClinicalIntentTypeVS",
+    "title" : "Clinical Intent Type ValueSet",
+    "description" : "The clinical intent type of the medication use - therapeutic, prophylactic, or self-medication.",
+    "systems" : ["http://profiles.ihe.net/PHARM/MEOW/CodeSystem/ihe-cs-clinicalintenttype"]
+  }]
+}

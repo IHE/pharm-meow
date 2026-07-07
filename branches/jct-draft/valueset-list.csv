@@ -1,0 +1,2 @@
+URL,Version,Status,OIDs,Name,Title,Description,Uses,Used,Sources
+http://profiles.ihe.net/PHARM/MEOW/ValueSet/ihe-vs-clinicalintenttype,0.1.0,active,,ClinicalIntentTypeVS,Clinical Intent Type ValueSet,"The clinical intent type of the medication use - therapeutic, prophylactic, or self-medication.",,"Internal"
